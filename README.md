@@ -11,6 +11,7 @@ Work includes:
 * Loader Hooks
 * ESM and Common.js Interoperability
 * Node.js and Browser interoperability
+* VM Modules implementation
 
 ## Modules Team Members
 
