@@ -50,4 +50,4 @@ Work includes:
 * [Wesley Wigham](https://github.com/weswigham) @weswigham
 * [Khaidi Chu](https://github.com/XadillaX) @XadillaX
 * [Yosuke Furukawa](https://github.com/yosuke-furukawa) @yosuke-furukawa
-* [zackschuster](https://github.com/zackschuster) @zackschuster
+* [Zack Schuster](https://github.com/zackschuster) @zackschuster
