@@ -37,6 +37,7 @@
 # Goals that are not expected for the first iteration
 
 1. 100% stable Loader APIs
+    * Any Loader APIs shipped must have a forward compatible appraoch towards their usage, such as providing a feature dection mechanism or versioned API.
 2. Treatment of `.js` file extension as ESM by default
 3. Support for the following URL schemes: `data:`, `blob:`, and `https:`
 
