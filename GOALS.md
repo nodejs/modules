@@ -1,7 +1,7 @@
 # Goals
 
 1. Enable use of ESM in Node without requiring a flag
-2. Have files be unable collide between module systems
+2. Have files be unable to collide between module systems
 3. Define a path to write code that runs in both Node and the Browser without a preprocessing step
     1. Define what a preprocessing step is
     2. A subset of functionality that is compatible between environments, not requiring either environment implement all features of the other
