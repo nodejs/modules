@@ -12,7 +12,7 @@
     1. All platform specific APIs exposed to ESM by default will be placed under `import.meta.*`
 6. Support developer centric workflows for:
     1. Intercepting dependencies and replacing them
-    2. APM integration
+    2. Application Performance Monitoring (APM) integration
     3. Multiple distributions of both ESM and CJS in the same package
     4. Creation of userland module systems (JSDOM)
 7. 100% backwards compatibility with existing CJS code bases if left unchanged
