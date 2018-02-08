@@ -9,7 +9,7 @@
     * Node versions supporting ESM
     * Node versions that do not support ESM
 5. Be standards compliant in the nature of our loading of ESM
-    1. All platform specific APIs exposed to ESM by default will be placed under `import.meta.*`
+    1. Contextual module APIs exposed to ESM by default will be placed under `import.meta.*`. This does not relate to per Realm globals nor module specifier resolution.
 6. Support developer centric workflows for:
     1. Intercepting dependencies and replacing them
     2. Application Performance Monitoring (APM) integration
