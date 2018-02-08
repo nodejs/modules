@@ -15,6 +15,7 @@
     2. Application Performance Monitoring (APM) integration
     3. Multiple distributions of both ESM and CJS in the same package
     4. Creation of userland module systems (JSDOM)
+    5. Incremental code base migration from CJS to ESM
 7. 100% backwards compatibility with existing CJS code bases if left unchanged
 
 # Non-Goals
