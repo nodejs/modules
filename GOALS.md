@@ -11,7 +11,7 @@
 5. Be standards compliant in the nature of our loading of ESM
     1. If not standards compliant by default, have standards compliant form possible
 6. Support developer centric workflows for:
-    1. Mocking modules
+    1. Intercepting dependencies and replacing them
     2. APM integration
     3. Multiple distributions of both ESM and CJS in the same package
     4. Creation of userland module systems (JSDOM)
