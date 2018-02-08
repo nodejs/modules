@@ -53,5 +53,7 @@
 * Interoperability with WASM
 * Interoperability with browser support for more module formats
 * Resource integrity checks
-* Scaling of more JS goals and out of band flags
+* Preparation for introduction of more JS spec breaking changes
+    * new parsers added to the JS spec
+    * new out of band data added to the JS spec
 * Enable a future where ESM is the default module system across JS environments
