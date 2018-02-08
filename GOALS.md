@@ -5,7 +5,9 @@
 3. Define a path to write code that runs in both Node and the Browser without a preprocessing step
     1. Define what a preprocessing step is
     2. A subset of functionality that is compatible between environments, not requiring either environment implement all features of the other
-4. Define a path to write code that runs in Node versions supporting ESM and in Node versions that do not support ESM
+4. Define a path to write libraries that support being used by both
+    * Node versions supporting ESM
+    * Node versions that do not support ESM
 5. Be standards compliant in the nature of our loading of ESM
     1. If not standards compliant by default, have standards compliant form possible
 6. Support developer centric workflows for:
