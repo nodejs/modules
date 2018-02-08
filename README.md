@@ -15,39 +15,43 @@ Work includes:
 
 ## Modules [Team Members](https://github.com/orgs/nodejs/teams/modules/members)
 
-* [Yuta Hiroto](https://github.com/abouthiroppy) @abouthiroppy
-* [Benjamin Gruenbaum](https://github.com/benjamingr) @benjamingr
-* [Ben Newman](https://github.com/benjamn) @benjamn
-* [Bradley Meck](https://github.com/bmeck) @bmeck
-* [Benedikt Meurer](https://github.com/bmeurer) @bmeurer
-* [C J Silverio](https://github.com/ceejbot) @ceejbot
-* [Chris Dickinson](https://github.com/chrisdickinson) @chrisdickinson
-* [Daniel Rosenwasser](https://github.com/DanielRosenwasser) @DanielRosenwasser
-* [Ahmad Abdul-Aziz](https://github.com/devamaz) @devamaz
-* [Gus Caplan](https://github.com/devsnek) @devsnek
-* [Eugene Ostroukhov](https://github.com/eugeneo) @eugeneo
-* [Evan Plaice](https://github.com/evanplaice) @evanplaice
-* [Jeremiah Senkpiel](https://github.com/Fishrock123) @Fishrock123
-* [Gil Tayar](https://github.com/giltayar) @giltayar
-* [Guy Bedford](https://github.com/guybedford) @guybedford
-* [Hassan Sani](https://github.com/inidaname) @inidaname
-* [James M Snell](https://github.com/jasnell) @jasnell
-* [John-David Dalton](https://github.com/jdalton) @jdalton
-* [Jan Olaf Krems](https://github.com/jkrems) @jkrems
-* [Lin Clark](https://github.com/linclark) @linclark
-* [Jordan Harband](https://github.com/ljharb) @ljharb
-* [Wassim Chegham](https://github.com/manekinekko) @manekinekko
-* [Matteo Collina](https://github.com/mcollina) @mcollina
-* [Matt DuLeone](https://github.com/mduleone) @mduleone
-* [Michael Dawson](https://github.com/mhdawson) @mhdawson
-* [Myles Borins](https://github.com/MylesBorins) @MylesBorins
-* [Refael Ackermann](https://github.com/refack) @refack
-* [Rob Palmer](https://github.com/robpalme) @robpalme
-* [Michaël Zasso](https://github.com/targos) @targos
-* [Torgny Bjers](https://github.com/tbjers) @tbjers
-* [Timothy Gu](https://github.com/TimothyGu) @TimothyGu
-* [Andrea Giammarchi](https://github.com/WebReflection) @WebReflection
-* [Wesley Wigham](https://github.com/weswigham) @weswigham
-* [Khaidi Chu](https://github.com/XadillaX) @XadillaX
-* [Yosuke Furukawa](https://github.com/yosuke-furukawa) @yosuke-furukawa
-* [Zack Schuster](https://github.com/zackschuster) @zackschuster
+<!-- ncu-team-sync.team(nodejs/modules) -->
+
+- [@abouthiroppy](https://github.com/abouthiroppy) - Yuta Hiroto
+- [@benjamingr](https://github.com/benjamingr) - Benjamin Gruenbaum
+- [@benjamn](https://github.com/benjamn) - Ben Newman
+- [@bmeck](https://github.com/bmeck) - Bradley Meck
+- [@bmeurer](https://github.com/bmeurer) - Benedikt Meurer
+- [@ceejbot](https://github.com/ceejbot) - C J Silverio
+- [@chrisdickinson](https://github.com/chrisdickinson) - Chris Dickinson
+- [@DanielRosenwasser](https://github.com/DanielRosenwasser) - Daniel Rosenwasser
+- [@devamaz](https://github.com/devamaz) - Ahmad Abdul-Aziz 
+- [@devsnek](https://github.com/devsnek) - Gus Caplan
+- [@eugeneo](https://github.com/eugeneo) - Eugene Ostroukhov
+- [@evanplaice](https://github.com/evanplaice) - Evan Plaice
+- [@Fishrock123](https://github.com/Fishrock123) - Jeremiah Senkpiel
+- [@giltayar](https://github.com/giltayar) - Gil Tayar
+- [@guybedford](https://github.com/guybedford) - Guy Bedford
+- [@inidaname](https://github.com/inidaname) - Hassan Sani
+- [@jasnell](https://github.com/jasnell) - James M Snell
+- [@jdalton](https://github.com/jdalton) - John-David Dalton
+- [@jkrems](https://github.com/jkrems) - Jan Olaf Krems
+- [@linclark](https://github.com/linclark) - Lin Clark
+- [@ljharb](https://github.com/ljharb) - Jordan Harband
+- [@manekinekko](https://github.com/manekinekko) - Wassim Chegham
+- [@mcollina](https://github.com/mcollina) - Matteo Collina
+- [@mduleone](https://github.com/mduleone) - Matt DuLeone
+- [@mhdawson](https://github.com/mhdawson) - Michael Dawson
+- [@MylesBorins](https://github.com/MylesBorins) - Myles Borins
+- [@refack](https://github.com/refack) - Refael Ackermann
+- [@robpalme](https://github.com/robpalme) - Rob Palmer
+- [@targos](https://github.com/targos) - Michaël Zasso
+- [@tbjers](https://github.com/tbjers) - Torgny Bjers
+- [@TimothyGu](https://github.com/TimothyGu) - Timothy Gu
+- [@WebReflection](https://github.com/WebReflection) - Andrea Giammarchi
+- [@weswigham](https://github.com/weswigham) - Wesley Wigham
+- [@XadillaX](https://github.com/XadillaX) - Khaidi Chu
+- [@yosuke-furukawa](https://github.com/yosuke-furukawa) - Yosuke Furukawa
+- [@zackschuster](https://github.com/zackschuster) - 
+
+<!-- ncu-team-sync end -->
