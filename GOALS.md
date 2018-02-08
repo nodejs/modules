@@ -9,7 +9,7 @@
     * Node versions supporting ESM
     * Node versions that do not support ESM
 5. Be standards compliant in the nature of our loading of ESM
-    1. All platform specific runtime APIs exposed to ESM will be placed under `import.meta.*`
+    1. All platform specific APIs exposed to ESM by default will be placed under `import.meta.*`
 6. Support developer centric workflows for:
     1. Intercepting dependencies and replacing them
     2. APM integration
@@ -50,6 +50,7 @@
 
 # Forwards compatibility concerns
 
+* Interoperability with WASM
 * Interoperability with browser support for more module formats
 * Resource integrity checks
 * Scaling of more JS goals and out of band flags
