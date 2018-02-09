@@ -28,11 +28,11 @@
     2. usage of `require.extensions`
     3. usage of `require.cache`
     4. usage of `NODE_PATH`, `~/.node_libraries`, `~/.node_modules`, and `$PREFIX/lib/node`
-4. Direct integration with APMs
-5. Direct integration with testing libraries
-6. Direct integration with transpilers
-7. Direct integration with browser stacks
-8. Direct integration with package managers
+4. Standardizing and implementing APIs that explicitly are tailored to APM
+5. Standardizing and implementing APIs that explicitly are tailored to testing libraries
+6. Standardizing and implementing APIs that explicitly are tailored to transpilers
+7. Standardizing and implementing APIs that explicitly are tailored to browser stacks
+8. Standardizing and implementing APIs that explicitly are tailored to package managers
 
 # Goals that are not expected for the first iteration
 
