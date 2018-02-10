@@ -17,6 +17,7 @@
     4. Creation of userland module systems (JSDOM)
     5. Incremental code base migration from CJS to ESM
 7. 100% backwards compatibility with existing CJS code bases if left unchanged
+8. Provide a path to have singleton references that can be obtained in both module systems
 
 # Non-Goals
 
