@@ -1,3 +1,13 @@
+# Preface: Design Principles
+
+These are a list of commitments that can be used to define reasons for goals existing.
+
+* We are committed to shipping ESM
+* We are committed to ESM being first class in Node.js
+* We are committed to having the Node.js and Web platform as first class runtimes for modules.
+* Modules installed via npm should be able to run after installation without requiring a build step.
+* We are committed to supporting our current users and offering migration paths as necessary. This can be through interoperability or APIs to improve the developer experience of working between module systems.
+
 # Goals
 
 1. Enable use of ESM in Node without requiring a flag
@@ -34,6 +44,8 @@
 6. Standardizing and implementing APIs that explicitly are tailored to transpilers
 7. Standardizing and implementing APIs that explicitly are tailored to browser stacks
 8. Standardizing and implementing APIs that explicitly are tailored to package managers
+9. Modification of existing `require` behavior
+    * Modification of implementation details is allowed only if it would be backwards compatible
 
 # Goals that are not expected for the first iteration
 
