@@ -60,6 +60,10 @@ or else the discussion will continue. Simple majority wins.
 Note that some changes to Team membership require unanimous consensus.  See
 "Team Membership" above.
 
+### Merging PRs into this Repository
+
+Pull requests must reach consensus in a meeting in order to be merged into this repository. Merging of pull requests must be decided during a meeting that has a minimal quorum of 50% of all active members. A pull request that is is unable to reach quorum due to lack of consensus or quorum must not be merged into this repository.
+
 <a id="developers-certificate-of-origin"></a>
 ## Developer's Certificate of Origin 1.1
 
