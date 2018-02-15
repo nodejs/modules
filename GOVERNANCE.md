@@ -62,6 +62,8 @@ Note that some changes to Team membership require unanimous consensus.  See
 
 ### Merging PRs into this Repository
 
+This section does not apply to [the Node.js core repository](https://github.com/nodejs/node). It only applied to [the Modules repository](https://github.com/nodejs/modules).
+
 Pull requests must reach consensus in a meeting in order to be merged into this repository. Merging of pull requests must be decided during a meeting that has a minimal quorum of 50% of all active members. Members with observer status are not considered active members for the purposes of reaching quorum. A pull request that is is unable to reach quorum due to lack of consensus or quorum must not be merged into this repository. Pull requests that fail to be merged will be addressed on a case by case basis.
 
 #### Errata and Editorial Changes
