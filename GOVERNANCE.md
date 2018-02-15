@@ -14,7 +14,7 @@ Collaborators and given commit-access to the project.
 
 ### Team Meetings
 
-The Team meets bi-weekly on a Google Hangout On Air. A designated moderator
+The Team meets bi-weekly on Zoom.us. A designated moderator
 approved by the Team runs the meeting. Each meeting should be
 published to YouTube.
 
