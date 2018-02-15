@@ -2,11 +2,12 @@
 
 These are a list of commitments that can be used to define reasons for goals existing.
 
-* We are committed to shipping ESM
+* We are committed to shipping ES Modules (ESM)
 * We are committed to ESM being first class in Node.js
 * We are committed to having the Node.js and Web platform as first class runtimes for modules.
 * Modules installed via npm should be able to run after installation without requiring a build step.
-* We are committed to supporting our current users and offering migration paths as necessary. This can be through interoperability or APIs to improve the developer experience of working between module systems.
+* We are committed to not breaking our existing ecosystem for modules
+* We are committed to providing APIs or conventions such that users will be able to use both CommonJS (CJS) and ESM with support for both workflows.
 
 # Goals
 
