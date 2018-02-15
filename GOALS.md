@@ -5,7 +5,7 @@ These are a list of commitments that can be used to define reasons for goals exi
 * We are committed to shipping ES Modules (ESM)
 * We are committed to ESM being first class in Node.js
 * We are committed to having the Node.js and Web platform as first class runtimes for modules.
-* Modules installed via npm should be able to run after installation without requiring a build step.
+* Modules installed via npm should be able to run after installation without requiring a [preprocessing step](#goal-define-preprocessing-step).
 * We are committed to not breaking our existing ecosystem for modules
 * We are committed to providing APIs or conventions such that users will be able to use both CommonJS (CJS) and ESM with support for both workflows.
 
@@ -14,7 +14,7 @@ These are a list of commitments that can be used to define reasons for goals exi
 1. Enable use of ESM in Node without requiring a flag
 2. Have files be unable to collide between module systems
 3. Define a path to write code that runs in both Node and the Browser without a preprocessing step
-    1. Define what a preprocessing step is
+    1. <a name="goal-define-preprocessing-step"></a>Define what a preprocessing step is
     2. A subset of functionality that is compatible between environments, not requiring either environment implement all features of the other
 4. Define a path to write libraries that support being used by both
     * Node versions supporting ESM
