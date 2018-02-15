@@ -62,7 +62,11 @@ Note that some changes to Team membership require unanimous consensus.  See
 
 ### Merging PRs into this Repository
 
-Pull requests must reach consensus in a meeting in order to be merged into this repository. Merging of pull requests must be decided during a meeting that has a minimal quorum of 50% of all active members. Members with observer status are not considered active members for the purposes of reaching quorum. A pull request that is is unable to reach quorum due to lack of consensus or quorum must not be merged into this repository.
+Pull requests must reach consensus in a meeting in order to be merged into this repository. Merging of pull requests must be decided during a meeting that has a minimal quorum of 50% of all active members. Members with observer status are not considered active members for the purposes of reaching quorum. A pull request that is is unable to reach quorum due to lack of consensus or quorum must not be merged into this repository. Pull requests that fail to be merged will be addressed on a case by case basis.
+
+#### Errata and Editorial Changes
+
+A special exception is made for pull requests seeking to fix errata or perform editorial changes to this repository. Errata or editorial pull requests may be merged without being presented at a meeting if a reasonable time is given for review and there no dissent. The time period seen as reasonable for review varies on a case by case basis as determined by the author. A member may request a specific time period for review of a errata or editorial pull request not to exceed the next meeting date. If a time for review is requested, members must wait for that time period to pass or review be completed prior to that time.
 
 <a id="developers-certificate-of-origin"></a>
 ## Developer's Certificate of Origin 1.1
