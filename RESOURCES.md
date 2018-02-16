@@ -20,9 +20,9 @@ Following a list of ESM and CommonJS relevant projects.
   * [Parceljs](https://parceljs.org/) multi purpose bundler focused on zero config and performance
   * [Browserify](http://browserify.org) the CommonJS module bundler that brought NodeJS to the Web
 
-#### Compilers
-  * [Babel](http://babeljs.io) compiled ES2015+ including modules downgraded to CommonJS
-  * [TypeScript](https://www.typescriptlang.org) compiled ES2015+ including modules downgraded to CommonJS
+#### Transpilers
+  * [Babel](http://babeljs.io) converts ES2015+ to older versions, including a CommonJS interop layer with ESM
+  * [TypeScript](https://www.typescriptlang.org) converts ES2015+ to older versions, including a CommonJS interop layer with ESM
   
 #### Runtime Utilities
   * [Reify](https://www.npmjs.com/package/reify) compiles ESM syntax to CommonJS on the fly, supporting live bindings without rewriting imported variable names
