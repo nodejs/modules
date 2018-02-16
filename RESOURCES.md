@@ -14,10 +14,6 @@
 
 Following a list of ESM and CommonJS relevant projects.
 
-#### Transpilers
-  * [Babel](http://babeljs.io) transpiled ES6+ including modules downgraded to CommonJS with an `exports.default` strategy
-  * [TypeScript](https://www.typescriptlang.org) transpiled classes including ES6 like/inspired modules
-
 #### Bundlers
   * [Webpack](https://webpack.js.org) multi purpose bundler compatible with CommonJS `exports.default` strategy. Actually diverging from npm resolution preferring a `browser` field in the `package.json` instead of actual CommonJS.
   * [Rollup](https://rollupjs.org) next-generation ES6 module bundler with tree shaking capability
@@ -25,10 +21,12 @@ Following a list of ESM and CommonJS relevant projects.
   * [Browserify](http://browserify.org) the CommonJS module bundler that brought NodeJS to the Web
 
 #### Compilers
-  * [Reify](https://www.npmjs.com/package/reify) compiles ESM syntax to CommonJS, supporting live bindings without rewriting imported variable names
-  * [@std/esm](https://github.com/standard-things/esm) is a fork of Reify focused on following Node's ESM support roadmap while providing a bridge from the CJS/ESM usage of today to the ESM of tomorrow.
-
+  * [Babel](http://babeljs.io) compiled ES2015+ including modules downgraded to CommonJS
+  * [TypeScript](https://www.typescriptlang.org) compiled ES2015+ including modules downgraded to CommonJS
+  
 #### Runtime Utilities
+  * [Reify](https://www.npmjs.com/package/reify) compiles ESM syntax to CommonJS on the fly, supporting live bindings without rewriting imported variable names
+  * [@std/esm](https://github.com/standard-things/esm) is a fork of Reify focused on following Node's ESM support roadmap while providing a bridge from the CJS/ESM usage of today to the ESM of tomorrow.
   * [cjs4esm](https://github.com/WebReflection/cjs4esm#cjs4esm--) brings CommonJS modules and `require` to ESM compatible environments such [SpiderMonkey](https://developer.mozilla.org/en-US/docs/Mozilla/Projects/SpiderMonkey), [JSC](https://trac.webkit.org/wiki/JavaScriptCore), or ESM compatible browsers
   * [import.js](https://github.com/WebReflection/import.js#importjs) is a dynamic `import(...)` polyfill
   * [SpiderMonkey](https://developer.mozilla.org/en-US/docs/Mozilla/Projects/SpiderMonkey) [ESM Loader](https://searchfox.org/mozilla-central/source/js/src/shell/ModuleLoader.js)
