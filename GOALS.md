@@ -23,6 +23,7 @@ These are a list of commitments that can be used to define reasons for goals exi
     * Node versions that do not support ESM
 5. Be standards compliant in the nature of our loading of ESM
     1. Contextual module APIs exposed to ESM by default will be placed under `import.meta.*`. This does not relate to per Realm globals nor module specifier resolution.
+    2. Should a choice be made to have a feature that is not compliant to ESM for any reason, Node will provide a way to create an ESM compliant implementation.
 6. Support developer centric workflows for:
     1. Intercepting dependencies and replacing them
     2. Application Performance Monitoring (APM) integration
