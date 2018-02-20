@@ -38,7 +38,7 @@ These are a list of commitments that can be used to define reasons for goals exi
 1. Use `.js` file extension for both CJS and ESM without a disambiguation mechanism
     * e.g. `require` falling back to CJS when it is unsure about the format of a resolved path
 2. Interoperability of Module formats with environments that do not support Module formats that Node seeks to support
-3. Forwards compatibility support for the transition of existing packages from CJS to ESM
+3. Require zero code or convention changes when moving from CJS to ESM
     1. loading unknown file formats and `.js` as CJS
     2. usage of `require.extensions`
     3. usage of `require.cache`
