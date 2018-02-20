@@ -9,6 +9,7 @@ These are a list of commitments that can be used to define reasons for goals exi
 * We are committed to not breaking our existing ecosystem for modules
 * We are committed to providing APIs or conventions such that users will be able to use both CommonJS (CJS) and ESM with support for both workflows.
 * We are commited to having security be a primary concern for ESM in Node.js.
+* We are commited to having performance be a primary concern for ESM in Node.js.
 
 # Goals
 
