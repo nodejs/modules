@@ -66,7 +66,6 @@ These are a list of commitments that can be used to define reasons for goals exi
     * Creation of in memory Module records
     * Composition of Loaders
     * Find a solution to the live-ness problem
-    * Discuss issues/benefits around static vs dynamic mutation of loader hooks
 
 # Forwards compatibility concerns
 
