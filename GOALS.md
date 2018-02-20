@@ -58,7 +58,7 @@ These are a list of commitments that can be used to define reasons for goals exi
 2. Treatment of `.js` file extension as ESM by default
 3. Support for the following URL schemes: `data:`, `blob:`, and `https:`
 
-# Direction
+# Current Direction
 
 * Build upon the existing work in Node that has designs around using `.mjs`
 * Enable usage of `.js` for ESM through compatible means of out of band data
