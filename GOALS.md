@@ -58,9 +58,16 @@ These are a list of commitments that can be used to define reasons for goals exi
 2. Treatment of `.js` file extension as ESM by default
 3. Support for the following URL schemes: `data:`, `blob:`, and `https:`
 
+# Current State
+
+* ESM loader is using `.mjs` to load ESM
+* ESM loader is using `.js` to load CJS
+* ESM loader is using URLs for the Module Map cache
+* ESM loader is using a new, but backwards compatibility focused resolution algorithm
+* ESM loader hooks are instrumented using the `--loader` command line flag
+
 # Current Direction
 
-* Build upon the existing work in Node that has designs around using `.mjs`
 * Enable usage of `.js` for ESM through compatible means of out of band data
 * Build upon the existing Loader hooks to aid usability
     * Creation of in memory Module records
