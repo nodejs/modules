@@ -14,7 +14,7 @@ These are a list of commitments that can be used to define reasons for goals exi
 # Goals
 
 1. Enable use of ESM in Node without requiring a flag
-2. Have files be unable to collide between module systems
+2. Have module cache entries be unable to collide between module systems
 3. Define a path to write code that runs in both Node and the Browser without a preprocessing step
     1. <a name="goal-define-preprocessing-step"></a>Define what a preprocessing step is
     2. A subset of functionality that is compatible between environments, not requiring either environment implement all features of the other
@@ -29,7 +29,7 @@ These are a list of commitments that can be used to define reasons for goals exi
     2. Application Performance Monitoring (APM) integration
     3. Multiple distributions of both ESM and CJS in the same package
     4. Creation of userland module systems (JSDOM)
-    5. Incremental code base migration from CJS to ESM by migrating individual files
+    5. Incremental code base migration from CJS to ESM by migrating individual source texts
 7. 100% backwards compatibility with existing CJS code bases if left unchanged
 8. Provide a path to have singleton references that can be obtained in both module systems
 
@@ -60,8 +60,8 @@ These are a list of commitments that can be used to define reasons for goals exi
 
 # Current State
 
-* ESM loader is using `.mjs` to load ESM
-* ESM loader is using `.js` to load CJS
+* ESM loader is using the `.mjs` file extension to load ESM
+* ESM loader is using the `.js` file extension to load CJS
 * ESM loader is using URLs for the Module Map cache
 * ESM loader is using a new, but backwards compatibility focused resolution algorithm
 * ESM loader hooks are instrumented using the `--loader` command line flag
