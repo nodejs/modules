@@ -28,7 +28,7 @@ These are a list of commitments that can be used to define reasons for goals exi
     1. Intercepting dependencies and replacing them
     2. Application Performance Monitoring (APM) integration
     3. Multiple distributions of both ESM and CJS in the same package
-    4. Creation of userland module systems (JSDOM)
+    4. Creation of userland module systems (such as JSDOM)
     5. Incremental code base migration from CJS to ESM by migrating individual source texts
 7. 100% backwards compatibility with existing CJS code bases if left unchanged
 8. Provide a path to have singleton references that can be obtained in both module systems
