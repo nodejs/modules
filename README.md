@@ -25,6 +25,7 @@ Work includes:
 - [@ceejbot](https://github.com/ceejbot) - C J Silverio
 - [@chrisdickinson](https://github.com/chrisdickinson) - Chris Dickinson
 - [@DanielRosenwasser](https://github.com/DanielRosenwasser) - Daniel Rosenwasser
+- [@dduleone](https://github.com/dduleone) - Dan DuLeone
 - [@devamaz](https://github.com/devamaz) - Ahmad Abdul-Aziz 
 - [@devsnek](https://github.com/devsnek) - Gus Caplan
 - [@eugeneo](https://github.com/eugeneo) - Eugene Ostroukhov
@@ -32,10 +33,12 @@ Work includes:
 - [@Fishrock123](https://github.com/Fishrock123) - Jeremiah Senkpiel
 - [@giltayar](https://github.com/giltayar) - Gil Tayar
 - [@guybedford](https://github.com/guybedford) - Guy Bedford
+- [@iarna](https://github.com/iarna) - Rebecca Turner
 - [@inidaname](https://github.com/inidaname) - Hassan Sani
 - [@jasnell](https://github.com/jasnell) - James M Snell
 - [@jdalton](https://github.com/jdalton) - John-David Dalton
 - [@jkrems](https://github.com/jkrems) - Jan Olaf Krems
+- [@justinfagnani](https://github.com/justinfagnani) - Justin Fagnani
 - [@linclark](https://github.com/linclark) - Lin Clark
 - [@ljharb](https://github.com/ljharb) - Jordan Harband
 - [@manekinekko](https://github.com/manekinekko) - Wassim Chegham
@@ -45,8 +48,10 @@ Work includes:
 - [@MylesBorins](https://github.com/MylesBorins) - Myles Borins
 - [@refack](https://github.com/refack) - Refael Ackermann
 - [@robpalme](https://github.com/robpalme) - Rob Palmer
+- [@robwormald](https://github.com/robwormald) - Rob Wormald
 - [@targos](https://github.com/targos) - Michaël Zasso
 - [@tbjers](https://github.com/tbjers) - Torgny Bjers
+- [@tbranyen](https://github.com/tbranyen) - Tim Branyen
 - [@TimothyGu](https://github.com/TimothyGu) - Timothy Gu
 - [@WebReflection](https://github.com/WebReflection) - Andrea Giammarchi
 - [@weswigham](https://github.com/weswigham) - Wesley Wigham
