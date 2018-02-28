@@ -5,7 +5,7 @@ These are a list of commitments that can be used to define reasons for goals exi
 * We are committed to shipping ES Modules (ESM)
 * We are committed to ESM being first class in Node.js
 * We are committed to having the Node.js and Web platform as first class runtimes for modules.
-* Modules installed though a package manager should be able to run after installation without requiring a [preprocessing step](#goal-define-preprocessing-step).
+* Modules installed though a package manager should be able to run in Node.js after installation without requiring a [preprocessing step](#goal-define-preprocessing-step).
 * We are committed to not breaking our existing ecosystem for modules
 * We are committed to providing APIs or conventions such that users will be able to use both CommonJS (CJS) and ESM with support for both workflows.
 * We are commited to having security be a primary concern for ESM in Node.js.
