@@ -29,9 +29,9 @@ group of Collaborators.
 Any community member or contributor can ask that something be added to
 the next meeting's agenda by logging a GitHub Issue. Any Collaborator,
 Team member or the moderator can add the item to the agenda by adding
-the ***diag-agenda*** tag to the issue.
+the ***modules-agenda*** tag to the issue.
 
-Prior to each Team meeting the moderator will share the Agenda with
+Prior to each Team meeting the moderator will share the agenda with
 members of the Team. Team members can add any items they like to the
 agenda at the beginning of each meeting. The moderator and the Team
 cannot veto or remove items.
@@ -48,11 +48,11 @@ The Team follows a
 [Consensus Seeking](http://en.wikipedia.org/wiki/Consensus-seeking_decision-making)
 decision-making model.
 
-When an agenda item has appeared to reach a consensus the moderator
+When an agenda item has appeared to reach a consensus, the moderator
 will ask "Does anyone object?" as a final call for dissent from the
 consensus.
 
-If an agenda item cannot reach a consensus a Team member can call for
+If an agenda item cannot reach a consensus, a Team member can call for
 either a closing vote or a vote to table the issue to the next
 meeting. The call for a vote must be seconded by a majority of the Team
 or else the discussion will continue. Simple majority wins.
@@ -62,13 +62,28 @@ Note that some changes to Team membership require unanimous consensus.  See
 
 ### Merging PRs into this Repository
 
-This section does not apply to [the Node.js core repository](https://github.com/nodejs/node). It only applied to [the Modules repository](https://github.com/nodejs/modules).
+This section does not apply to [the Node.js core repository](https://github.com/nodejs/node).
+It only applies to [the Modules repository](https://github.com/nodejs/modules).
 
-Pull requests must reach consensus in a meeting in order to be merged into this repository. Merging of pull requests must be decided during a meeting that has a minimal quorum of 50% of all active members. Members with observer status are not considered active members for the purposes of reaching quorum. A pull request that is is unable to reach quorum due to lack of consensus or quorum must not be merged into this repository. Pull requests that fail to be merged will be addressed on a case by case basis.
+Pull requests must reach consensus in a meeting in order to be merged into this
+repository. Merging of pull requests must be decided during a meeting that has a
+minimal quorum of 50% of all active members. Members with observer status are
+not considered active members for the purposes of reaching quorum. A pull
+request that is is unable to reach quorum due to lack of consensus or quorum
+must not be merged into this repository. Pull requests that fail to be merged
+will be addressed on a case by case basis.
 
 #### Errata and Editorial Changes
 
-A special exception is made for pull requests seeking to fix errata or perform editorial changes to this repository. Errata or editorial pull requests may be merged without being presented at a meeting if a reasonable time is given for review and there no dissent. The time period seen as reasonable for review varies on a case by case basis as determined by the author. A member may request a specific time period for review of a errata or editorial pull request not to exceed the next meeting date. If a time for review is requested, members must wait for that time period to pass or review be completed prior to that time.
+A special exception is made for pull requests seeking to fix errata or perform
+editorial changes to this repository. Errata or editorial pull requests may be
+merged without being presented at a meeting if a reasonable time is given for
+review and there no dissent. The time period seen as reasonable for review
+varies on a case by case basis as determined by the author. A member may
+request a specific time period for review of an errata or editorial pull request
+not to exceed the next meeting date. If a time for review is requested, members
+must wait for that time period to pass or review be completed prior to that
+time.
 
 <a id="developers-certificate-of-origin"></a>
 ## Developer's Certificate of Origin 1.1
