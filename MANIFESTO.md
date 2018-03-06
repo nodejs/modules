@@ -32,3 +32,4 @@ Signed,
 
 Myles Borins (@MylesBorins)
 Gus Caplan (@devsnek)
+Jordan Harband (@ljharb)
