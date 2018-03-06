@@ -31,3 +31,4 @@ Without working together there will be no chance of a successful module system. 
 Signed,
 
 Myles Borins (@MylesBorins)
+Gus Caplan (@devsnek)
