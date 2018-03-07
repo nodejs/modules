@@ -18,7 +18,7 @@ We the undersigned agree on the the following,
 * The closer the Node.js and Web platform remain the better the developer experience will be
 
 * The Node.js implementation of ESModules must have the following features:
-  - Compliant to ecma262. It is important to follow the standard. If we need changes in the standard we should attempt to accomplish them at tc39.
+  - Compliant to ECMA-262. It is important to follow the standard. If we need changes in the standard we should attempt to accomplish them at TC39.
   - Interoperability. It is important to be able to utilize ESModule code from CommonJS and vice versa.
   - Hooks. It is important to be able to have hooks into the lifecycle of a Module.
   - Multiple Goals. e.g. wasm. It is important that our implementation scales to any number of future goals.
