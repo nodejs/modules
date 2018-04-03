@@ -1,7 +1,7 @@
 ### Modules Team
 
 For the current list of Team members, see the project
-[README.md](./README.md#current-project-team-members).
+[README.md](./README.md#members).
 
 ### Collaborators
 
