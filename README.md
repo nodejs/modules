@@ -13,11 +13,10 @@ Work includes:
 * Node.js and Browser interoperability
 * VM Modules implementation
 
-## Modules [Team Members](https://github.com/orgs/nodejs/teams/modules/members)
+## Members
 
-<!-- ncu-team-sync.team(nodejs/modules) -->
+<!-- ncu-team-sync.team(nodejs/modules-collaborators) -->
 
-- [@abouthiroppy](https://github.com/abouthiroppy) - Yuta Hiroto
 - [@benjamingr](https://github.com/benjamingr) - Benjamin Gruenbaum
 - [@benjamn](https://github.com/benjamn) - Ben Newman
 - [@bmeck](https://github.com/bmeck) - Bradley Meck
@@ -33,6 +32,7 @@ Work includes:
 - [@Fishrock123](https://github.com/Fishrock123) - Jeremiah Senkpiel
 - [@giltayar](https://github.com/giltayar) - Gil Tayar
 - [@guybedford](https://github.com/guybedford) - Guy Bedford
+- [@hiroppy](https://github.com/hiroppy) - Yuta Hiroto
 - [@iarna](https://github.com/iarna) - Rebecca Turner
 - [@inidaname](https://github.com/inidaname) - Hassan Sani
 - [@jasnell](https://github.com/jasnell) - James M Snell
@@ -52,11 +52,18 @@ Work includes:
 - [@targos](https://github.com/targos) - Michaël Zasso
 - [@tbjers](https://github.com/tbjers) - Torgny Bjers
 - [@tbranyen](https://github.com/tbranyen) - Tim Branyen
+- [@TheLarkInn](https://github.com/TheLarkInn) - Sean Larkin
 - [@TimothyGu](https://github.com/TimothyGu) - Timothy Gu
 - [@WebReflection](https://github.com/WebReflection) - Andrea Giammarchi
 - [@weswigham](https://github.com/weswigham) - Wesley Wigham
 - [@XadillaX](https://github.com/XadillaX) - Khaidi Chu
 - [@yosuke-furukawa](https://github.com/yosuke-furukawa) - Yosuke Furukawa
-- [@zackschuster](https://github.com/zackschuster) - 
+- [@zackschuster](https://github.com/zackschuster) - Zack Schuster
+
+<!-- ncu-team-sync end -->
+
+<!-- ## Observers -->
+
+<!-- ncu-team-sync.team(nodejs/modules-observers) -->
 
 <!-- ncu-team-sync end -->
