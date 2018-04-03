@@ -1,16 +1,52 @@
 ### Modules Team
 
 For the current list of Team members, see the project
-[README.md](./README.md#members).
+[README.md](./README.md).
 
-### Collaborators
+### Members
 
 The [nodejs/modules](https://github.com/nodejs/modules) GitHub
-repository is maintained by the Team and additional Collaborators who are added
-by the Team on an ongoing basis.
+repository is maintained by the Team and additional Members who are
+added on an ongoing basis.
 
-Individuals making significant and valuable contributions are made
-Collaborators and given commit-access to the project.
+There are two types of Members:
+
+#### Active Members
+
+* Invited to all meetings
+* Can participate in [consensus seeking process](#consensus-seeking-process)
+* Counted towards quorum in [Team Meetings](#team-meetings)
+* Participates in voting
+
+#### Observers
+
+* Invited to all meetings
+* Can participate in [consensus seeking process](#consensus-seeking-process)
+* Not counted towards quorum in [Team Meetings](#team-meetings)
+* Cannot participate in voting
+
+## Team Membership
+
+Team Membership is not time-limited. There is no fixed size of the Team.
+
+There is no specific set of requirements or qualifications for Team Membership beyond these rules.
+
+Changes to Team membership should be proposed with a pull-request and labelled `modules-agenda`
+to be included in the next [team meeting](#team-meetings). Decisions are made via the
+[Consensus Seeking Process](#consensus-seeking-process).
+
+If a Team member is unable to attend a meeting where a planned membership decision is being made,
+then their consent is assumed.
+
+New Members to the team are initially accepted as Observers.
+
+Observers can request to be made Active Members following the above process.
+
+Active Members requesting to be made Observers following the above process are automatically approved
+by the Team and do not require consensus.
+
+Any Member requesting to be removed from the group following the above process are automatically approved
+by the Team and do not require consensus.
 
 ### Team Meetings
 
@@ -56,8 +92,8 @@ will ask "Does anyone object?" as a final call for dissent from the
 consensus.
 
 If an agenda item cannot reach a consensus, a Team member can call for
-either a closing vote or a vote to table the issue to the next
-meeting. The call for a vote must be seconded by a majority of the Team
+the item to be decided by a vote or to table the issue to the next
+meeting. In both cases the decision must be seconded by a majority of the Team
 or else the discussion will continue. Simple majority wins. Only Active
 Members participate in a vote.
 
@@ -67,7 +103,7 @@ This section does not apply to [the Node.js core repository](https://github.com/
 It only applies to [the Modules repository](https://github.com/nodejs/modules).
 
 Pull requests must reach consensus in a meeting in order to be merged into this
-repository. A pull request that is is unable to reach consensus cannot be merged
+repository. A pull request that is unable to reach consensus cannot be merged
 into this repository.
 
 #### Errata and Editorial Changes
