@@ -39,6 +39,9 @@ cannot veto or remove items.
 The Team may invite persons or representatives from certain projects to
 participate in a non-voting capacity.
 
+Decisions in meetings are made via the [Consensus Seeking Process](#Consensus-Seeking-Process)
+and require a quorum of 50% of Active Members.
+
 The moderator is responsible for summarizing the discussion of each
 agenda item and sends it as a pull request after the meeting.
 
@@ -55,10 +58,8 @@ consensus.
 If an agenda item cannot reach a consensus, a Team member can call for
 either a closing vote or a vote to table the issue to the next
 meeting. The call for a vote must be seconded by a majority of the Team
-or else the discussion will continue. Simple majority wins.
-
-Note that some changes to Team membership require unanimous consensus.  See
-"Team Membership" above.
+or else the discussion will continue. Simple majority wins. Only Active
+Members participate in a vote.
 
 ### Merging PRs into this Repository
 
@@ -66,12 +67,8 @@ This section does not apply to [the Node.js core repository](https://github.com/
 It only applies to [the Modules repository](https://github.com/nodejs/modules).
 
 Pull requests must reach consensus in a meeting in order to be merged into this
-repository. Merging of pull requests must be decided during a meeting that has a
-minimal quorum of 50% of all active members. Members with observer status are
-not considered active members for the purposes of reaching quorum. A pull
-request that is is unable to reach quorum due to lack of consensus or quorum
-must not be merged into this repository. Pull requests that fail to be merged
-will be addressed on a case by case basis.
+repository. A pull request that is is unable to reach consensus cannot be merged
+into this repository.
 
 #### Errata and Editorial Changes
 
