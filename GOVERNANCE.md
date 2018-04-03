@@ -1,9 +1,9 @@
-### Modules Team
+# Modules Team
 
 For the current list of Team members, see the project
 [README.md](./README.md).
 
-### Members
+## Members
 
 The [nodejs/modules](https://github.com/nodejs/modules) GitHub
 repository is maintained by the Team and additional Members who are
@@ -11,14 +11,14 @@ added on an ongoing basis.
 
 There are two types of Members:
 
-#### Active Members
+### Active Members
 
 * Invited to all meetings
 * Can participate in [consensus seeking process](#consensus-seeking-process)
 * Counted towards quorum in [Team Meetings](#team-meetings)
 * Participates in voting
 
-#### Observers
+### Observers
 
 * Invited to all meetings
 * Can participate in [consensus seeking process](#consensus-seeking-process)
@@ -48,7 +48,7 @@ by the Team and do not require consensus.
 Any Member requesting to be removed from the group following the above process are automatically approved
 by the Team and do not require consensus.
 
-### Team Meetings
+## Team Meetings
 
 The Team meets bi-weekly on Zoom.us. A designated moderator
 approved by the Team runs the meeting. Each meeting should be
@@ -81,7 +81,7 @@ and require a quorum of 50% of Active Members.
 The moderator is responsible for summarizing the discussion of each
 agenda item and sends it as a pull request after the meeting.
 
-### Consensus Seeking Process
+## Consensus Seeking Process
 
 The Team follows a
 [Consensus Seeking](http://en.wikipedia.org/wiki/Consensus-seeking_decision-making)
@@ -97,7 +97,7 @@ meeting. In both cases the decision must be seconded by a majority of the Team
 or else the discussion will continue. Simple majority wins. Only Active
 Members participate in a vote.
 
-### Merging PRs into this Repository
+## Merging PRs into this Repository
 
 This section does not apply to [the Node.js core repository](https://github.com/nodejs/node).
 It only applies to [the Modules repository](https://github.com/nodejs/modules).
@@ -106,7 +106,7 @@ Pull requests must reach consensus in a meeting in order to be merged into this
 repository. A pull request that is unable to reach consensus cannot be merged
 into this repository.
 
-#### Errata and Editorial Changes
+### Errata and Editorial Changes
 
 A special exception is made for pull requests seeking to fix errata or perform
 editorial changes to this repository. Errata or editorial pull requests may be
