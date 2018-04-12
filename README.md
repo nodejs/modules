@@ -46,7 +46,6 @@ Work includes:
 - [@mduleone](https://github.com/mduleone) - Matt DuLeone
 - [@mhdawson](https://github.com/mhdawson) - Michael Dawson
 - [@MylesBorins](https://github.com/MylesBorins) - Myles Borins
-- [@refack](https://github.com/refack) - Refael Ackermann
 - [@robpalme](https://github.com/robpalme) - Rob Palmer
 - [@robwormald](https://github.com/robwormald) - Rob Wormald
 - [@targos](https://github.com/targos) - Michaël Zasso
@@ -62,8 +61,10 @@ Work includes:
 
 <!-- ncu-team-sync end -->
 
-<!-- ## Observers -->
+## Observers
 
 <!-- ncu-team-sync.team(nodejs/modules-observers) -->
+
+- [@refack](https://github.com/refack) - Refael Ackermann
 
 <!-- ncu-team-sync end -->
