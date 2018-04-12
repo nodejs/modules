@@ -62,8 +62,10 @@ Work includes:
 
 <!-- ncu-team-sync end -->
 
-<!-- ## Observers -->
+## Observers
 
 <!-- ncu-team-sync.team(nodejs/modules-observers) -->
+
+- [@GeoffreyBooth](https://github.com/GeoffreyBooth/) - Geoffrey Booth
 
 <!-- ncu-team-sync end -->
