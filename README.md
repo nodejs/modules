@@ -66,4 +66,6 @@ Work includes:
 
 <!-- ncu-team-sync.team(nodejs/modules-observers) -->
 
+- [@xtuc](https://github.com/xtuc/) - Sven Sauleau
+
 <!-- ncu-team-sync end -->
