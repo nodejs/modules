@@ -102,21 +102,28 @@ Members participate in a vote.
 This section does not apply to [the Node.js core repository](https://github.com/nodejs/node).
 It only applies to [the Modules repository](https://github.com/nodejs/modules).
 
-Pull requests must reach consensus in a meeting in order to be merged into this
-repository. A pull request that is unable to reach consensus cannot be merged
-into this repository.
+Pull requests not included under the _special exemptions_ section below must
+reach consensus in a meeting in order to be merged into this repository. A pull
+request that is is unable to reach consensus cannot be merged into this
+repository.
 
-### Errata and Editorial Changes
 
-A special exception is made for pull requests seeking to fix errata or perform
-editorial changes to this repository. Errata or editorial pull requests may be
-merged without being presented at a meeting if a reasonable time is given for
-review and there no dissent. The time period seen as reasonable for review
-varies on a case by case basis as determined by the author. A member may
-request a specific time period for review of an errata or editorial pull request
-not to exceed the next meeting date. If a time for review is requested, members
-must wait for that time period to pass or review be completed prior to that
-time.
+### Special Exemptions to the PR landing process
+
+Special exception is made for pull requests seeking to make any of the following
+changes to this repository:
+
+- Errata fixes.
+- Editorial changes.
+- Meeting minutes.
+
+These pull requests may be merged without being presented at a meeting if a
+reasonable time is given for review and there no dissent. The time period seen
+as reasonable for review varies on a case by case basis as determined by the
+author. A member may request a specific time period for review of such a pull
+request not to exceed the next meeting date. If a time for review is requested,
+members must wait for that time period to pass or review be completed prior to
+that time.
 
 <a id="developers-certificate-of-origin"></a>
 ## Developer's Certificate of Origin 1.1
