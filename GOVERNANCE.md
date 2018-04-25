@@ -107,7 +107,6 @@ reach consensus in a meeting in order to be merged into this repository. A pull
 request that is is unable to reach consensus cannot be merged into this
 repository.
 
-
 ### Special Exemptions to the PR landing process
 
 Special exception is made for pull requests seeking to make any of the following
@@ -116,6 +115,7 @@ changes to this repository:
 - Errata fixes.
 - Editorial changes.
 - Meeting minutes.
+- Updates to the team lists via the `ncu-sync` tool.
 
 These pull requests may be merged without being presented at a meeting if a
 reasonable time is given for review and there no dissent. The time period seen
