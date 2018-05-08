@@ -57,6 +57,7 @@ Work includes:
 - [@devamaz](https://github.com/devamaz) - Ahmad Abdul-Aziz 
 - [@eugeneo](https://github.com/eugeneo) - Eugene Ostroukhov
 - [@evanplaice](https://github.com/evanplaice) - Evan Plaice
+- [@GeoffreyBooth](https://github.com/GeoffreyBooth) - Geoffrey Booth
 - [@hiroppy](https://github.com/hiroppy) - Yuta Hiroto
 - [@jasnell](https://github.com/jasnell) - James M Snell
 - [@refack](https://github.com/refack) - Refael Ackermann
@@ -64,6 +65,7 @@ Work includes:
 - [@tbranyen](https://github.com/tbranyen) - Tim Branyen
 - [@TheLarkInn](https://github.com/TheLarkInn) - Sean Larkin
 - [@WebReflection](https://github.com/WebReflection) - Andrea Giammarchi
+- [@xtuc](https://github.com/xtuc) - Sven SAULEAU
 - [@yosuke-furukawa](https://github.com/yosuke-furukawa) - Yosuke Furukawa
 - [@zackschuster](https://github.com/zackschuster) - Zack Schuster
 
