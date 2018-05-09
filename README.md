@@ -68,5 +68,6 @@ Work includes:
 - [@xtuc](https://github.com/xtuc) - Sven SAULEAU
 - [@yosuke-furukawa](https://github.com/yosuke-furukawa) - Yosuke Furukawa
 - [@zackschuster](https://github.com/zackschuster) - Zack Schuster
+- [@tzmanics](https://github.com/tzmanics) - Tara Z. Manicsic
 
 <!-- ncu-team-sync end -->
