@@ -25,6 +25,7 @@ Work includes:
 - [@DanielRosenwasser](https://github.com/DanielRosenwasser) - Daniel Rosenwasser
 - [@devsnek](https://github.com/devsnek) - Gus Caplan
 - [@Fishrock123](https://github.com/Fishrock123) - Jeremiah Senkpiel
+- [@GeoffreyBooth](https://github.com/GeoffreyBooth) - Geoffrey Booth
 - [@giltayar](https://github.com/giltayar) - Gil Tayar
 - [@guybedford](https://github.com/guybedford) - Guy Bedford
 - [@iarna](https://github.com/iarna) - Rebecca Turner
@@ -53,10 +54,9 @@ Work includes:
 
 - [@bmeurer](https://github.com/bmeurer) - Benedikt Meurer
 - [@dduleone](https://github.com/dduleone) - Dan DuLeone
-- [@devamaz](https://github.com/devamaz) - Ahmad Abdul-Aziz 
+- [@devamaz](https://github.com/devamaz) - Ahmad Abdul-Aziz
 - [@eugeneo](https://github.com/eugeneo) - Eugene Ostroukhov
 - [@evanplaice](https://github.com/evanplaice) - Evan Plaice
-- [@GeoffreyBooth](https://github.com/GeoffreyBooth) - Geoffrey Booth
 - [@hiroppy](https://github.com/hiroppy) - Yuta Hiroto
 - [@jasnell](https://github.com/jasnell) - James M Snell
 - [@refack](https://github.com/refack) - Refael Ackermann
