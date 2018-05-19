@@ -42,7 +42,6 @@ Work includes:
 - [@robpalme](https://github.com/robpalme) - Rob Palmer
 - [@targos](https://github.com/targos) - Michaël Zasso
 - [@tbjers](https://github.com/tbjers) - Torgny Bjers
-- [@TimothyGu](https://github.com/TimothyGu) - Timothy Gu
 - [@weswigham](https://github.com/weswigham) - Wesley Wigham
 - [@XadillaX](https://github.com/XadillaX) - Khaidi Chu
 
@@ -64,6 +63,7 @@ Work includes:
 - [@robwormald](https://github.com/robwormald) - Rob Wormald
 - [@tbranyen](https://github.com/tbranyen) - Tim Branyen
 - [@TheLarkInn](https://github.com/TheLarkInn) - Sean Larkin
+- [@TimothyGu](https://github.com/TimothyGu) - Timothy Gu
 - [@WebReflection](https://github.com/WebReflection) - Andrea Giammarchi
 - [@xtuc](https://github.com/xtuc) - Sven SAULEAU
 - [@yosuke-furukawa](https://github.com/yosuke-furukawa) - Yosuke Furukawa
