@@ -54,7 +54,7 @@ Work includes:
 
 - [@bmeurer](https://github.com/bmeurer) - Benedikt Meurer
 - [@dduleone](https://github.com/dduleone) - Dan DuLeone
-- [@devamaz](https://github.com/devamaz) - Ahmad Abdul-Aziz 
+- [@devamaz](https://github.com/devamaz) - Ahmad Abdul-Aziz
 - [@eugeneo](https://github.com/eugeneo) - Eugene Ostroukhov
 - [@evanplaice](https://github.com/evanplaice) - Evan Plaice
 - [@GeoffreyBooth](https://github.com/GeoffreyBooth) - Geoffrey Booth
@@ -69,5 +69,6 @@ Work includes:
 - [@yosuke-furukawa](https://github.com/yosuke-furukawa) - Yosuke Furukawa
 - [@zackschuster](https://github.com/zackschuster) - Zack Schuster
 - [@tzmanics](https://github.com/tzmanics) - Tara Z. Manicsic
+- [@zenparsing](https://github.com/zenparsing) - Kevin Smith
 
 <!-- ncu-team-sync end -->
