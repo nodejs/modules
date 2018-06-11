@@ -31,7 +31,7 @@ Team Membership is not time-limited. There is no fixed size of the Team.
 
 There is no specific set of requirements or qualifications for Team Membership beyond these rules.
 
-Changes to Team membership should be proposed with a pull-request and labelled `modules-agenda`
+Changes to Team membership should be proposed with an issue and labelled `modules-agenda`
 to be included in the next [team meeting](#team-meetings). Decisions are made via the
 [Consensus Seeking Process](#consensus-seeking-process).
 
