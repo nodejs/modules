@@ -13,6 +13,43 @@ Work includes:
 * Node.js and Browser interoperability
 * VM Modules implementation
 
+## Features
+
+Based on [these use cases](https://docs.google.com/document/d/10BBsIqdAXB9JR2KUzQGYbCiVugYBnxE4REBakX29yyo/edit) ([#55](https://github.com/nodejs/modules/issues/55)), our implementation aims to support the following features:
+
+- Spec compliance ([#132](https://github.com/nodejs/modules/issues/132))
+- Browser equivalence ([#133](https://github.com/nodejs/modules/issues/133))
+- No refactoring ([#87](https://github.com/nodejs/modules/issues/87))
+- Pluggable Loaders to support multiple use cases ([#82](https://github.com/nodejs/modules/issues/82))
+- Named exports when importing CJS ([#81](https://github.com/nodejs/modules/issues/81))
+- Dual-goal packages ([#93](https://github.com/nodejs/modules/issues/93))
+- Multi-mode packages ([#94](https://github.com/nodejs/modules/issues/94))
+- Code coverage/instrumentation ([#95](https://github.com/nodejs/modules/issues/95))
+- Runtime loaders, transpilation at import time ([#96](https://github.com/nodejs/modules/issues/96))
+- Arbitrary sources for module source text ([#97](https://github.com/nodejs/modules/issues/97))
+- Mock modules (injection) ([#98](https://github.com/nodejs/modules/issues/98))
+- Mixed module types within app/module; gradual migration from CommonJS to ESM ([#99](https://github.com/nodejs/modules/issues/99))
+- Transparent interoperability for ESM importing CommonJS ([#100](https://github.com/nodejs/modules/issues/100))
+- Polyfillability ([#101](https://github.com/nodejs/modules/issues/101))
+- Tree shaking ([#102](https://github.com/nodejs/modules/issues/102))
+- File / path / URL resolving ([#103](https://github.com/nodejs/modules/issues/103))
+- Retrievable module metadata ([#104](https://github.com/nodejs/modules/issues/104))
+- Transparent migration ([#105](https://github.com/nodejs/modules/issues/105))
+- WASM modules ([#106](https://github.com/nodejs/modules/issues/106))
+- Browser and Node compatibility without building ([#107](https://github.com/nodejs/modules/issues/107))
+- Browser-compatible build that includes CommonJS ([#108](https://github.com/nodejs/modules/issues/108))
+- Browser-compatible specifier resolution ([#109](https://github.com/nodejs/modules/issues/109))
+- Specifier resolution customization ([#110](https://github.com/nodejs/modules/issues/110))
+- Package encapsulation ([#111](https://github.com/nodejs/modules/issues/111))
+- Don’t break CommonJS ([#112](https://github.com/nodejs/modules/issues/112))
+- Conditional imports ([#113](https://github.com/nodejs/modules/issues/113))
+- Import JSON without needing asynchronous syntax ([#114](https://github.com/nodejs/modules/issues/114))
+- Importing non-JavaScript files ([#115](https://github.com/nodejs/modules/issues/115))
+- Import CommonJS without needing asynchronous syntax ([#116](https://github.com/nodejs/modules/issues/116))
+- NodeJS contextual pathing use cases ([#121](https://github.com/nodejs/modules/issues/121))
+- Load ESM over https ([#127](https://github.com/nodejs/modules/issues/127))
+
+
 ## Members
 
 <!-- ncu-team-sync.team(nodejs/modules-active-members) -->
