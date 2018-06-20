@@ -15,7 +15,7 @@ Work includes:
 
 ## Features
 
-Based on [these use cases](https://docs.google.com/document/d/10BBsIqdAXB9JR2KUzQGYbCiVugYBnxE4REBakX29yyo/edit) ([#55](https://github.com/nodejs/modules/issues/55)), our implementation aims to support the following features:
+Based on [these use cases](https://docs.google.com/document/d/10BBsIqdAXB9JR2KUzQGYbCiVugYBnxE4REBakX29yyo/edit) ([#55](https://github.com/nodejs/modules/issues/55)), our implementation aims to support the following features (subject to change):
 
 - Spec compliance ([#132](https://github.com/nodejs/modules/issues/132))
 - Browser equivalence ([#133](https://github.com/nodejs/modules/issues/133))
