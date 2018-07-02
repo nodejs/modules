@@ -100,7 +100,7 @@ Based on [these use cases](https://docs.google.com/document/d/10BBsIqdAXB9JR2KUz
 - [@TheLarkInn](https://github.com/TheLarkInn) - Sean Larkin
 - [@TimothyGu](https://github.com/TimothyGu) - Timothy Gu
 - [@WebReflection](https://github.com/WebReflection) - Andrea Giammarchi
-- [@xtuc](https://github.com/xtuc) - Sven SAULEAU
+- [@xtuc](https://github.com/xtuc) - Sven Sauleau
 - [@yosuke-furukawa](https://github.com/yosuke-furukawa) - Yosuke Furukawa
 - [@zackschuster](https://github.com/zackschuster) - Zack Schuster
 - [@tzmanics](https://github.com/tzmanics) - Tara Z. Manicsic
