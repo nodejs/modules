@@ -1,4 +1,4 @@
-This PR is meant for discussion of responses to [this issue](). I’ve opened it as a PR so that we can start separate discussion threads under the various proposals, with the PR commenting-on-code interface keeping things organized. If people suggest new proposals, or revisions to current ones, I’ll update the PR accordingly.
+This PR is meant for discussion of responses to [this issue](https://github.com/nodejs/modules/issues/149). I’ve opened it as a PR so that we can start separate discussion threads under the various proposals, with the PR commenting-on-code interface keeping things organized. If people suggest new proposals, or revisions to current ones, I’ll update the PR accordingly.
 
 ## Proposals
 
@@ -68,3 +68,7 @@ node --loader=esm index.mjs
 ```
 
 The `esm` loader itself would be part of core, and would itself need to be written in CommonJS.
+
+### `"use module"`
+
+JavaScript files with a `"use module";` statement in the code, before any other statements, are treated as ESM. This was suggested to TC39 and rejected, but there’s nothing invalid about it. It has the advantage that it’s an author-defined signal that a file should be treated as ESM, like the `.mjs` extension; but because it’s in the source code itself, it’s compatible with build pipelines that don’t support `.mjs` or multiple extensions for JavaScript.
