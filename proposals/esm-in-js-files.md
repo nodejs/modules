@@ -25,15 +25,15 @@ importCommonJS(import.meta, './commonjs-file.js');
 
 If a user wants to use the `import` statement to import a CommonJS file, that file needs to have a `.cjs` extension. This would allow intermixing of ESM `.js` files and CommonJS `.cjs` files, and potentially the use of CommonJS in browser environments. The `.cjs` extension would map to `application/node`, even on the Web.
 
-Since no `.cjs` files currently exist, this solution either requires renaming files or creating symlinks, e.g. `file.cjs` pointing at `file.js`. This solution definitively ends the ambiguity inherent in the `.js` extension: a user could use `.mjs` and `.cjs` exclusively and purse ambiguity from their filenames.
+Since no `.cjs` files currently exist, this solution either requires renaming files or creating symlinks, e.g. `file.cjs` pointing at `file.js`. This solution definitively ends the ambiguity inherent in the `.js` extension: a user could use `.mjs` and `.cjs` exclusively and purge ambiguity from their filenames.
 
 ### `package.json` flag to tell Node how to handle `.js` files
 
-This would be https://github.com/nodejs/node/pull/18392 or something like it. That PR proposes a `"mode": "esm"` to tell Node that all `.js` files within that `package.json`’s package boundary should be treated as ESM files.
+This would be [nodejs/node/pull/18392](https://github.com/nodejs/node/pull/18392) or something like it. That PR proposes a `"mode": "esm"` to tell Node that all `.js` files within that `package.json`’s package boundary should be treated as ESM files.
 
 ### `package.json` section to tell Node how to handle any file
 
-Similar to https://github.com/nodejs/node/pull/18392, but this would be a new section in `package.json` where the user can treat Node like a configurable webserver, and define the MIME types it should use to “serve” files that get imported:
+Similar to [nodejs/node/pull/18392](https://github.com/nodejs/node/pull/18392), but this would be a new section in `package.json` where the user can treat Node like a configurable webserver, and define the MIME types it should use to “serve” files that get imported:
 
 ```json
 "mimes": {
