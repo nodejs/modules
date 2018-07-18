@@ -47,6 +47,7 @@ Based on [these use cases](https://docs.google.com/document/d/10BBsIqdAXB9JR2KUz
 - NodeJS contextual pathing use cases ([#121](https://github.com/nodejs/modules/issues/121))
 - ESM in executable files ([#152](https://github.com/nodejs/modules/issues/152))
 - ESM in .js files ([#151](https://github.com/nodejs/modules/151))
+- Callable resolver ([#157](https://github.com/nodejs/modules/issues/157))
 
 ## Members
 
