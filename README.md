@@ -36,7 +36,7 @@ Based on these use cases (#55), our implementation aims to support the following
 * Mixed module types within app/module; gradual migration from CommonJS to ESM (#99)
 * ESM in .js files (#151)
 
-### Existing Node.js Features:
+### Existing Node.js Utility Features:
 
 * Importing non-JavaScript files (#115)
 * NodeJS contextual pathing use cases (#121)
