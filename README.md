@@ -42,7 +42,6 @@ Based on [these use cases](https://docs.google.com/document/d/10BBsIqdAXB9JR2KUz
 - Package encapsulation ([#111](https://github.com/nodejs/modules/issues/111))
 - Don’t break CommonJS ([#112](https://github.com/nodejs/modules/issues/112))
 - Conditional imports ([#113](https://github.com/nodejs/modules/issues/113))
-- Import JSON without needing asynchronous syntax ([#114](https://github.com/nodejs/modules/issues/114))
 - Importing non-JavaScript files ([#115](https://github.com/nodejs/modules/issues/115))
 - Import CommonJS without needing asynchronous syntax ([#116](https://github.com/nodejs/modules/issues/116))
 - NodeJS contextual pathing use cases ([#121](https://github.com/nodejs/modules/issues/121))
