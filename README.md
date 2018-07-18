@@ -32,7 +32,6 @@ Based on [these use cases](https://docs.google.com/document/d/10BBsIqdAXB9JR2KUz
 - Polyfillability ([#101](https://github.com/nodejs/modules/issues/101))
 - Tree shaking ([#102](https://github.com/nodejs/modules/issues/102))
 - File / path / URL resolving ([#103](https://github.com/nodejs/modules/issues/103))
-- Retrievable module metadata ([#104](https://github.com/nodejs/modules/issues/104))
 - Consumer-agnostic imports ([#105](https://github.com/nodejs/modules/issues/105))
 - WASM modules ([#106](https://github.com/nodejs/modules/issues/106))
 - Browser and Node compatibility without building ([#107](https://github.com/nodejs/modules/issues/107))
