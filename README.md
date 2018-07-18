@@ -15,7 +15,7 @@ Work includes:
 
 ## Features
 
-Based on these use cases (#55), our implementation aims to support the following features (subject to change):
+Based on [these use cases](https://docs.google.com/document/d/10BBsIqdAXB9JR2KUzQGYbCiVugYBnxE4REBakX29yyo/edit) ([#55](https://github.com/nodejs/modules/issues/55)), our implementation aims to support the following features (subject to change):
 
 ### Baseline Modules Implementation Features:
 * Spec compliance ([#132](https://github.com/nodejs/modules/issues/132))
@@ -64,8 +64,6 @@ Based on these use cases (#55), our implementation aims to support the following
 * Import CommonJS without needing asynchronous syntax (#[116](https://github.com/nodejs/modules/issues/116))
 * Tree shaking (#[102](https://github.com/nodejs/modules/issues/102))
 * Polyfillability (#[101](https://github.com/nodejs/modules/issues/101))
-
-Based on [these use cases](https://docs.google.com/document/d/10BBsIqdAXB9JR2KUzQGYbCiVugYBnxE4REBakX29yyo/edit) ([#55](https://github.com/nodejs/modules/issues/55)), our implementation aims to support the following features (subject to change):
 
 ## Members
 
