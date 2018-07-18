@@ -45,6 +45,8 @@ Based on [these use cases](https://docs.google.com/document/d/10BBsIqdAXB9JR2KUz
 - Importing non-JavaScript files ([#115](https://github.com/nodejs/modules/issues/115))
 - Import CommonJS without needing asynchronous syntax ([#116](https://github.com/nodejs/modules/issues/116))
 - NodeJS contextual pathing use cases ([#121](https://github.com/nodejs/modules/issues/121))
+- ESM in executable files ([#152](https://github.com/nodejs/modules/issues/152))
+- ESM in .js files ([#151](https://github.com/nodejs/modules/151))
 
 ## Members
 
