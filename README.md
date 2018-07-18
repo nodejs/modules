@@ -28,7 +28,7 @@ Based on [these use cases](https://docs.google.com/document/d/10BBsIqdAXB9JR2KUz
 - Arbitrary sources for module source text ([#97](https://github.com/nodejs/modules/issues/97))
 - Mock modules (injection) ([#98](https://github.com/nodejs/modules/issues/98))
 - Mixed module types within app/module; gradual migration from CommonJS to ESM ([#99](https://github.com/nodejs/modules/issues/99))
-- Transparent interoperability for ESM importing CommonJS ([#100](https://github.com/nodejs/modules/issues/100))
+- Import interoperability for ESM importing CommonJS ([#100](https://github.com/nodejs/modules/issues/100))
 - Polyfillability ([#101](https://github.com/nodejs/modules/issues/101))
 - Tree shaking ([#102](https://github.com/nodejs/modules/issues/102))
 - File / path / URL resolving ([#103](https://github.com/nodejs/modules/issues/103))
