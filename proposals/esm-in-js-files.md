@@ -21,7 +21,17 @@ import { importCommonJS } from 'module';
 importCommonJS(import.meta, './commonjs-file.js');
 ```
 
-### `.cjs`
+### `createRequireFunction`
+
+See [nodejs/node#19360](https://github.com/nodejs/node/pull/19360):
+
+```js
+import { createRequireFunction } from 'module';
+const require = createRequireFunction(new URL(import.meta.url));
+const x = require('./commonjs-file.js');
+```
+
+### `.cjs` file extension
 
 If a user wants to use the `import` statement to import a CommonJS file, that file needs to have a `.cjs` extension. This would allow intermixing of ESM `.js` files and CommonJS `.cjs` files, and potentially the use of CommonJS in browser environments. The `.cjs` extension would map to `application/node`, even on the Web.
 
