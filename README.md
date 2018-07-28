@@ -96,8 +96,8 @@ Based on [these use cases](https://docs.google.com/document/d/10BBsIqdAXB9JR2KUz
 - [@jasnell](https://github.com/jasnell) - James M Snell
 - [@refack](https://github.com/refack) - Refael Ackermann
 - [@robwormald](https://github.com/robwormald) - Rob Wormald
-- [@tbranyen](https://github.com/tbranyen) - Tim Branyen
 - [@sendilkumarn](https://github.com/sendilkumarn) - Sendil Kumar
+- [@tbranyen](https://github.com/tbranyen) - Tim Branyen
 - [@TheLarkInn](https://github.com/TheLarkInn) - Sean Larkin
 - [@TimothyGu](https://github.com/TimothyGu) - Timothy Gu
 - [@WebReflection](https://github.com/WebReflection) - Andrea Giammarchi
