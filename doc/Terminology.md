@@ -55,14 +55,18 @@ Normative Terms
   Consumer-defined Disambiguation
 </dt>
 <dd>
+  
   When importing a file into an ESM context, the parse goal of the file is determined by the importing module (the consumer). This is often accomplished via syntax, for example by using only `import` statements for ESM or `require` (or other function) for CommonJS.
+  
 </dd>
 
 <dt id="author-disambiguation">
   Author-defined Disambiguation
 </dt>
 <dd>
+  
   A file or module’s parse goal is included within itself. This is often achieved via a file extension such as `.mjs` or a field in a `package.json` file. Other suggestions have included a `"use module"` directive or unambiguous syntax, such as parsing the file for `import` or `export` statements.
+
 </dd>
 </dl>
   
