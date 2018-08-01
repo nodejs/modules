@@ -72,7 +72,6 @@ Based on [these use cases](https://docs.google.com/document/d/10BBsIqdAXB9JR2KUz
 - [@benjamingr](https://github.com/benjamingr) - Benjamin Gruenbaum
 - [@benjamn](https://github.com/benjamn) - Ben Newman
 - [@bmeck](https://github.com/bmeck) - Bradley Meck
-- [@ceejbot](https://github.com/ceejbot) - C J Silverio
 - [@chrisdickinson](https://github.com/chrisdickinson) - Chris Dickinson
 - [@DanielRosenwasser](https://github.com/DanielRosenwasser) - Daniel Rosenwasser
 - [@devsnek](https://github.com/devsnek) - Gus Caplan
@@ -85,9 +84,7 @@ Based on [these use cases](https://docs.google.com/document/d/10BBsIqdAXB9JR2KUz
 - [@jdalton](https://github.com/jdalton) - John-David Dalton
 - [@jkrems](https://github.com/jkrems) - Jan Olaf Krems
 - [@justinfagnani](https://github.com/justinfagnani) - Justin Fagnani
-- [@linclark](https://github.com/linclark) - Lin Clark
 - [@ljharb](https://github.com/ljharb) - Jordan Harband
-- [@manekinekko](https://github.com/manekinekko) - Wassim Chegham
 - [@mcollina](https://github.com/mcollina) - Matteo Collina
 - [@mduleone](https://github.com/mduleone) - Matt DuLeone
 - [@mhdawson](https://github.com/mhdawson) - Michael Dawson
@@ -96,7 +93,6 @@ Based on [these use cases](https://docs.google.com/document/d/10BBsIqdAXB9JR2KUz
 - [@targos](https://github.com/targos) - Michaël Zasso
 - [@tbjers](https://github.com/tbjers) - Torgny Bjers
 - [@weswigham](https://github.com/weswigham) - Wesley Wigham
-- [@XadillaX](https://github.com/XadillaX) - Khaidi Chu
 
 <!-- ncu-team-sync end -->
 
@@ -105,23 +101,28 @@ Based on [these use cases](https://docs.google.com/document/d/10BBsIqdAXB9JR2KUz
 <!-- ncu-team-sync.team(nodejs/modules-observers) -->
 
 - [@bmeurer](https://github.com/bmeurer) - Benedikt Meurer
+- [@ceejbot](https://github.com/ceejbot) - C J Silverio
 - [@dduleone](https://github.com/dduleone) - Dan DuLeone
 - [@devamaz](https://github.com/devamaz) - Ahmad Abdul-Aziz
 - [@eugeneo](https://github.com/eugeneo) - Eugene Ostroukhov
 - [@evanplaice](https://github.com/evanplaice) - Evan Plaice
 - [@hiroppy](https://github.com/hiroppy) - Yuta Hiroto
 - [@jasnell](https://github.com/jasnell) - James M Snell
+- [@linclark](https://github.com/linclark) - Lin Clark
+- [@manekinekko](https://github.com/manekinekko) - Wassim Chegham
 - [@refack](https://github.com/refack) - Refael Ackermann
 - [@robwormald](https://github.com/robwormald) - Rob Wormald
-- [@sendilkumarn](https://github.com/sendilkumarn) - Sendil Kumar
+- [@sendilkumarn](https://github.com/sendilkumarn) - Sendil Kumar N
+- [@SMotaal](https://github.com/SMotaal) - Saleh Abdel Motaal
 - [@tbranyen](https://github.com/tbranyen) - Tim Branyen
 - [@TheLarkInn](https://github.com/TheLarkInn) - Sean Larkin
 - [@TimothyGu](https://github.com/TimothyGu) - Timothy Gu
+- [@tzmanics](https://github.com/tzmanics) - Tara Z. Manicsic
 - [@WebReflection](https://github.com/WebReflection) - Andrea Giammarchi
+- [@XadillaX](https://github.com/XadillaX) - Khaidi Chu
 - [@xtuc](https://github.com/xtuc) - Sven Sauleau
 - [@yosuke-furukawa](https://github.com/yosuke-furukawa) - Yosuke Furukawa
 - [@zackschuster](https://github.com/zackschuster) - Zack Schuster
-- [@tzmanics](https://github.com/tzmanics) - Tara Z. Manicsic
 - [@zenparsing](https://github.com/zenparsing) - Kevin Smith
 
 <!-- ncu-team-sync end -->
