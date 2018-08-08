@@ -17,6 +17,28 @@ Normative Terms
   This term alone does not specify in which direction(s) the agnosticism applies.
 </dd>
 
+<dt id=agnostic-package-consumers>
+  Agnostic Package Consumers
+</dt>
+<dd> 
+  A restricted form of [Agnostic Consumers](#agnostic-consumers) that applies only to imported modules referenced via a `package.json` file, as opposed to directly.
+  
+  This implies the imported resource is the main entrypoint into another package.
+</dd>
+
+<dt id=agnostic-module-consumers>
+  Agnostic Module Consumers
+</dt>
+<dd> 
+  A restricted form of [Agnostic Consumers](#agnostic-consumers) that applies only to imported modules referenced directly, as opposed to via a `package.json` file.
+  
+  This implies the imported resource either:
+  
+  - does not reside within any package, or
+  - resides within the current package, or
+  - is a deep import into another package, i.e. it bypasses the default entrypoint resolution process
+</dd>
+
 <dt id=require-interop>
   Require Interoperability <code>require(<esm>)</code>
 </dt>
