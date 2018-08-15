@@ -73,3 +73,44 @@ Similar to the previous, this would define parse goals for extensions directly:
 ```
 
 I presume that this would be limited to JavaScript-like files, unless things like `.json` or `.node` could have parse goals.
+
+### Consensus: “MIME types/webserver as metaphor” with links to external JSON files
+
+Start with the second proposal from this list, “MIME types/webserver as metaphor”, and its new `mimes` section in `package.json` that can be an object, e.g.:
+
+```json
+"mimes": {
+  "js": "text/javascript",
+  "cjs": "application/node"
+}
+```
+
+That `mimes` section could alternatively take an array of strings, which would be relative or resolved paths to JSON files:
+
+```json
+"mimes": [
+  "./my-mimes.json",
+  "typescript/mimes.json"
+]
+```
+
+Each JSON file would be an object with “extension: mime” mappings like the first example. They would be combined using `Object.assign`. If the first element in the array is `null`, Node’s default MIME mappings are discarded first before the array elements are merged, e.g. something like:
+
+```js
+const nodeDefaultMimeMappings = require('module').mimeMappings;
+
+const packageJsonMimes = require('./package.json').mimes;
+if (Array.isArray(packageJsonMimes)) {
+  let mimeMappings = (packageJsonMimes[0] === null) ? Object.create(null) : nodeDefaultMimeMappings;
+  packageJsonMimes.forEach((filePath, index) => {
+    if (filePath === null && index !== 0) {
+      throw new Error('Only the first element of a mimes array may be null');
+    }
+    Object.assign(mimeMappings, require(filePath));
+  });
+  return mimeMappings;
+} else {
+  return Object.assign(nodeDefaultMimeMappings, packageJsonMimes);
+}
+```
+
