@@ -36,14 +36,13 @@ These features will be part of the first phase of development:
   - No CommonJS.
   - No JSON.
   - No native modules.
-  - Implemented in https://github.com/nodejs/ecmascript-modules/pull/3
 
 * Remove dynamic path searching:
   - No extension adding.
   - No directory resolution, including no support for `index.js` or `index.mjs`.
   - No support for `main` field for ESM.
-  - Implemented in https://github.com/nodejs/ecmascript-modules/pull/2
 
+These changes are implemented in https://github.com/nodejs/ecmascript-modules/pull/6
 
 ## Later Phases
 
