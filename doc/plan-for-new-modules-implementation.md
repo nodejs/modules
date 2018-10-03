@@ -29,6 +29,9 @@ These features will be part of the first phase of development:
 * Dynamic `import()`.
   - Already in the existing implementation.
 
+* Support for built-in modules with named exports
+  - Already in the existing implementation
+
 ### How will we get from where we are to Phase 1
 
 * Remove support in the `import` statement of formats other than ESM:
