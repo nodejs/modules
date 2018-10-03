@@ -40,6 +40,10 @@ These features will be part of the first phase of development:
   - No extension adding.
   - No directory resolution, including no support for `index.js` or `index.mjs`.
   - No support for `main` field for ESM.
+  
+* Remove current VM implementation
+
+* Remove current Loader implementation
 
 These changes are implemented in https://github.com/nodejs/ecmascript-modules/pull/6
 
