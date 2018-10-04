@@ -72,7 +72,6 @@ Based on [these use cases](https://docs.google.com/document/d/10BBsIqdAXB9JR2KUz
 - [@benjamingr](https://github.com/benjamingr) - Benjamin Gruenbaum
 - [@benjamn](https://github.com/benjamn) - Ben Newman
 - [@bmeck](https://github.com/bmeck) - Bradley Meck
-- [@chrisdickinson](https://github.com/chrisdickinson) - Chris Dickinson
 - [@DanielRosenwasser](https://github.com/DanielRosenwasser) - Daniel Rosenwasser
 - [@devsnek](https://github.com/devsnek) - Gus Caplan
 - [@Fishrock123](https://github.com/Fishrock123) - Jeremiah Senkpiel
@@ -83,7 +82,6 @@ Based on [these use cases](https://docs.google.com/document/d/10BBsIqdAXB9JR2KUz
 - [@inidaname](https://github.com/inidaname) - Hassan Sani
 - [@jdalton](https://github.com/jdalton) - John-David Dalton
 - [@jkrems](https://github.com/jkrems) - Jan Olaf Krems
-- [@justinfagnani](https://github.com/justinfagnani) - Justin Fagnani
 - [@ljharb](https://github.com/ljharb) - Jordan Harband
 - [@mcollina](https://github.com/mcollina) - Matteo Collina
 - [@mduleone](https://github.com/mduleone) - Matt DuLeone
@@ -94,6 +92,7 @@ Based on [these use cases](https://docs.google.com/document/d/10BBsIqdAXB9JR2KUz
 - [@targos](https://github.com/targos) - Michaël Zasso
 - [@tbjers](https://github.com/tbjers) - Torgny Bjers
 - [@weswigham](https://github.com/weswigham) - Wesley Wigham
+- [@zenparsing](https://github.com/zenparsing) - Kevin Smith
 
 <!-- ncu-team-sync end -->
 
@@ -103,12 +102,14 @@ Based on [these use cases](https://docs.google.com/document/d/10BBsIqdAXB9JR2KUz
 
 - [@bmeurer](https://github.com/bmeurer) - Benedikt Meurer
 - [@ceejbot](https://github.com/ceejbot) - C J Silverio
+- [@chrisdickinson](https://github.com/chrisdickinson) - Chris Dickinson
 - [@dduleone](https://github.com/dduleone) - Dan DuLeone
 - [@devamaz](https://github.com/devamaz) - Ahmad Abdul-Aziz
 - [@eugeneo](https://github.com/eugeneo) - Eugene Ostroukhov
 - [@evanplaice](https://github.com/evanplaice) - Evan Plaice
 - [@hiroppy](https://github.com/hiroppy) - Yuta Hiroto
 - [@jasnell](https://github.com/jasnell) - James M Snell
+- [@justinfagnani](https://github.com/justinfagnani) - Justin Fagnani
 - [@linclark](https://github.com/linclark) - Lin Clark
 - [@manekinekko](https://github.com/manekinekko) - Wassim Chegham
 - [@refack](https://github.com/refack) - Refael Ackermann
@@ -123,7 +124,6 @@ Based on [these use cases](https://docs.google.com/document/d/10BBsIqdAXB9JR2KUz
 - [@XadillaX](https://github.com/XadillaX) - Khaidi Chu
 - [@xtuc](https://github.com/xtuc) - Sven Sauleau
 - [@yosuke-furukawa](https://github.com/yosuke-furukawa) - Yosuke Furukawa
-- [@zackschuster](https://github.com/zackschuster) - Zack Schuster
-- [@zenparsing](https://github.com/zenparsing) - Kevin Smith
+- [@zackschuster](https://github.com/zackschuster) Zack Schuster
 
 <!-- ncu-team-sync end -->
