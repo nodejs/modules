@@ -50,6 +50,25 @@ These features will be part of the first phase of development:
 
 These changes are implemented in https://github.com/nodejs/ecmascript-modules/pull/6
 
-## Later Phases
+## Phase 2
 
-There **will** be future phases. We will **not** ship the code produced by Phase 1. This first phase lacks support for important use cases and will not be released as the new modules implementation.
+Phase 2 will focus on uncontencious features to enhance UX:
+
+* improving cjs interop in esm
+  - createRequireFromURL
+  - tracking issue: REPLACEME
+* Package.json meta data for bare imports
+  - main vs module?
+  - tracking issue: REPLACEME
+* Re-Introduce VM module integration
+  - tracking issue: REPLACEME
+  - Implemented in: https://github.com/nodejs/ecmascript-modules/pull/8
+
+## Phase 3
+
+Phase 3 will focus on loaders.
+
+## Phase 4
+
+Phase 4 will focus on remaining contenciuous issues.
+  
