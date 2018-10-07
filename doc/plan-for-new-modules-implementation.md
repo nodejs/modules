@@ -52,7 +52,7 @@ These changes are implemented in https://github.com/nodejs/ecmascript-modules/pu
 
 ## Phase 2
 
-Phase 2 will focus on uncontencious features to enhance UX:
+Phase 2 will focus on uncontentious features to enhance UX:
 
 * improving cjs interop in esm
   - createRequireFromURL
@@ -66,9 +66,8 @@ Phase 2 will focus on uncontencious features to enhance UX:
 
 ## Phase 3
 
-Phase 3 will focus on loaders.
+Phase 3 will focus on extensible "loaders" and deliver an environment that allows user-land experimentation.
 
 ## Phase 4
 
-Phase 4 will focus on remaining contenciuous issues.
-  
+PhPhase 4 will focus on addressing the user feedback gathered from the experimentation enabled by Phase 3.
