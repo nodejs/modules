@@ -43,13 +43,42 @@ These features will be part of the first phase of development:
   - No extension adding.
   - No directory resolution, including no support for `index.js` or `index.mjs`.
   - No support for `main` field for ESM.
-  
+
 * Remove current VM implementation
 
 * Remove current Loader implementation
 
 These changes are implemented in https://github.com/nodejs/ecmascript-modules/pull/6
 
-## Later Phases
+## Phase 2
 
-There **will** be future phases. We will **not** ship the code produced by Phase 1. This first phase lacks support for important use cases and will not be released as the new modules implementation.
+* A `--mode` field to enable ESM support in the cases of `--eval` and STDIN input, _or_ any file: `node --mode=esm index.js`.
+  - Using this in `package.json` or being scoped to packages is put off for a later phase.
+  - This will be supplemented/replaced by more robust configurability such as designed in ([#160](https://github.com/nodejs/modules/pull/160)) in a later phase.
+
+* `createRequireFromURL`, to complement the just-added `createRequireFromPath`.
+
+* Re-introduce VM module integration.
+  - Implemented in: https://github.com/nodejs/ecmascript-modules/pull/8.
+
+## Future Phases
+
+The following features will follow soon in upcoming phases:
+
+* Loaders ([#82](https://github.com/nodejs/modules/issues/82)), ([#96](https://github.com/nodejs/modules/issues/96)).
+
+* `package.json` metadata support, including an ESM-compatible design for the `main` and possibly `module` fields; and user-configurable map for file extensions to parse goals, a.k.a. `mimes` field ([#160](https://github.com/nodejs/modules/pull/160)).
+
+* Browser-compatible specifier resolution ([#109](https://github.com/nodejs/modules/issues/109)), a.k.a. bare imports. See [package name maps](https://github.com/domenic/package-name-maps).
+
+* Browser-compatible dynamic path searching.
+
+* Multi-mode packages ([#94](https://github.com/nodejs/modules/issues/94)).
+
+* ESM in executable files ([#152](https://github.com/nodejs/modules/issues/152)).
+
+* Callable resolver ([#157](https://github.com/nodejs/modules/issues/157)).
+
+* Mock modules (injection) ([#98](https://github.com/nodejs/modules/issues/98)).
+
+This is an incomplete list. More features will be added in future phases, based on the [features list in our README](https://github.com/nodejs/modules/#features).
