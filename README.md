@@ -125,5 +125,6 @@ Based on [these use cases](https://docs.google.com/document/d/10BBsIqdAXB9JR2KUz
 - [@xtuc](https://github.com/xtuc) - Sven Sauleau
 - [@yosuke-furukawa](https://github.com/yosuke-furukawa) - Yosuke Furukawa
 - [@zackschuster](https://github.com/zackschuster) Zack Schuster
+- [@soldair](https://github.com/soldair) Ryan Day
 
 <!-- ncu-team-sync end -->
