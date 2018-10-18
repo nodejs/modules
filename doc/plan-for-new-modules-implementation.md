@@ -70,4 +70,4 @@ Phase 3 will focus on extensible "loaders" and deliver an environment that allow
 
 ## Phase 4
 
-PhPhase 4 will focus on addressing the user feedback gathered from the experimentation enabled by Phase 3.
+Phase 4 will focus on addressing the user feedback gathered from the experimentation enabled by Phase 3.
