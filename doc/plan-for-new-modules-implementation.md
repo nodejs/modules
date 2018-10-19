@@ -52,33 +52,30 @@ These changes are implemented in https://github.com/nodejs/ecmascript-modules/pu
 
 ## Phase 2
 
-* A `--mode` field to enable ESM support in the cases of `--eval` and STDIN input, _or_ any file: `node --mode=esm index.js`.
-  - Using this in `package.json` or being scoped to packages is put off for a later phase.
-  - This will be supplemented/replaced by more robust configurability such as designed in ([#160](https://github.com/nodejs/modules/pull/160)) in a later phase.
+* Re-introduce virtual module from source integration.
+  - Potential implementation in: https://github.com/nodejs/ecmascript-modules/pull/8.
 
-* `createRequireFromURL`, to complement the just-added `createRequireFromPath`.
+* Improve CommonJS interoperability.
+  - Refine `createRequireFromPath`.
+  - See [https://gist.github.com/SMotaal/e73c12bd801d78a3108fa30ecd303676](https://gist.github.com/SMotaal/e73c12bd801d78a3108fa30ecd303676).
 
-* Re-introduce VM module integration.
-  - Implemented in: https://github.com/nodejs/ecmascript-modules/pull/8.
+* Support importing a package entry point, e.g. `import _ from 'lodash'`.
+  - Currently this is only possible via an explicit deep import, e.g. `import _ from 'lodash/index.mjs'`. The idea would be to somehow enable the former syntax.
+  - `package.json` `module` field? `main` field?
+
+* An out-of-band mechanism for command-line disambiguation of source entry point parse goal.
+  - For example, `--eval`/`STDIN`.
+
+## Phase 3
+
+Phase 3 will tentatively focus on extensible loaders and deliver an environment that allows user-land experimentation.
+
+We should try to find a loaders solution that supports all items in the [features list in our README](https://github.com/nodejs/modules/#features).
+
+## Phase 4
+
+Phase 4 will include addressing user feedback gathered from the experimentation enabled by Phase 3 and focus on a holistic and complete experience of ESM in Node.js.
 
 ## Future Phases
 
-The following features will follow soon in upcoming phases:
-
-* Loaders ([#82](https://github.com/nodejs/modules/issues/82)), ([#96](https://github.com/nodejs/modules/issues/96)).
-
-* `package.json` metadata support, including an ESM-compatible design for the `main` and possibly `module` fields; and user-configurable map for file extensions to parse goals, a.k.a. `mimes` field ([#160](https://github.com/nodejs/modules/pull/160)).
-
-* Browser-compatible specifier resolution ([#109](https://github.com/nodejs/modules/issues/109)), a.k.a. bare imports. See [package name maps](https://github.com/domenic/package-name-maps).
-
-* Browser-compatible dynamic path searching.
-
-* Multi-mode packages ([#94](https://github.com/nodejs/modules/issues/94)).
-
-* ESM in executable files ([#152](https://github.com/nodejs/modules/issues/152)).
-
-* Callable resolver ([#157](https://github.com/nodejs/modules/issues/157)).
-
-* Mock modules (injection) ([#98](https://github.com/nodejs/modules/issues/98)).
-
-This is an incomplete list. More features will be added in future phases, based on the [features list in our README](https://github.com/nodejs/modules/#features).
+TBD.
