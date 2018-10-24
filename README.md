@@ -116,6 +116,7 @@ Based on [these use cases](https://docs.google.com/document/d/10BBsIqdAXB9JR2KUz
 - [@robwormald](https://github.com/robwormald) - Rob Wormald
 - [@rubys](https://github.com/rubys) - Sam Ruby
 - [@sendilkumarn](https://github.com/sendilkumarn) - Sendil Kumar N
+- [@soldair](https://github.com/soldair) Ryan Day
 - [@tbranyen](https://github.com/tbranyen) - Tim Branyen
 - [@TheLarkInn](https://github.com/TheLarkInn) - Sean Larkin
 - [@TimothyGu](https://github.com/TimothyGu) - Timothy Gu
@@ -125,6 +126,5 @@ Based on [these use cases](https://docs.google.com/document/d/10BBsIqdAXB9JR2KUz
 - [@xtuc](https://github.com/xtuc) - Sven Sauleau
 - [@yosuke-furukawa](https://github.com/yosuke-furukawa) - Yosuke Furukawa
 - [@zackschuster](https://github.com/zackschuster) Zack Schuster
-- [@soldair](https://github.com/soldair) Ryan Day
 
 <!-- ncu-team-sync end -->
