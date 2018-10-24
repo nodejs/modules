@@ -116,6 +116,7 @@ Based on [these use cases](https://docs.google.com/document/d/10BBsIqdAXB9JR2KUz
 - [@robwormald](https://github.com/robwormald) - Rob Wormald
 - [@rubys](https://github.com/rubys) - Sam Ruby
 - [@sendilkumarn](https://github.com/sendilkumarn) - Sendil Kumar N
+- [@soldair](https://github.com/soldair) Ryan Day
 - [@tbranyen](https://github.com/tbranyen) - Tim Branyen
 - [@TheLarkInn](https://github.com/TheLarkInn) - Sean Larkin
 - [@TimothyGu](https://github.com/TimothyGu) - Timothy Gu
