@@ -49,12 +49,11 @@ PACKAGE_RESOLVE(packageName, packagePath, parentURL)
 > 1. Note: Further package name encoding validations can be implemented here.
 > 1. Let _parentURL_ be the parent folder URL of _parentURL_.
 > 1. While _parentURL_ contains a non-empty _pathname_,
->    1. Let _packageURL_ be equal to _"${parentPath}/node_modules/${packageName}_.
+>    1. Let _packageURL_ be equal to _"${parentPath}/node_modules/${packageName}"_.
 >    1. If _packagePath_ is not empty then,
 >       1. Let _url_ be equal to _"${packageURL}/${packagePath}"_.
 >       1. If the file at _url_ exists then,
 >          1. Return _url_.
->       1. Continue the next iteration.
 >    1. Otherwise,
 >       1. Let _packageMain_ be the result of _CHECK_PACKAGE_MAIN(packageURL)_.
 >       1. If _packageMain_ is not _undefined_ then,
