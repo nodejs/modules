@@ -22,6 +22,35 @@ The main lookup is then provided by _CHECK_PACKAGE_MAIN_ which is still an exper
 
 Currently the main lookup will only check for _index.mjs_.
 
+### Examples
+
+Relative and absolute resolution without directory or extension resolution (URL resolution):
+
+* _ESM_RESOLVE(./a.asdf, file:///parent/path)_ -> _file:///parent/a.asdf_
+* _ESM_RESOLVE(/a, file:///parent/path)_ -> _file:///a_
+* _ESM_RESOLVE(file:///a, file:///parent/path)_ -> _file:///a_
+
+Package resolution:
+
+1. _ESM_RESOLVE(pkg/x, file:///path/to/project)_ -> _file:///path/to/node_modules/pkg/x_ (if it exists)
+1. _ESM_RESOLVE(pkg/x, file:///path/to/project)_ -> _file:///path/node_modules/pkg/x_ (otherwise, if it exists)
+1. _ESM_RESOLVE(pkg/x, file:///path/to/project)_ -> _file:///node_modules/pkg/x_ (otherwise, if it exists)
+1. _ESM_RESOLVE(pkg/x, file:///path/to/project)_ -> _Not Found_ (otherwise)
+
+Main resolution:
+
+1. _ESM_RESOLVE(pkg, file:///path/to/project)_ -> _file:///path/to/node_modules/pkg/index.mjs_ (if it exists)
+1. _ESM_RESOLVE(pkg, file:///path/to/project)_ -> _file:///path/node_modules/pkg/index.mjs_ (otherwise, if it exists)
+1. _ESM_RESOLVE(pkg, file:///path/to/project)_ -> _file:///node_modules/pkg/index.mjs_ (otherwise, if it exists)
+1. _ESM_RESOLVE(pkg, file:///path/to/project)_ -> _Not Found_ (otherwise)
+
+Scoped package main resolution:
+
+1. _ESM_RESOLVE(@pkg/name, file:///path/to/project)_ -> _file:///path/to/node_modules/@pkg/name/index.mjs_ (if it exists)
+1. _ESM_RESOLVE(@pkg/name, file:///path/to/project)_ -> _file:///path/node_modules/@pkg/name/index.mjs_ (otherwise, if it exists)
+1. _ESM_RESOLVE(@pkg/name, file:///path/to/project)_ -> _file:///node_modules/@pkg/name/index.mjs_ (otherwise, if it exists)
+1. _ESM_RESOLVE(@pkg/name, file:///path/to/project)_ -> _Not Found_ (otherwise)
+
 ### Resolver Algorithm
 
 The algorithm to resolve an ES module specifier is provided through _ESM_RESOLVE_:
@@ -47,7 +76,7 @@ PACKAGE_RESOLVE(packageName, packagePath, parentURL)
 > 1. Assert: _packagePath_ contains no leading separator and can be empty.
 > 1. Assert: _packageName_ is a valid package name or scoped package name.
 > 1. Note: Further package name encoding validations can be implemented here.
-> 1. Let _parentURL_ be the parent folder URL of _parentURL_.
+> 1. Set _parentURL_ to the parent folder URL of _parentURL_.
 > 1. While _parentURL_ contains a non-empty _pathname_,
 >    1. Let _packageURL_ be equal to _"${parentPath}/node_modules/${packageName}"_.
 >    1. If _packagePath_ is not empty then,
