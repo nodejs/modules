@@ -59,7 +59,7 @@ These changes are implemented in https://github.com/nodejs/ecmascript-modules/pu
   - Refine `createRequireFromPath`.
   - See [https://gist.github.com/SMotaal/e73c12bd801d78a3108fa30ecd303676](https://gist.github.com/SMotaal/e73c12bd801d78a3108fa30ecd303676).
 
-* Define semantics for importing a package entry point, e.. `import _ from 'lodash'`
+* Define semantics for importing a package entry point, e.g. `import _ from 'lodash'`
   - Currently this is only possible via an explicit deep import, e.g. `import _ from 'lodash/index.mjs'`. The idea would be to somehow enable the former syntax.
   - `package.json` `module` field? `main` field?
 
