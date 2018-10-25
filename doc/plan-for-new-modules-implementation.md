@@ -43,13 +43,36 @@ These features will be part of the first phase of development:
   - No extension adding.
   - No directory resolution, including no support for `index.js` or `index.mjs`.
   - No support for `main` field for ESM.
-  
+
 * Remove current VM implementation
 
 * Remove current Loader implementation
 
 These changes are implemented in https://github.com/nodejs/ecmascript-modules/pull/6
 
-## Later Phases
+## Phase 2
 
-There **will** be future phases. We will **not** ship the code produced by Phase 1. This first phase lacks support for important use cases and will not be released as the new modules implementation.
+* Explore design space for virtual module from source
+  - Potential implementation in: https://github.com/nodejs/ecmascript-modules/pull/8.
+
+* Improve CommonJS interoperability.
+  - Refine `createRequireFromPath`.
+  - See [https://gist.github.com/SMotaal/e73c12bd801d78a3108fa30ecd303676](https://gist.github.com/SMotaal/e73c12bd801d78a3108fa30ecd303676).
+
+* Define semantics for importing a package entry point, e.g. `import _ from 'lodash'`
+  - Currently this is only possible via an explicit deep import, e.g. `import _ from 'lodash/index.mjs'`. The idea would be to somehow enable the former syntax.
+  - `package.json` `module` field? `main` field?
+
+## Phase 3
+
+Phase 3 will tentatively focus on extensible loaders and deliver an environment that allows user-land experimentation.
+
+We should try to find a loaders solution that supports all items in the [features list in our README](https://github.com/nodejs/modules/#features).
+
+## Phase 4
+
+Phase 4 will include addressing user feedback gathered from the experimentation enabled by Phase 3 and focus on a holistic and complete experience of ESM in Node.js.
+
+## Future Phases
+
+TBD.
