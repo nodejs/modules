@@ -62,6 +62,8 @@ These changes are implemented in https://github.com/nodejs/ecmascript-modules/pu
 * Define semantics for importing a package entry point, e.g. `import _ from 'lodash'`
   - Currently this is only possible via an explicit deep import, e.g. `import _ from 'lodash/index.mjs'`. The idea would be to somehow enable the former syntax.
   - `package.json` `module` field? `main` field?
+  
+* Define semantics for determining when to load sources as CommonJS or ES module for both the top-level main (`node x.js`) and dependency loading.
 
 ## Phase 3
 
