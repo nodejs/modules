@@ -33,7 +33,8 @@ There is no specific set of requirements or qualifications for Team Membership b
 
 Changes to Team membership should be proposed with an issue and labelled `modules-agenda`
 to be included in the next [team meeting](#team-meetings). Decisions are made via the
-[Consensus Seeking Process](#consensus-seeking-process).
+[Consensus Seeking Process](#consensus-seeking-process). If there are not objections in the
+issue new members may attend the meeting in which their membership is officially accepted.
 
 If a Team member is unable to attend a meeting where a planned membership decision is being made,
 then their consent is assumed.
