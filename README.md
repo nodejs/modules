@@ -100,6 +100,7 @@ Based on [these use cases](https://docs.google.com/document/d/10BBsIqdAXB9JR2KUz
 
 <!-- ncu-team-sync.team(nodejs/modules-observers) -->
 
+- [@bmacnaughton](https://github.com/bmacnaughton) - Bruce MacNaughton
 - [@bmeurer](https://github.com/bmeurer) - Benedikt Meurer
 - [@ceejbot](https://github.com/ceejbot) - C J Silverio
 - [@chrisdickinson](https://github.com/chrisdickinson) - Chris Dickinson
@@ -115,8 +116,9 @@ Based on [these use cases](https://docs.google.com/document/d/10BBsIqdAXB9JR2KUz
 - [@refack](https://github.com/refack) - Refael Ackermann
 - [@robwormald](https://github.com/robwormald) - Rob Wormald
 - [@rubys](https://github.com/rubys) - Sam Ruby
+- [@ryzokuken](https://github.com/ryzokuken) - Ujjwal Sharma
 - [@sendilkumarn](https://github.com/sendilkumarn) - Sendil Kumar N
-- [@soldair](https://github.com/soldair) Ryan Day
+- [@soldair](https://github.com/soldair) - Ryan Day
 - [@tbranyen](https://github.com/tbranyen) - Tim Branyen
 - [@TheLarkInn](https://github.com/TheLarkInn) - Sean Larkin
 - [@TimothyGu](https://github.com/TimothyGu) - Timothy Gu
