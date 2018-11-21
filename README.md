@@ -102,7 +102,7 @@ Based on [these use cases](https://docs.google.com/document/d/10BBsIqdAXB9JR2KUz
 - [@ceejbot](https://github.com/ceejbot) - C J Silverio
 - [@chrisdickinson](https://github.com/chrisdickinson) - Chris Dickinson
 - [@dduleone](https://github.com/dduleone) - Dan DuLeone
-- [@devamaz](https://github.com/devamaz) - Ahmad Abdul-Aziz 
+- [@devamaz](https://github.com/devamaz) - Ahmad Abdul-Aziz
 - [@eugeneo](https://github.com/eugeneo) - Eugene Ostroukhov
 - [@evanplaice](https://github.com/evanplaice) - Evan Plaice
 - [@hiroppy](https://github.com/hiroppy) - Yuta Hiroto
@@ -127,6 +127,6 @@ Based on [these use cases](https://docs.google.com/document/d/10BBsIqdAXB9JR2KUz
 - [@XadillaX](https://github.com/XadillaX) - Khaidi Chu
 - [@xtuc](https://github.com/xtuc) - Sven Sauleau
 - [@yosuke-furukawa](https://github.com/yosuke-furukawa) - Yosuke Furukawa
-- [@zackschuster](https://github.com/zackschuster)
+- [@zackschuster](https://github.com/zackschuster) Zack Schuster
 
 <!-- ncu-team-sync end -->
