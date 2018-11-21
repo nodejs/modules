@@ -62,8 +62,11 @@ These changes are implemented in https://github.com/nodejs/ecmascript-modules/pu
 * Define semantics for importing a package entry point, e.g. `import _ from 'lodash'`
   - Currently this is only possible via an explicit deep import, e.g. `import _ from 'lodash/index.mjs'`. The idea would be to somehow enable the former syntax.
   - `package.json` `module` field? `main` field?
+  - Proposal: [“Package Exports” proposal](https://github.com/jkrems/proposal-pkg-exports) for bare module specifier resolution of ESM packages.
+  - Proposal: [“File Specifier Resolution” proposal](https://github.com/GeoffreyBooth/node-import-file-specifier-resolution-proposal) mentions bare module specifier resolution of CommonJS packages; complements Package Exports proposal.
   
 * Define semantics for determining when to load sources as CommonJS or ES module for both the top-level main (`node x.js`) and dependency loading.
+  - Proposal: [“File Specifier Resolution” proposal](https://github.com/GeoffreyBooth/node-import-file-specifier-resolution-proposal) covers `import` statements of ESM files; and CommonJS files, package entry point and package deep imports.
 
 ## Phase 3
 
