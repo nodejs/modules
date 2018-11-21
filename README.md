@@ -127,6 +127,6 @@ Based on [these use cases](https://docs.google.com/document/d/10BBsIqdAXB9JR2KUz
 - [@XadillaX](https://github.com/XadillaX) - Khaidi Chu
 - [@xtuc](https://github.com/xtuc) - Sven Sauleau
 - [@yosuke-furukawa](https://github.com/yosuke-furukawa) - Yosuke Furukawa
-- [@zackschuster](https://github.com/zackschuster) Zack Schuster
+- [@zackschuster](https://github.com/zackschuster) - Zack Schuster
 
 <!-- ncu-team-sync end -->
