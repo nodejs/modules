@@ -47,7 +47,7 @@ Based on [these use cases](https://docs.google.com/document/d/10BBsIqdAXB9JR2KUz
 * ESM in executable files ([#152](https://github.com/nodejs/modules/issues/152))
 * Callable resolver ([#157](https://github.com/nodejs/modules/issues/157))
 
-### Loader Features
+### Loader Features:
 
 * Code coverage/instrumentation ([#95](https://github.com/nodejs/modules/issues/95))
 * Pluggable Loaders to support multiple use cases ([#82](https://github.com/nodejs/modules/issues/82))
