@@ -22,8 +22,8 @@ Following a list of ESM and CommonJS relevant projects.
 
 #### Transpilers
   * [Babel](http://babeljs.io) converts ES2015+ to older versions, including a CommonJS interop layer with ESM
-  * [TypeScript](https://www.typescriptlang.org) converts ES2015+ to older versions, including a CommonJS interop layer with ESM
-  
+  * [TypeScript](https://www.typescriptlang.org) TypeScript is a typed superset of JavaScript that compiles to plain JavaScript, including a CommonJS interop layer with ESM
+
 #### Loaders
   * [Reify](https://www.npmjs.com/package/reify) compiles ESM syntax to CommonJS on the fly, supporting live bindings without rewriting imported variable names
   * [@std/esm](https://github.com/standard-things/esm) is a fork of Reify focused on following Node's ESM support roadmap while providing a bridge from the CJS/ESM usage of today to the ESM of tomorrow.
