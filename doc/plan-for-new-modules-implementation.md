@@ -70,8 +70,7 @@ These changes are implemented in https://github.com/nodejs/ecmascript-modules/pu
 
 * Implement specification changes related to dynamic module records
   - Proposal: ["Dynamic Modules Proposal"](https://github.com/nodejs/dynamic-modules/)
-  - We will need to reach consensus on appropriate behavior for [`export * from 'dynamic-module'`](https://github.com/nodejs/dynamic-modules/pull/11).
-    The current behavior of throwing may be reverted at a later time.
+  - We will need to reach consensus on appropriate behavior for [`export * from 'dynamic-module'`](https://github.com/nodejs/dynamic-modules/pull/11). If consensus cannot be reached, then this feature will be deferred to a later phase. The current behavior of throwing may also be reverted at a later time.
 
 ## Phase 3
 
