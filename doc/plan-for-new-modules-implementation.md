@@ -64,9 +64,13 @@ These changes are implemented in https://github.com/nodejs/ecmascript-modules/pu
   - `package.json` `module` field? `main` field?
   - Proposal: [“Package Exports” proposal](https://github.com/jkrems/proposal-pkg-exports) for bare module specifier resolution of ESM packages.
   - Proposal: [“File Specifier Resolution” proposal](https://github.com/GeoffreyBooth/node-import-file-specifier-resolution-proposal) mentions bare module specifier resolution of CommonJS packages; complements Package Exports proposal.
-  
+
 * Define semantics for determining when to load sources as CommonJS or ES module for both the top-level main (`node x.js`) and dependency loading.
   - Proposal: [“File Specifier Resolution” proposal](https://github.com/GeoffreyBooth/node-import-file-specifier-resolution-proposal) covers `import` statements of ESM files; and CommonJS files, package entry point and package deep imports.
+
+* Implement specification changes related to dynamic module records
+  - Proposal: ["Dynamic Modules Proposal"](https://github.com/nodejs/dynamic-modules/)
+  - We will need to reach consensus on appropriate behavior for [`export * from 'dynamic-module'`](https://github.com/nodejs/dynamic-modules/pull/11). If consensus cannot be reached, then this feature will be deferred to a later phase. The current behavior of throwing may also be reverted at a later time.
 
 ## Phase 3
 
