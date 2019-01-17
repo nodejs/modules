@@ -19,7 +19,11 @@ The team is working on a new implementation to potentially replace the `--experi
 
 ### Discussion
 
-The team is using the [node-js.slack.com](https://node-js.slack.com/) channel `#esm` for discussion. To register, please go to [nodeslackers.com](http://www.nodeslackers.com/).
+There are several public places where the modules group has been discussing their work:
+
+- The [issues](https://github.com/nodejs/modules/issues) and [pull requests](https://github.com/nodejs/modules/pulls) on this repo and the [ecmascript-modules](https://github.com/nodejs/ecmascript-modules) repo.
+- The [node-js.slack.com](https://node-js.slack.com/) channel `#esm`. To register, please go to [nodeslackers.com](http://www.nodeslackers.com/).
+- The [#node.js channel on chat.freenode.net](https://webchat.freenode.net/?channels=node.js&uio=d4).
 
 ## Features
 
