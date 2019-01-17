@@ -90,7 +90,6 @@ Based on [these use cases](https://docs.google.com/document/d/10BBsIqdAXB9JR2KUz
 - [@robpalme](https://github.com/robpalme) - Rob Palmer
 - [@SMotaal](https://github.com/SMotaal) - Saleh Abdel Motaal
 - [@targos](https://github.com/targos) - Michaël Zasso
-- [@tbjers](https://github.com/tbjers) - Torgny Bjers
 - [@weswigham](https://github.com/weswigham) - Wesley Wigham
 - [@zenparsing](https://github.com/zenparsing) - Kevin Smith
 
@@ -123,6 +122,7 @@ Based on [these use cases](https://docs.google.com/document/d/10BBsIqdAXB9JR2KUz
 - [@ryzokuken](https://github.com/ryzokuken) - Ujjwal Sharma
 - [@sendilkumarn](https://github.com/sendilkumarn) - Sendil Kumar N
 - [@soldair](https://github.com/soldair) - Ryan Day
+- [@tbjers](https://github.com/tbjers) - Torgny Bjers
 - [@tbranyen](https://github.com/tbranyen) - Tim Branyen
 - [@TheLarkInn](https://github.com/TheLarkInn) - Sean Larkin
 - [@TimothyGu](https://github.com/TimothyGu) - Timothy Gu
