@@ -17,6 +17,10 @@ Work includes:
 
 The team is working on a new implementation to potentially replace the `--experimental-modules` implementation in current shipping Node. The new implementation is in progress in the [ecmascript-modules](https://github.com/nodejs/ecmascript-modules) repo, and a road map of its development is [here](./doc/plan-for-new-modules-implementation.md).
 
+### Discussion
+
+The team is using the [node-js.slack.com](https://node-js.slack.com/) channel `#esm` for discussion. To register, please go to [nodeslackers.com](http://www.nodeslackers.com/).
+
 ## Features
 
 Based on [these use cases](https://docs.google.com/document/d/10BBsIqdAXB9JR2KUzQGYbCiVugYBnxE4REBakX29yyo/edit) ([#55](https://github.com/nodejs/modules/issues/55)), our implementation aims to support the following features (subject to change):
