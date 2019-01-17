@@ -23,7 +23,7 @@ There are several public places where the modules group has been discussing thei
 
 - The [issues](https://github.com/nodejs/modules/issues) and [pull requests](https://github.com/nodejs/modules/pulls) on this repo and the [ecmascript-modules](https://github.com/nodejs/ecmascript-modules) repo.
 - The [node-js.slack.com](https://node-js.slack.com/) channel `#esm`. To register, please go to [nodeslackers.com](http://www.nodeslackers.com/).
-- The [#node.js channel on chat.freenode.net](https://webchat.freenode.net/?channels=node.js&uio=d4).
+- The [#node-dev channel on chat.freenode.net](https://webchat.freenode.net/?channels=node-dev&uio=d4).
 
 ## Features
 
