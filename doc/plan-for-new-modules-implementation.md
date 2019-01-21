@@ -72,7 +72,7 @@ These changes are implemented in https://github.com/nodejs/ecmascript-modules/pu
   - Proposal: ["Dynamic Modules Proposal"](https://github.com/nodejs/dynamic-modules/)
   - We will need to reach consensus on appropriate behavior for [`export * from 'dynamic-module'`](https://github.com/nodejs/dynamic-modules/pull/11). If consensus cannot be reached, then this feature will be deferred to a later phase. The current behavior of throwing may also be reverted at a later time.
 
-* Define semantics for enabling ESM treatment of source code loaded via `--eval`, STDIN and extensionless files.
+* Define semantics for enabling ESM treatment of source code loaded via `--eval`, STDIN, and extensionless files.
 
 ## Phase 3
 
