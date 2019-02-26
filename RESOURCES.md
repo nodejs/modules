@@ -14,18 +14,18 @@
 
 Following a list of ESM and CommonJS relevant projects.
 
-#### Transpilers
-  * [Babel](http://babeljs.io) transpiled ES6+ including modules downgraded to CommonJS with an `exports.default` strategy
-  * [TypeScript](https://www.typescriptlang.org) transpiled classes including ES6 like/inspired modules
-
 #### Bundlers
   * [Webpack](https://webpack.js.org) multi purpose bundler compatible with CommonJS `exports.default` strategy. Actually diverging from npm resolution preferring a `browser` field in the `package.json` instead of actual CommonJS.
   * [Rollup](https://rollupjs.org) next-generation ES6 module bundler with tree shaking capability
   * [Parceljs](https://parceljs.org/) multi purpose bundler focused on zero config and performance
   * [Browserify](http://browserify.org) the CommonJS module bundler that brought NodeJS to the Web
 
-#### Compilers
-  * [Reify](https://www.npmjs.com/package/reify) compiles ESM syntax to CommonJS, supporting live bindings without rewriting imported variable names
+#### Transpilers
+  * [Babel](http://babeljs.io) converts ES2015+ to older versions, including a CommonJS interop layer with ESM
+  * [TypeScript](https://www.typescriptlang.org) TypeScript is a typed superset of JavaScript that compiles to plain JavaScript, including a CommonJS interop layer with ESM
+
+#### Loaders
+  * [Reify](https://www.npmjs.com/package/reify) compiles ESM syntax to CommonJS on the fly, supporting live bindings without rewriting imported variable names
   * [@std/esm](https://github.com/standard-things/esm) is a fork of Reify focused on following Node's ESM support roadmap while providing a bridge from the CJS/ESM usage of today to the ESM of tomorrow.
 
 #### Runtime Utilities
