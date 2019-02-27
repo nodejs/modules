@@ -68,6 +68,8 @@ The “minimal kernel” consists of features that the @nodejs/modules group hav
 
 Phase 2 fleshes out the implementation with enough functionality that it should be useful to average users as a minimum viable product. At the completion of Phase 2, the old `--experimental-modules` implementation is replaced with this new one (still behind the `--experimental-modules` flag).
 
+### Core Functionality
+
 * Define semantics for importing a package entry point, e.g. `import _ from 'lodash'`
   - Proposal: [“File Specifier Resolution” proposal](https://github.com/GeoffreyBooth/node-import-file-specifier-resolution-proposal) covers bare module specifier resolution of CommonJS packages.
   - Landed in https://github.com/nodejs/ecmascript-modules/pull/28.
@@ -82,7 +84,12 @@ Phase 2 fleshes out the implementation with enough functionality that it should 
 
 * A loaders solution that supports all items in the [features list in our README](https://github.com/nodejs/modules/#features).
   - Should loaders be per package, per application or either?
-  - Will land in Phase 2 only if an implementation without major problems (e.g. memory leaks) can be completed in time. If the problems can be isolated behind a flag, we could upstream a buggy implementation and fix and unflag it after unflagging.
+  - Will land in Phase 2 only if an implementation without major problems (e.g. memory leaks) can be completed in time. If the problems can be isolated behind a flag specific to loaders, we could upstream a buggy implementation and unflag it after its bugs are fixed.
+
+### Needs Consensus
+
+* Add, or decide not to support, file extension and directory index searching in ESM.
+  - See https://github.com/nodejs/modules/issues/268.
 
 
 ## Phase 3: Path to Stability: Removing `--experimental-modules` Flag
@@ -110,6 +117,3 @@ Phase 3 improves user experience and extends the MVP. Phase 3 is malleable based
 * Finalize support for (or removal of) `import` of CommonJS files and packages.
   - See https://github.com/nodejs/modules/issues/264.
   - Defaults only or named exports? Behind a flag or not?
-
-* File extension/directory index searching in ESM.
-  - See https://github.com/nodejs/modules/issues/268.
