@@ -76,26 +76,28 @@ Phase 2 fleshes out the implementation with enough functionality that it should 
   - Proposal: [“File Specifier Resolution” proposal](https://github.com/GeoffreyBooth/node-import-file-specifier-resolution-proposal) covers `import` statements of ESM files; and CommonJS files, package entry point and package deep imports.
   - Landed in https://github.com/nodejs/ecmascript-modules/pull/28.
 
-* Define semantics for enabling ESM treatment of source code loaded via `--eval`, STDIN, and extensionless files.
+* Define semantics for enabling ESM treatment of source code loaded via `--eval`, STDIN, and extensionless files (both with and without shebang lines).
   - Proposal: [“Entry Points Proposal”](https://github.com/geoffreybooth/node-esm-entry-points-proposal) covers non-file forms of input as well as adding `--type` flag for controlling file-based input.
   - Landed in https://github.com/nodejs/ecmascript-modules/pull/32.
 
-* Dual CommonJS/ESM packages: Support packages that can both be `require`d as CommonJS and `import`ed as ESM, with separate entry points for each.
-  - Proposal: https://github.com/nodejs/modules/issues/273.
-  - PR: https://github.com/nodejs/ecmascript-modules/pull/41.
+* A loaders solution that supports all items in the [features list in our README](https://github.com/nodejs/modules/#features).
+  - Should loaders be per package, per application or either?
+  - Will land in Phase 2 only if an implementation without major problems (e.g. memory leaks) can be completed in time. If the problems can be isolated behind a flag, we could upstream a buggy implementation and fix and unflag it after unflagging.
+
 
 ## Phase 3: Path to Stability: Removing `--experimental-modules` Flag
 
-Phase 3 improves user experience and extends the MVP. At the end of this phase, the `--experimental-modules` flag is dropped.
+Phase 3 improves user experience and extends the MVP. Phase 3 is malleable based on how things proceed while working on this phase. At the end of this phase, the `--experimental-modules` flag is dropped.
 
 ### UX Improvements
+
+* Dual CommonJS/ESM packages: Either support packages that can both be `require`d as CommonJS and `import`ed as ESM; or decide to specifically not support dual CommonJS/ESM packages.
+  - Proposal: https://github.com/nodejs/modules/issues/273.
+  - PR: https://github.com/nodejs/ecmascript-modules/pull/41.
 
 * Better mechanism for creating `require` function.
   - See [https://gist.github.com/SMotaal/e73c12bd801d78a3108fa30ecd303676](https://gist.github.com/SMotaal/e73c12bd801d78a3108fa30ecd303676).
   - `import 'nodejs:require'`? `import.meta.require`? Or only `createRequireFromPath`?
-
-* A loaders solution that supports all items in the [features list in our README](https://github.com/nodejs/modules/#features).
-  - Should loaders be per package, per application or either?
 
 * Map the paths within modules, providing similar functionality as the browser’s [import maps proposal](https://github.com/WICG/import-maps#packages-via-trailing-slashes).
   - Proposal: [“Package Exports Proposal”](https://github.com/jkrems/proposal-pkg-exports).
