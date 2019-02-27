@@ -73,13 +73,11 @@ Based on [these use cases](https://docs.google.com/document/d/10BBsIqdAXB9JR2KUz
 
 <!-- ncu-team-sync.team(nodejs/modules-active-members) -->
 
-- [@benjamingr](https://github.com/benjamingr) - Benjamin Gruenbaum
 - [@bmeck](https://github.com/bmeck) - Bradley Meck
 - [@DanielRosenwasser](https://github.com/DanielRosenwasser) - Daniel Rosenwasser
 - [@devsnek](https://github.com/devsnek) - Gus Caplan
 - [@Fishrock123](https://github.com/Fishrock123) - Jeremiah Senkpiel
 - [@GeoffreyBooth](https://github.com/GeoffreyBooth) - Geoffrey Booth
-- [@giltayar](https://github.com/giltayar) - Gil Tayar
 - [@guybedford](https://github.com/guybedford) - Guy Bedford
 - [@inidaname](https://github.com/inidaname) - Hassan Sani
 - [@jdalton](https://github.com/jdalton) - John-David Dalton
@@ -99,6 +97,7 @@ Based on [these use cases](https://docs.google.com/document/d/10BBsIqdAXB9JR2KUz
 
 <!-- ncu-team-sync.team(nodejs/modules-observers) -->
 
+- [@benjamingr](https://github.com/benjamingr) - Benjamin Gruenbaum
 - [@benjamn](https://github.com/benjamn) - Ben Newman
 - [@bmacnaughton](https://github.com/bmacnaughton) - Bruce MacNaughton
 - [@bmeurer](https://github.com/bmeurer) - Benedikt Meurer
@@ -108,6 +107,7 @@ Based on [these use cases](https://docs.google.com/document/d/10BBsIqdAXB9JR2KUz
 - [@devamaz](https://github.com/devamaz) - Ahmad Abdul-Aziz
 - [@eugeneo](https://github.com/eugeneo) - Eugene Ostroukhov
 - [@evanplaice](https://github.com/evanplaice) - Evan Plaice
+- [@giltayar](https://github.com/giltayar) - Gil Tayar
 - [@hiroppy](https://github.com/hiroppy) - Yuta Hiroto
 - [@iarna](https://github.com/iarna) - Rebecca Turner
 - [@jasnell](https://github.com/jasnell) - James M Snell
