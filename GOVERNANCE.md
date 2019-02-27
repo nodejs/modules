@@ -98,10 +98,11 @@ meeting. In both cases the decision must be seconded by a majority of the Team
 or else the discussion will continue. Simple majority wins. Only Active
 Members participate in a vote.
 
-## Merging PRs into this Repository
+## Merging PRs into this Repository or nodejs/ecmascript-modules
 
 This section does not apply to [the Node.js core repository](https://github.com/nodejs/node).
-It only applies to [the Modules repository](https://github.com/nodejs/modules).
+It only applies to [the Modules repository](https://github.com/nodejs/modules) and
+[nodejs/ecmascript-modules](https://github.com/nodejs/ecmascript-modules).
 
 Pull requests not included under the _special exemptions_ section below must
 reach consensus in a meeting in order to be merged into this repository. A pull
@@ -117,6 +118,9 @@ changes to this repository:
 - Editorial changes.
 - Meeting minutes.
 - Updates to the team lists via the `ncu-sync` tool.
+- Doc Fixes
+- Tests
+- Fixing Conflicts with a rebase
 
 These pull requests may be merged without being presented at a meeting if a
 reasonable time is given for review and there no dissent. The time period seen
