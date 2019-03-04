@@ -82,10 +82,6 @@ Phase 2 fleshes out the implementation with enough functionality that it should 
   - Proposal: [“Entry Points Proposal”](https://github.com/geoffreybooth/node-esm-entry-points-proposal) covers non-file forms of input as well as adding `--type` flag for controlling file-based input.
   - Landed in https://github.com/nodejs/ecmascript-modules/pull/32.
 
-* A loaders solution that supports all items in the [features list in our README](https://github.com/nodejs/modules/#features).
-  - Should loaders be per package, per application or either?
-  - Will land in Phase 2 only if an implementation without major problems (e.g. memory leaks) can be completed in time. If the problems can be isolated behind a flag specific to loaders, we could upstream a buggy implementation and unflag it after its bugs are fixed.
-
 ### Needs Consensus
 
 * Add, or decide not to support, file extension and directory index searching in ESM.
@@ -97,6 +93,10 @@ Phase 2 fleshes out the implementation with enough functionality that it should 
 Phase 3 improves user experience and extends the MVP. Phase 3 is malleable based on how things proceed while working on this phase. At the end of this phase, the `--experimental-modules` flag is dropped.
 
 ### UX Improvements
+
+* A loaders solution that supports all items in the [features list in our README](https://github.com/nodejs/modules/#features).
+  - Should loaders be per package, per application or either?
+  - Will land in Phase 2 only if an implementation without major problems (e.g. memory leaks) can be completed in time. If the problems can be isolated behind a flag specific to loaders, we could upstream a buggy implementation and unflag it after its bugs are fixed.
 
 * Dual CommonJS/ESM packages: Either support packages that can both be `require`d as CommonJS and `import`ed as ESM; or decide to specifically not support dual CommonJS/ESM packages.
   - Proposal: https://github.com/nodejs/modules/issues/273.
