@@ -68,8 +68,6 @@ The “minimal kernel” consists of features that the @nodejs/modules group hav
 
 Phase 2 fleshes out the implementation with enough functionality that it should be useful to average users as a minimum viable product. At the completion of Phase 2, the old `--experimental-modules` implementation is replaced with this new one (still behind the `--experimental-modules` flag).
 
-### Core Functionality
-
 * Define semantics for importing a package entry point, e.g. `import _ from 'lodash'`
   - Proposal: [“File Specifier Resolution” proposal](https://github.com/GeoffreyBooth/node-import-file-specifier-resolution-proposal) covers bare module specifier resolution of CommonJS packages.
   - Landed in https://github.com/nodejs/ecmascript-modules/pull/28.
@@ -82,14 +80,9 @@ Phase 2 fleshes out the implementation with enough functionality that it should 
   - Proposal: [“Entry Points Proposal”](https://github.com/geoffreybooth/node-esm-entry-points-proposal) covers non-file forms of input as well as adding `--type` flag for controlling file-based input.
   - Landed in https://github.com/nodejs/ecmascript-modules/pull/32.
 
-* A loaders solution that supports all items in the [features list in our README](https://github.com/nodejs/modules/#features).
-  - Should loaders be per package, per application or either?
-  - Will land in Phase 2 only if an implementation without major problems (e.g. memory leaks) can be completed in time. If the problems can be isolated behind a flag specific to loaders, we could upstream a buggy implementation and unflag it after its bugs are fixed.
-
-### Needs Consensus
-
-* Add, or decide not to support, file extension and directory index searching in ESM.
+* File extension and directory index searching in ESM, behind its own flag.
   - See https://github.com/nodejs/modules/issues/268.
+  - Per 2019-03-04 meeting, searching will be disabled by default in ESM but enabled via a flag; and the flag will be neutral as to which state the feature should take (similar to `--type=commonjs` / `--type=module`, where the former is currently a noop because it’s the default; but if the default changes someday, the latter would become the noop).
 
 
 ## Phase 3: Path to Stability: Removing `--experimental-modules` Flag
@@ -97,6 +90,9 @@ Phase 2 fleshes out the implementation with enough functionality that it should 
 Phase 3 improves user experience and extends the MVP. Phase 3 is malleable based on how things proceed while working on this phase. At the end of this phase, the `--experimental-modules` flag is dropped.
 
 ### UX Improvements
+
+* A loaders solution that supports all items in the [features list in our README](https://github.com/nodejs/modules/#features).
+  - Should loaders be per package, per application or either?
 
 * Dual CommonJS/ESM packages: Either support packages that can both be `require`d as CommonJS and `import`ed as ESM; or decide to specifically not support dual CommonJS/ESM packages.
   - Proposal: https://github.com/nodejs/modules/issues/273.
