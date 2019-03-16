@@ -84,7 +84,7 @@ There is also ongoing work to cover WASM and other future potential module types
 
 _This is a work in progress and subject to change._ You can create a package with ES module sources by using the `package.json` `"main"` field to point to an ES module package entry point. Node.js will know to load it as an ES module if the file ends in `.mjs` or if the `package.json` also contains `"type": "module"`.
 
-Currently it is not possible to create a package that is usable both via `require` (as CommonJS) and via `import` (as an ES module). There are efforts underway to address this, and may involve changes to the above (especially concerning `"main"`). Please do not publish any ES module packages intended for use by Node.js until this is resolved.
+Currently it is not possible to create a package that can be used via both `require('pkg')` and `import 'pkg'`. There are efforts underway to address this, and may involve changes to the above. In particular, Node.js might choose a field other than `"main"` to define a package’s ES module entry point. While we are aware that the community has embraced the `"module"` field, it is unlikely that Node.js will adopt that field as many of the packages published using `"module"` include ES module JavaScript that may not evaluate in Node.js (because extensions are left off of filenames, or the code includes `require` statements, etc.). Please do not publish any ES module packages intended for use by Node.js until this is resolved.
 
 ## Works in progress
 
