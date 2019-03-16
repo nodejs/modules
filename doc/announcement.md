@@ -62,9 +62,7 @@ By default in the new `--experimental-modules`, file extensions are mandatory in
 
 We’re providing the `--es-module-specifier-resolution=node` flag to opt in to cjs-style extension and `index` resolution. We’ve turned it off by default to collect feedback on how users feel about using fully specified paths before we unflag the `--experimental-modules` implementation. You can find our discussion on the topic [here](https://github.com/nodejs/modules/issues/268).
 
-We’re making this change to align with browsers, where [file extensions are generally always needed in `import` statements](https://github.com/WICG/import-maps#extension-less-imports). Part of the reason for Node.js to support ES modules in the first place is because ES modules are the standard, and the point of aligning to standards is to increase compatibility and interoperability between systems. In this case, Node.js supporting ES modules means that more JavaScript code will be capable of running in either Node or in browsers, without requiring some kind of translation process to make the code compatible with one or the other. Of course, it will always remain possible for users to write code that can’t function cross-platform (JavaScript referencing `window`, or importing `fs`, for example) but by aligning as much as we can, we encourage code to be cross-platform by default.
-
-Also, [import maps may bring support for similar functionality to browsers](https://github.com/WICG/import-maps#extension-less-imports). Should that proposal be accepted, Node is interested in supporting extensionless specifiers in a cross-platform compatible way.
+Since explicit file extensions are usually required on the Web, we hope that aligning with that style encourages code to be cross-platform by default.
 
 ## `module.createRequireFromPath`
 
@@ -94,7 +92,7 @@ All of the above is shipping as part of `--experimental-modules` in Node.js 12. 
 
 - **Easier `require`.** Using `module.createRequireFromPath()` involves a lot of boilerplate. We hope to provide a simpler way to use `require` in ES module code.
 
-- **Package path maps.** Along the lines of the browser [import maps proposal](https://github.com/WICG/import-maps), we would like to support paths to files within packages. This would allow things like `import sdk from 'some-service/sdk'` to have `'some-service/sdk'` map to something like `./src/sdk/index.mjs`.
+- **Package path maps.** We would like to support paths to files within packages. This would allow things like `import sdk from 'some-service/sdk'` to have `'some-service/sdk'` map to something like `./src/sdk/public-api.mjs`.
 
 - **Automatic entry point module type detection.** This would provide a way for running `.js` files as either CommonJS or ES modules based on whether `import` or `export` statements appear in the source code of the file.
 
