@@ -54,7 +54,7 @@ Use `--type=module`, or the shorthand `-m`, to run a `.js` file as an ES module.
 
 When running a file, e.g. `node file.js`, Node follows an algorithm to determine if it should load the file as CommonJS or as an ES module. First it looks for an explicit file extension (`.mjs` or `.cjs`); then it looks for a `"type"` field in the nearest parent `package.json`; and finally it looks at the `--type` flag. The `--type` flag can be `--type=module` (or `-m`) or `--type=commonjs`. You can also set this flag in `NODE_OPTIONS` if you’d like to change how Node behaves systemwide.
 
-This flag provides a way to support ES module syntax for input via `--eval`, `--print` or `STDIN`.
+This flag provides a way to support ES module syntax for input via `--eval`, `--print`, or `STDIN`.
 
 ## Explicit filenames
 
@@ -64,7 +64,7 @@ We’re providing the `--es-module-specifier-resolution=node` flag to opt in to 
 
 We’re making this change to align with browsers, where [extensions are required](https://github.com/WICG/import-maps#extension-less-imports). Part of the reason for Node.js to support ES modules in the first place is because ES modules are the standard, and the point of aligning to standards is to increase compatibility and interoperability between systems. In this case, Node.js supporting ES modules means that more JavaScript code will be capable of running in either Node or in browsers, without requiring some kind of translation process to make the code compatible with one or the other. Of course, it will always remain possible for users to write code that can’t function cross-platform (JavaScript referencing `window`, or importing `fs`, for example) but by aligning as much as we can, we encourage code to be cross-platform by default.
 
-Also, [import maps may bring support for automatic extension resolution to browsers](https://github.com/WICG/import-maps#extension-less-imports). Should that proposal be accepted, Node is interested in supporting extensionless specifiers in a cross-platform compatible way.
+Also, [import maps may bring support for similar functionality to browsers](https://github.com/WICG/import-maps#extension-less-imports). Should that proposal be accepted, Node is interested in supporting extensionless specifiers in a cross-platform compatible way.
 
 ## `module.createRequireFromPath`
 
@@ -74,7 +74,9 @@ The “CommonJS globals” `require`, `exports`, `module.exports`, `__filename`,
 
 The previous `--experimental-modules` allowed `import` statements of JSON and native modules. This has been removed; you may use `module.createRequireFromPath()` for these.
 
-There is ongoing work in the standards space to cover JSON and WASM and other future potential module types. Node.js will add support for these in compliant ways when the standard is finalized.
+A separate flag `--experimental-json-modules` enables experimental support for `import` of JSON files. There is [work in progress](https://github.com/whatwg/html/issues/4315) for standardizing this feature with browsers, and Node hopes to align our support with the eventual standard.
+
+There is also ongoing work to cover WASM and other future potential module types. Node.js will add support for these in spec-compliant ways over time.
 
 ## ES module code in packages
 
@@ -82,9 +84,9 @@ _This is a work in progress and subject to change._ You can create a package wit
 
 Currently it is not possible to create a package that is usable both via `require` (as CommonJS) and via `import` (as an ES module). There are efforts underway to address this, and may involve changes to the above (especially concerning `"main"`). Please do not publish any ES module packages intended for use by Node.js until this is resolved.
 
-## Coming soon
+## Works in progress
 
-All of the above is shipping as part of `--experimental-modules` in Node.js 12. On our [road map](https://github.com/nodejs/modules/blob/master/doc/plan-for-new-modules-implementation.md) for improvements before the `--experimental-modules` flag is hopefully dropped in October 2019, when Node.js 12 reaches LTS status:
+All of the above is shipping as part of `--experimental-modules` in Node.js 12. On our [road map](https://github.com/nodejs/modules/blob/master/doc/plan-for-new-modules-implementation.md) for potential improvements before the `--experimental-modules` flag is hopefully dropped in October 2019, when Node.js 12 reaches LTS status:
 
 - **Better loaders.** The current loaders code is a holdover from the previous `--experimental-modules` and doesn’t fully integrate with the new system. There is much work to be done here.
 
