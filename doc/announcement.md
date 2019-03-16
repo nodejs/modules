@@ -24,21 +24,21 @@ Like the previous version, this new `--experimental-modules` adds support to Nod
 
 - `import.meta.url` provides the `file://` URL of the current ES module file.
 
+- Loaders can be written to modify Node’s runtime behavior with respect to ES modules. _This is still very much a work in progress._
+
 - Node.js can be run with an ES module file as a program’s initial entry point.
 
 - Files loaded as ES modules are loaded in strict mode, which in CommonJS requires adding `'use strict';` to the top of every file.
 
-- Loaders can be written to modify Node’s runtime behavior with respect to ES modules. _This is still very much a work in progress._
+- Files ending in `.mjs` are explicitly treated as ES modules in `import` statements and when run via the `node` command.
 
-So if that’s what’s carried over from the previous implementation, what’s new?
+And the new version of `--experimental-modules` adds:
 
 ## `import` and `export` syntax in `.js` files
 
-Yes, we heard [you](https://github.com/dherman/defense-of-dot-js/blob/master/proposal.md). And [you](https://gist.github.com/ceejbot/b49f8789b2ab6b09548ccb72813a1054). And [you](https://twitter.com/maybekatz/status/1062473765865512961). You can now use `import` and `export` syntax in `.js` files.
+We heard some [very](https://github.com/dherman/defense-of-dot-js/blob/master/proposal.md) [strong](https://gist.github.com/ceejbot/b49f8789b2ab6b09548ccb72813a1054) [feedback](https://twitter.com/maybekatz/status/1062473765865512961) that Node needs to provide a way to use `import` and `export` syntax in `.js` files.
 
-The `.mjs` extension is still supported, and still always explicitly means that its file uses the Module parse goal (and therefore is an ES module). We also created a new `.cjs` file extension, to explicitly signify that a file should be treated as CommonJS. (CommonJS is the other module system that Node.js supports, with `require` and `module.exports`.) These two extensions allow individual files to define how they should be loaded, as ES modules or as CommonJS.
-
-We came up with two things: a `"type"` field in `package.json` and a `--type` flag. Their naming was inspired by browsers’ `<script type="module">`.
+The new `--experimental-modules` provides two ways: a `"type"` field in `package.json` and a `--type` flag. Their naming was inspired by browsers’ `<script type="module">`.
 
 ### `package.json` `"type"` field
 
@@ -55,6 +55,10 @@ Use `--type=module`, or the shorthand `-m`, to run a `.js` file as an ES module.
 When running a file, e.g. `node file.js`, Node follows an algorithm to determine if it should load the file as CommonJS or as an ES module. First it looks for an explicit file extension (`.mjs` or `.cjs`); then it looks for a `"type"` field in the nearest parent `package.json`; and finally it looks at the `--type` flag. The `--type` flag can be `--type=module` (or `-m`) or `--type=commonjs`. You can also set this flag in `NODE_OPTIONS` if you’d like to change how Node behaves systemwide.
 
 This flag provides a way to support ES module syntax for input via `--eval`, `--print`, or `STDIN`.
+
+## `.cjs` extension
+
+Just as the `.mjs` file extension explicitly signifies that a file should be treated as an ES module, the new `.cjs` file extension explicitly signifies that a file should be treated as CommonJS. (CommonJS is the other module system that Node.js supports, with `require` and `module.exports`.) The `.cjs` extension provides a way to save CommonJS files in a project where both `.mjs` and `.js` files are treated as ES modules.
 
 ## Explicit filenames
 
