@@ -2,11 +2,11 @@
 
 Back in 2017, Node.js 8.9.0 shipped experimental support for [ECMAScript modules](https://hacks.mozilla.org/2018/03/es-modules-a-cartoon-deep-dive/), known for their `import` and `export` statements. This support was behind the flag `--experimental-modules`.
 
-A lot has happened since then. All major browsers [now support](https://caniuse.com/#feat=es6-module) ECMAScript modules (ES modules) via `<script type="module">`. Various projects have sprung up to make npm packages with ES module sources available for use in browsers via `<script type="module">`. Support for [import maps](https://github.com/WICG/import-maps), which bring to browsers Node-style package names in `import` statements, [is coming to Chrome](https://groups.google.com/a/chromium.org/forum/#!msg/blink-dev/qYeQFqgFOyA/rXJapjMaEAAJ).
+A lot has happened since then. All major browsers [now support](https://caniuse.com/#feat=es6-module) ECMAScript modules (ES modules) via `<script type="module">`. Various projects have sprung up to make npm packages with ES module sources available for use in browsers via `<script type="module">`. Support for [import maps](https://github.com/WICG/import-maps), which bring to browsers Node.js-style package names in `import` statements, [is coming to Chrome](https://groups.google.com/a/chromium.org/forum/#!msg/blink-dev/qYeQFqgFOyA/rXJapjMaEAAJ).
 
-All this progress toward adoption of ES modules has increased the urgency for Node.js to ship its support for ES modules. Now that there are other runtimes and environments where ES modules are in use, it’s more important than ever that Node.js support the JavaScript standard.
+All this progress toward adoption of ES modules has increased the urgency for Node.js to ship its support for ES modules. Now that there are other runtimes and environments where ES modules are in use, it’s more important than ever that Node.js support this JavaScript standard.
 
-Node’s initial ES modules support remained in an experimental state in order to allow the community time to provide feedback on that design. The [Modules Team](https://github.com/nodejs/modules) was formed to act on this feedback and ship first-class support for ES modules in Node.js. This has led to a [new implementation](https://github.com/nodejs/ecmascript-modules) for supporting ES modules, that we are pleased to announce will ship as part of Node.js 12. It will replace the old `--experimental-modules` implementation, behind the same flag. We hope that this new implementation addresses many of the community’s concerns, and can ship as part of Node.js proper, without a flag, before Node.js 12 reaches [LTS status](https://nodejs.org/en/about/releases/) in October 2019.
+Node.js’s initial ES modules support remained in an experimental state in order to allow the community time to provide feedback on that design. The [Modules Team](https://github.com/nodejs/modules) was formed to act on this feedback and ship first-class support for ES modules in Node.js. This has led to a [new implementation](https://github.com/nodejs/ecmascript-modules) for supporting ES modules, that we are pleased to announce will ship as part of Node.js 12. It will replace the old `--experimental-modules` implementation, behind the same flag. We hope that this new implementation addresses many of the community’s concerns, and can ship as part of Node.js proper, without a flag, before Node.js 12 reaches [LTS status](https://nodejs.org/en/about/releases/) in October 2019.
 
 ## What’s in `--experimental-modules`
 
@@ -24,7 +24,7 @@ Like the previous version, this new `--experimental-modules` adds support to Nod
 
 - `import.meta.url` provides the `file://` URL of the current ES module file.
 
-- Loaders can be written to modify Node’s runtime behavior with respect to ES modules. _This is still very much a work in progress._
+- Loaders can be written to modify Node.js’s runtime behavior with respect to ES modules. _This is still very much a work in progress._
 
 - Node.js can be run with an ES module file as a program’s initial entry point.
 
@@ -36,13 +36,13 @@ And the new version of `--experimental-modules` adds:
 
 ## `import` and `export` syntax in `.js` files
 
-We heard some [very](https://github.com/dherman/defense-of-dot-js/blob/master/proposal.md) [strong](https://gist.github.com/ceejbot/b49f8789b2ab6b09548ccb72813a1054) [feedback](https://twitter.com/maybekatz/status/1062473765865512961) that Node needs to provide a way to use `import` and `export` syntax in `.js` files.
+We heard some [very](https://github.com/dherman/defense-of-dot-js/blob/master/proposal.md) [strong](https://gist.github.com/ceejbot/b49f8789b2ab6b09548ccb72813a1054) [feedback](https://twitter.com/maybekatz/status/1062473765865512961) that Node.js needs to provide a way to use `import` and `export` syntax in `.js` files.
 
 The new `--experimental-modules` provides two ways: a `"type"` field in `package.json` and a `--type` flag. Their naming was inspired by browsers’ `<script type="module">`.
 
 ### `package.json` `"type"` field
 
-Add `"type": "module"` to the `package.json` for your project, and Node will treat all `.js` files in your project as ES modules.
+Add `"type": "module"` to the `package.json` for your project, and Node.js will treat all `.js` files in your project as ES modules.
 
 If some of your project’s files use CommonJS and you can’t convert your entire project all at once, you can either rename those files to use the `.cjs` extension or put them in a subfolder containing a `package.json` with `{ "type": "commonjs" }`, under which all `.js` files are treated as CommonJS.
 
@@ -52,7 +52,7 @@ For any file that Node.js tries to load, it will look for a `package.json` in th
 
 Use `--type=module`, or the shorthand `-m`, to run a `.js` file as an ES module.
 
-When running a file, e.g. `node file.js`, Node follows an algorithm to determine if it should load the file as CommonJS or as an ES module. First it looks for an explicit file extension (`.mjs` or `.cjs`); then it looks for a `"type"` field in the nearest parent `package.json`; and finally it looks at the `--type` flag. The `--type` flag can be `--type=module` (or `-m`) or `--type=commonjs`. You can also set this flag in `NODE_OPTIONS` if you’d like to change how Node behaves systemwide.
+When running a file, e.g. `node --experimental-modules --type=module main.js`, Node.js follows an algorithm to determine if it should load the file as CommonJS or as an ES module. First it looks for an explicit file extension (`.mjs` or `.cjs`); then it looks for a `"type"` field in the nearest parent `package.json`; and finally it looks at the `--type` flag. The `--type` flag can be `--type=module` (or `-m`) or `--type=commonjs`. You can also set this flag in `NODE_OPTIONS` if you’d like to change how Node.js behaves systemwide.
 
 This flag provides a way to support ES module syntax for input via `--eval`, `--print`, or `STDIN`.
 
@@ -76,13 +76,13 @@ The “CommonJS globals” `require`, `exports`, `module.exports`, `__filename`,
 
 The previous `--experimental-modules` allowed `import` statements of JSON and native modules. This has been removed; you may use `module.createRequireFromPath()` for these.
 
-A separate flag `--experimental-json-modules` enables experimental support for `import` of JSON files. There is [work in progress](https://github.com/whatwg/html/issues/4315) for standardizing this feature with browsers, and Node hopes to align our support with the eventual standard.
+A separate flag `--experimental-json-modules` enables experimental support for `import` of JSON files. There is [work in progress](https://github.com/whatwg/html/issues/4315) for standardizing this feature with browsers, and Node.js hopes to align our support with the eventual standard.
 
 There is also ongoing work to cover WASM and other future potential module types. Node.js will add support for these in spec-compliant ways over time.
 
 ## ES module code in packages
 
-_This is a work in progress and subject to change._ You can create a package with ES module sources by using the `package.json` `"main"` field to point to an ES module package entry point. Node will know to load it as an ES module if the file ends in `.mjs` or if the `package.json` also contains `"type": "module"`.
+_This is a work in progress and subject to change._ You can create a package with ES module sources by using the `package.json` `"main"` field to point to an ES module package entry point. Node.js will know to load it as an ES module if the file ends in `.mjs` or if the `package.json` also contains `"type": "module"`.
 
 Currently it is not possible to create a package that is usable both via `require` (as CommonJS) and via `import` (as an ES module). There are efforts underway to address this, and may involve changes to the above (especially concerning `"main"`). Please do not publish any ES module packages intended for use by Node.js until this is resolved.
 
@@ -90,7 +90,7 @@ Currently it is not possible to create a package that is usable both via `requir
 
 All of the above is shipping as part of `--experimental-modules` in Node.js 12. On our [road map](https://github.com/nodejs/modules/blob/master/doc/plan-for-new-modules-implementation.md) for potential improvements before the `--experimental-modules` flag is hopefully dropped in October 2019, when Node.js 12 reaches LTS status:
 
-- **Better loaders.** The current loaders code is a holdover from the previous `--experimental-modules` and doesn’t fully integrate with the new system. There is much work to be done here.
+**Loaders features.** Loaders are being further developed to support process isolation, multiple loaders, and multi-Realm support with lower-level hooks. The `--loader` API will still change considerably before this is unflagged.
 
 - **Dual CommonJS/ES module packages.** We want to provide a standard way for package authors to publish a package that can be both `require`d into CommonJS or `import`ed into an ES module.
 
