@@ -1,4 +1,4 @@
-# Announcing a New `--experimental-modules`
+# Announcing a new `--experimental-modules`
 
 Back in 2017, Node.js 8.9.0 shipped experimental support for [ECMAScript modules](https://hacks.mozilla.org/2018/03/es-modules-a-cartoon-deep-dive/), known for their `import` and `export` statements. This support was behind the flag `--experimental-modules`.
 
