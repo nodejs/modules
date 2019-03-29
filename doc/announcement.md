@@ -56,7 +56,7 @@ When running a file, e.g. `node --experimental-modules --entry-type=module main.
 
 Note that setting the type of a file via `--entry-type` does _not_ set the type for any files that that file may `import`; you probably want to add a `package.json` with a `"type"` field to define the type for a folder of files.
 
-This flag provides a way to support ES module syntax for input via `--eval`, `--print`, or `STDIN`; and for loose single `.js` files outside of any package or project.
+This flag provides a way to support ES module syntax for input via `--eval`, `--print`, or `STDIN`; and for loose single `.js` and extensionless files outside of any package or project.
 
 ## `.cjs` extension
 
