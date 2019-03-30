@@ -92,7 +92,7 @@ Currently it is not possible to create a package that can be used via both `requ
 
 All of the above is shipping as part of `--experimental-modules` in Node.js 12. On our [road map](https://github.com/nodejs/modules/blob/master/doc/plan-for-new-modules-implementation.md) for potential improvements before the `--experimental-modules` flag is hopefully dropped in October 2019, when Node.js 12 reaches LTS status:
 
-**Loaders features.** Loaders are being further developed to support process isolation, multiple loaders, and multi-Realm support with lower-level hooks. The `--loader` API will still change considerably before this is unflagged.
+- **Loaders features.** Loaders are being further developed to support process isolation, multiple loaders, and multi-Realm support with lower-level hooks. The `--loader` API will still change considerably before this is unflagged.
 
 - **Dual CommonJS/ES module packages.** We want to provide a standard way for package authors to publish a package that can be both `require`d into CommonJS or `import`ed into an ES module.
 
