@@ -38,7 +38,7 @@ And the new version of `--experimental-modules` adds:
 
 We heard some [very](https://github.com/dherman/defense-of-dot-js/blob/master/proposal.md) [strong](https://gist.github.com/ceejbot/b49f8789b2ab6b09548ccb72813a1054) [feedback](https://twitter.com/maybekatz/status/1062473765865512961) that Node.js needs to provide a way to use `import` and `export` syntax in `.js` files.
 
-The new `--experimental-modules` provides two ways: a `"type"` field in `package.json` and a `--type` flag. Their naming was inspired by browsers’ `<script type="module">`.
+The new `--experimental-modules` provides two ways: a `"type"` field in `package.json` and an `--entry-type` flag. Their naming was inspired by browsers’ `<script type="module">`.
 
 ### `package.json` `"type"` field
 
@@ -48,13 +48,15 @@ If some of your project’s files use CommonJS and you can’t convert your enti
 
 For any file that Node.js tries to load, it will look for a `package.json` in that file’s folder, then that file’s parent folder and so on upwards until it reaches the root of the volume. This is similar to [how Babel searches for `.babelrc` files](https://babeljs.io/docs/en/config-files#file-relative-configuration). This new approach allows Node.js to use `package.json` for package-level metadata and configuration, similar to how it is already used by Babel and other tools.
 
-### `--type` flag
+### `--entry-type` flag
 
-Use `--type=module`, or the shorthand `-m`, to run a `.js` file as an ES module.
+Use `--entry-type=module` to run a `.js` file as an ES module.
 
-When running a file, e.g. `node --experimental-modules --type=module main.js`, Node.js follows an algorithm to determine if it should load the file as CommonJS or as an ES module. First it looks for an explicit file extension (`.mjs` or `.cjs`); then it looks for a `"type"` field in the nearest parent `package.json`; and finally it looks at the `--type` flag. The `--type` flag can be `--type=module` (or `-m`) or `--type=commonjs`. You can also set this flag in `NODE_OPTIONS` if you’d like to change how Node.js behaves systemwide.
+When running a file, e.g. `node --experimental-modules --entry-type=module main.js`, Node.js follows an algorithm to determine if it should load the file as CommonJS or as an ES module. First it looks for an explicit file extension (`.mjs` or `.cjs`); then it looks for a `"type"` field in the nearest parent `package.json`; and finally it looks at the `--entry-type` flag. The `--entry-type` flag can be `--entry-type=module` or `--entry-type=commonjs`.
 
-This flag provides a way to support ES module syntax for input via `--eval`, `--print`, or `STDIN`.
+Note that setting the type of a file via `--entry-type` does _not_ set the type for any files that that file may `import`; you probably want to add a `package.json` with a `"type"` field to define the type for a folder of files.
+
+This flag provides a way to support ES module syntax for input via `--eval`, `--print`, or `STDIN`; and for loose single `.js` and extensionless files outside of any package or project.
 
 ## `.cjs` extension
 
@@ -90,7 +92,7 @@ Currently it is not possible to create a package that can be used via both `requ
 
 All of the above is shipping as part of `--experimental-modules` in Node.js 12. On our [road map](https://github.com/nodejs/modules/blob/master/doc/plan-for-new-modules-implementation.md) for potential improvements before the `--experimental-modules` flag is hopefully dropped in October 2019, when Node.js 12 reaches LTS status:
 
-**Loaders features.** Loaders are being further developed to support process isolation, multiple loaders, and multi-Realm support with lower-level hooks. The `--loader` API will still change considerably before this is unflagged.
+- **Loaders features.** Loaders are being further developed to support process isolation, multiple loaders, and multi-Realm support with lower-level hooks. The `--loader` API will still change considerably before this is unflagged.
 
 - **Dual CommonJS/ES module packages.** We want to provide a standard way for package authors to publish a package that can be both `require`d into CommonJS or `import`ed into an ES module.
 

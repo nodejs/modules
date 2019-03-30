@@ -15,7 +15,10 @@ Work includes:
 
 ## Current Efforts
 
-The team is working on a new implementation to potentially replace the `--experimental-modules` implementation in current shipping Node. The new implementation is in progress in the [ecmascript-modules](https://github.com/nodejs/ecmascript-modules) repo, and a road map of its development is [here](./doc/plan-for-new-modules-implementation.md).
+> ### [Current Plan for `--experimental-modules`](./doc/plan-for-new-modules-implementation.md)
+
+The team is working on a new implementation that replaces the Node.js 8 through 11 `--experimental-modules` implementation starting in Node.js 12. The new implementation is in progress in the [ecmascript-modules](https://github.com/nodejs/ecmascript-modules) repo. A road map of its development is [here](./doc/plan-for-new-modules-implementation.md).
+
 
 ## Features
 
