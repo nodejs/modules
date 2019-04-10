@@ -98,21 +98,58 @@ meeting. In both cases the decision must be seconded by a majority of the Team
 or else the discussion will continue. Simple majority wins. Only Active
 Members participate in a vote.
 
-## Merging PRs into this Repository or nodejs/ecmascript-modules
+## Pull Requests
 
-This section does not apply to [the Node.js core repository](https://github.com/nodejs/node).
-It only applies to [the Modules repository](https://github.com/nodejs/modules) and
-[nodejs/ecmascript-modules](https://github.com/nodejs/ecmascript-modules).
+This section details expectations for working group members involved in any pull
+requests that relate to the group's [scope][modules-wg-purpose] and
+[implementation work][modules-wg-plan].
+
+The following expectations apply to all team members involved in a related pull
+requests in the [Node.js core repository][nodejs-core] or any of the Modules
+working group's repositories, including [this Repository][nodejs-modules] and
+the [nodejs/ecmascript-modules][nodejs-ecmascript-modules] fork.
+
+These expectations are intended to ensure that all concurrent efforts align
+with the overall direction of the group for delivering a cohesive and predictable
+user experience for ECMAScript, CommonJS, and other modules supported by Node.js.
 
 Pull requests not included under the _special exemptions_ section below must
-reach consensus in a meeting in order to be merged into this repository. A pull
-request that is is unable to reach consensus cannot be merged into this
-repository.
+reach consensus in a meeting in order to be merged into the respective repository.
 
-### Special Exemptions to the PR landing process
+A pull request that is is unable to reach consensus cannot be merged into the
+respective repository.
+
+### Merging PRs into nodejs/node
+
+The current triage process will flag any pull requests requiring the attention
+of this working group's members where they will be expected to determine based on
+the _special expections_ sections outlined below if explicit consensus is needed
+in the following meeting, or if it is implied.
+
+### Merging PRs into nodejs/ecmascript-modules
+
+The group may decide that certain features first be implemented in
+[nodejs/ecmascript-modules][nodejs-ecmascript-modules] before deciding if it
+should be upstreamed.
+
+Specific restrictions or allowances may be determined on a case basis,
+adhering in principle to the same expectations outline below.
+
+### Special Exceptions for Pull Requests
+
+**Special Exceptions for nodejs/node**
 
 Special exception is made for pull requests seeking to make any of the following
-changes to this repository:
+changes to the [the Node.js core repository][nodejs-core]:
+
+- Errata fixes.
+- Editorial changes (*non-intent-altering* only).
+- Semver Patch fixes.
+
+**Special Exemptions for nodejs/ecmascript-modules and nodejs/modules**
+
+Special exception is made for pull requests seeking to make any of the following
+changes to [the Modules repository][nodejs-modules] or [the nodejs/ecmascript-modules repository][nodejs-ecmascript-modules]:
 
 - Errata fixes.
 - Editorial changes.
@@ -129,6 +166,7 @@ author. A member may request a specific time period for review of such a pull
 request not to exceed the next meeting date. If a time for review is requested,
 members must wait for that time period to pass or review be completed prior to
 that time.
+
 
 <a id="developers-certificate-of-origin"></a>
 ## Developer's Certificate of Origin 1.1
@@ -156,3 +194,12 @@ By making a contribution to this project, I certify that:
   personal information I submit with it, including my sign-off) is
   maintained indefinitely and may be redistributed consistent with
   this project or the open source license(s) involved.
+
+
+<!-- Links -->
+
+[nodejs-modules]: https://github.com/nodejs/modules
+[nodejs-core]: https://github.com/nodejs/node
+[nodejs-ecmascript-modules]: https://github.com/nodejs/ecmascript-modules
+[modules-wg-purpose]: ./README#purpose
+[modules-wg-plan]: ./doc/plan-for-new-modules-implementation
