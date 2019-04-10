@@ -123,7 +123,7 @@ respective repository.
 
 The current triage process will flag any pull requests requiring the attention
 of this working group's members where they will be expected to determine based on
-the _special expections_ sections outlined below if explicit consensus is needed
+the _special exemptions_ sections outlined below if explicit consensus is needed
 in the following meeting, or if it is implied.
 
 ### Merging PRs into nodejs/ecmascript-modules
@@ -135,11 +135,11 @@ should be upstreamed.
 Specific restrictions or allowances may be determined on a case basis,
 adhering in principle to the same expectations outline below.
 
-### Special Exceptions for Pull Requests
+### Special Exemptions for Pull Requests
 
-**Special Exceptions for nodejs/node**
+**Special Exemptions for nodejs/node**
 
-Special exception is made for pull requests seeking to make any of the following
+Special exemption is made for pull requests seeking to make any of the following
 changes to the [the Node.js core repository][nodejs-core]:
 
 - Errata fixes.
@@ -148,7 +148,7 @@ changes to the [the Node.js core repository][nodejs-core]:
 
 **Special Exemptions for nodejs/ecmascript-modules and nodejs/modules**
 
-Special exception is made for pull requests seeking to make any of the following
+Special exemption is made for pull requests seeking to make any of the following
 changes to [the Modules repository][nodejs-modules] or [the nodejs/ecmascript-modules repository][nodejs-ecmascript-modules]:
 
 - Errata fixes.
