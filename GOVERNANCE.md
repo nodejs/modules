@@ -201,5 +201,5 @@ By making a contribution to this project, I certify that:
 [nodejs-modules]: https://github.com/nodejs/modules
 [nodejs-core]: https://github.com/nodejs/node
 [nodejs-ecmascript-modules]: https://github.com/nodejs/ecmascript-modules
-[modules-wg-purpose]: ./README#purpose
-[modules-wg-plan]: ./doc/plan-for-new-modules-implementation
+[modules-wg-purpose]: ./README.md#purpose
+[modules-wg-plan]: ./doc/plan-for-new-modules-implementation.md
