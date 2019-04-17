@@ -100,13 +100,13 @@ Members participate in a vote.
 
 ## Pull Requests
 
-This section details expectations for working group members involved in any pull
-requests that relate to the group's [scope][modules-wg-purpose] and
-[implementation work][modules-wg-plan].
+This section details expectations for team members involved in any pull
+requests that relate to the group's [scope][modules-team-purpose] and
+[implementation work][modules-team-plan].
 
 The following expectations apply to all team members involved in a related pull
 requests in the [Node.js core repository][nodejs-core] or any of the Modules
-working group's repositories, including [this Repository][nodejs-modules] and
+team's repositories, including [this Repository][nodejs-modules] and
 the [nodejs/ecmascript-modules][nodejs-ecmascript-modules] fork.
 
 These expectations are intended to ensure that all concurrent efforts align
@@ -122,7 +122,7 @@ respective repository.
 ### Merging PRs into nodejs/node
 
 The current triage process will flag any pull requests requiring the attention
-of this working group's members where they will be expected to determine based on
+of this team's members where they will be expected to determine based on
 the _special exemptions_ sections outlined below if explicit consensus is needed
 in the following meeting, or if it is implied.
 
@@ -201,5 +201,5 @@ By making a contribution to this project, I certify that:
 [nodejs-modules]: https://github.com/nodejs/modules
 [nodejs-core]: https://github.com/nodejs/node
 [nodejs-ecmascript-modules]: https://github.com/nodejs/ecmascript-modules
-[modules-wg-purpose]: ./README.md#purpose
-[modules-wg-plan]: ./doc/plan-for-new-modules-implementation.md
+[modules-team-purpose]: ./README.md#purpose
+[modules-team-plan]: ./doc/plan-for-new-modules-implementation.md
