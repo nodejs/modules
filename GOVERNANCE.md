@@ -98,11 +98,20 @@ meeting. In both cases the decision must be seconded by a majority of the Team
 or else the discussion will continue. Simple majority wins. Only Active
 Members participate in a vote.
 
-## Merging PRs into this Repository or nodejs/ecmascript-modules
+## Pull Requests
 
-This section does not apply to [the Node.js core repository](https://github.com/nodejs/node).
-It only applies to [the Modules repository](https://github.com/nodejs/modules) and
-[nodejs/ecmascript-modules](https://github.com/nodejs/ecmascript-modules).
+This section details expectations for team members involved in any pull
+requests that relate to the group's [scope][modules-team-purpose] and
+[implementation work][modules-team-plan].
+
+The following expectations apply to all team members involved in a related pull
+requests in [this Repository][nodejs-modules] and
+the [nodejs/ecmascript-modules][nodejs-ecmascript-modules] fork. This section does
+not apply to [the Node.js core repository](https://github.com/nodejs/node).
+
+These expectations are intended to ensure that all concurrent efforts align
+with the overall direction of the group for delivering a cohesive and predictable
+user experience for ECMAScript, CommonJS, and other modules supported by Node.js.
 
 Pull requests not included under the _special exemptions_ section below must
 reach consensus in a meeting in order to be merged into this repository. A pull
@@ -156,3 +165,12 @@ By making a contribution to this project, I certify that:
   personal information I submit with it, including my sign-off) is
   maintained indefinitely and may be redistributed consistent with
   this project or the open source license(s) involved.
+
+
+<!-- Links -->
+
+[nodejs-modules]: https://github.com/nodejs/modules
+[nodejs-core]: https://github.com/nodejs/node
+[nodejs-ecmascript-modules]: https://github.com/nodejs/ecmascript-modules
+[modules-team-purpose]: ./README.md#purpose
+[modules-team-plan]: ./doc/plan-for-new-modules-implementation.md
