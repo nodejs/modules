@@ -8,11 +8,11 @@ This document outlines the plan for building a new implementation to support ECM
 
 * **Phase 2** fleshes out the implementation with enough functionality that it should be useful to average users as a minimum viable product.
 
-  - At the completion of Phase 2, the old `--experimental-modules` implementation was [replaced](https://github.com/nodejs/node/pull/26745) with this new one (still behind the `--experimental-modules` flag). It will be released as part of Node 12, in April 2019.
+  - At the completion of Phase 2, the old `--experimental-modules` implementation was [replaced](https://github.com/nodejs/node/pull/26745) with this new one (still behind the `--experimental-modules` flag). It was released as part of Node 12 on 2019-04-23.
 
 * **Phase 3** improves user experience and extends the MVP.
 
-  - At the completion of Phase 3, the new implementation’s experimental flag is dropped. The goal is to “release” (drop the `--experimental-modules` flag) by when Node 12 starts LTS in October 2019.
+  - At the completion of Phase 3, the new implementation’s experimental flag will be dropped. The goal is to “release” (drop the `--experimental-modules` flag) by when Node 12 starts LTS in October 2019.
 
 The effort is currently in **[Phase 3](#phase-3-path-to-stability-removing---experimental-modules-flag)**.
 
@@ -80,13 +80,14 @@ Phase 2 fleshes out the implementation with enough functionality that it should 
 * Define semantics for enabling ESM treatment of source code loaded via `--eval`, STDIN, and extensionless files (both with and without shebang lines).
   - Proposal: [“Entry Points Proposal”](https://github.com/geoffreybooth/node-esm-entry-points-proposal) covers non-file forms of input as well as adding `--type` flag for controlling file-based input.
   - Landed in https://github.com/nodejs/ecmascript-modules/pull/32.
-  - Renamed to `--entry-type` as part of upstream PR to Node.js core.
+  - Renamed to `--entry-type` as part of upstream [PR](https://github.com/nodejs/node/pull/26745) to Node.js core.
+  - Renamed to `--intry-type` and limited to `--eval`, `--print` and `STDIN` as part of follow-up [PR](https://github.com/nodejs/node/pull/27184) to Node.js core.
 
 * File extension and directory index searching in ESM, behind its own flag, `--es-module-specifier-resolution`.
   - See https://github.com/nodejs/modules/issues/268.
   - Landed in https://github.com/nodejs/ecmascript-modules/pull/48.
 
-The work through the end of Phase 2 landed in Node.js `master` as part of https://github.com/nodejs/node/pull/26745.
+The work through the end of Phase 2 landed in Node.js `master` as part of https://github.com/nodejs/node/pull/26745 and was released in Node 12.0.0.
 
 ## Phase 3: Path to Stability: Removing `--experimental-modules` Flag
 
@@ -105,20 +106,20 @@ Phase 3 improves user experience and extends the MVP. Phase 3 is malleable based
 * Better mechanism for creating `require` function.
   - See [https://gist.github.com/SMotaal/e73c12bd801d78a3108fa30ecd303676](https://gist.github.com/SMotaal/e73c12bd801d78a3108fa30ecd303676).
   - `import 'nodejs:require'`? `import.meta.require`? Or only `createRequireFromPath`?
+  - How about `createRequireFromPath('.')`?
 
 * Map the paths within modules, providing similar functionality as the browser’s [import maps proposal](https://github.com/WICG/import-maps#packages-via-trailing-slashes).
   - Proposal: [“Package Exports Proposal”](https://github.com/jkrems/proposal-pkg-exports).
 
 * Automatic entry point module type detection.
   - Proposal: [“Entry Points Proposal”](https://github.com/geoffreybooth/node-esm-entry-points-proposal) includes `--type=auto` flag for running `.js` files in either ESM or CommonJS based on which module system is detected.
-  - PR: https://github.com/nodejs/ecmascript-modules/pull/55.
+  - PR: https://github.com/nodejs/ecmascript-modules/pull/69.
 
 ### Needs Consensus
-
-* Determine the name and functionality behind command-line flag(s) for specifying CommonJS or ESM.
-  - See https://github.com/nodejs/modules/issues/300.
-  - Apply to non-file inputs only? Entry point only? Package scope/mirror `package.json` `"type"`?
 
 * Finalize support for (or removal of) `import` of CommonJS files and packages.
   - See https://github.com/nodejs/modules/issues/264.
   - Defaults only or named exports? Behind a flag or not?
+
+* Provide a way to make ESM the default instead of CommonJS.
+  - See https://github.com/nodejs/modules/issues/318.
