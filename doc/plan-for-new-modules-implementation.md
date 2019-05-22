@@ -93,33 +93,50 @@ The work through the end of Phase 2 landed in Node.js `master` as part of https:
 
 Phase 3 improves user experience and extends the MVP. Phase 3 is malleable based on how things proceed while working on this phase. At the end of this phase, the `--experimental-modules` flag is dropped.
 
-### UX Improvements
+### In Progress
 
 * A loaders solution that supports all items in the [features list in our README](https://github.com/nodejs/modules/#features).
   - Should loaders be per package, per application or either?
-
-* Dual CommonJS/ESM packages: Either support packages with both CommonJS and ESM sources that can be used in either environment; or decide to specifically not support dual CommonJS/ESM packages.
-  - Proposal 1: https://github.com/nodejs/modules/issues/273.
-  - PR for Proposal 1: https://github.com/nodejs/ecmascript-modules/pull/41.
-  - Proposal 2: https://github.com/nodejs/modules/issues/299.
-
-* Better mechanism for creating `require` function.
-  - See [https://gist.github.com/SMotaal/e73c12bd801d78a3108fa30ecd303676](https://gist.github.com/SMotaal/e73c12bd801d78a3108fa30ecd303676).
-  - `import 'nodejs:require'`? `import.meta.require`? Or only `createRequireFromPath`?
-  - How about `createRequireFromPath('.')`?
+  - **Status**: In development.
 
 * Map the paths within modules, providing similar functionality as the browser’s [import maps proposal](https://github.com/WICG/import-maps#packages-via-trailing-slashes).
-  - Proposal: [“Package Exports Proposal”](https://github.com/jkrems/proposal-pkg-exports).
+  - Proposal: [Package Exports Proposal](https://github.com/jkrems/proposal-pkg-exports).
+  - **Status**: Proposal under development.
 
-* Automatic entry point module type detection.
-  - Proposal: [“Entry Points Proposal”](https://github.com/geoffreybooth/node-esm-entry-points-proposal) includes `--type=auto` flag for running `.js` files in either ESM or CommonJS based on which module system is detected.
+* Reference package root via the package’s name.
+  - Proposal: [Package `"name"` Resolution Proposal](https://github.com/guybedford/package-name-resolution).
+  - Discussion: https://github.com/nodejs/modules/issues/306.
+  - **Status**: Seeking consensus.
+
+* Limited module type detection.
   - PR: https://github.com/nodejs/ecmascript-modules/pull/69.
-
-### Needs Consensus
-
-* Finalize support for (or removal of) `import` of CommonJS files and packages.
-  - See https://github.com/nodejs/modules/issues/264.
-  - Defaults only or named exports? Behind a flag or not?
+  - Upstream PR: https://github.com/nodejs/node/pull/27808.
+  - **Status**: Upstream PR submitted.
 
 * Provide a way to make ESM the default instead of CommonJS.
   - See https://github.com/nodejs/modules/issues/318.
+  - **Status**: Seeking consensus.
+
+* Dual CommonJS/ESM packages: Either support packages with both CommonJS and ESM sources that can be used in either environment; or decide to specifically not support dual CommonJS/ESM packages.
+  - Status quo is current `--experimental-modules` behavior: `"main"` points to exactly one file, and all file extensions are mandatory (by default), so there is no possibility of an `import` specifier pointing to different files in ESM versus CommonJS. Recommended practice for dual packages is to have `"main"` point to the CommonJS entry point and have users use a deep import, e.g. `/module.mjs`, to access ESM entry point.
+  - Proposal for new `package.json` field for ESM entry point: https://github.com/nodejs/modules/issues/273.
+  - PR for above: https://github.com/nodejs/ecmascript-modules/pull/41.
+  - Status summary: https://github.com/nodejs/modules/issues/273#issuecomment-492408041.
+  - Proposal for `require` of ESM: https://github.com/nodejs/modules/issues/299.
+  - **Status**: Status quo has consensus and will ship absent any other proposals achieving consensus. “New field” proposal lacks consensus. “`require` of ESM” proposal awaiting implementation and consensus.
+
+* Finalize behavior of `import` of CommonJS files and packages.
+  - Overview: https://github.com/nodejs/modules/issues/264.
+  - Status quo is current `--experimental-modules` behavior: `import` only the CommonJS default export, so `import _ from 'cjs-pkg'` but not `import { shuffle } from 'cjs-pkg'`.
+  - If the spec changes to allow it, we want to implement dynamic modules to enable named exports from CommonJS: https://github.com/nodejs/modules/issues/252.
+  - Another option is to specify CommonJS named exports in `package.json`: https://github.com/nodejs/modules/issues/324.
+  - **Status**: Status quo has consensus and will ship absent any other proposals achieving consensus. Dynamic modules is stalled due to upstream concerns from TC39. Named exports in `package.json` seeks consensus.
+
+### Done
+
+* Better mechanism for creating `require` function: `createRequire`.
+  - Landed in https://github.com/nodejs/node/pull/27405 and shipped in 12.2.0.
+
+### Abandoned
+
+Proposals that the group has decided not to pursue will be listed here, along with explanations.
