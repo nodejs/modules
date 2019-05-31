@@ -114,13 +114,15 @@ Phase 3 improves user experience and extends the MVP. Phase 3 is malleable based
   - **Status**: Upstream PR submitted.
 
 * Provide a way to make ESM the default instead of CommonJS.
-  - See https://github.com/nodejs/modules/issues/318.
+  - Discussion: https://github.com/nodejs/modules/issues/318.
+  - Proposal: https://github.com/nodejs/modules/issues/335.
   - **Status**: Seeking consensus.
 
 * Dual CommonJS/ESM packages: Either support packages with both CommonJS and ESM sources that can be used in either environment; or decide to specifically not support dual CommonJS/ESM packages.
   - Status quo is current `--experimental-modules` behavior: `"main"` points to exactly one file, and all file extensions are mandatory (by default), so there is no possibility of an `import` specifier pointing to different files in ESM versus CommonJS. Recommended practice for dual packages is to have `"main"` point to the CommonJS entry point and have users use a deep import, e.g. `/module.mjs`, to access ESM entry point.
+  - PR to document status quo: https://github.com/nodejs/node/pull/27957.
   - Proposal for new `package.json` field for ESM entry point: https://github.com/nodejs/modules/issues/273.
-  - PR for above: https://github.com/nodejs/ecmascript-modules/pull/41.
+  - PR for new `package.json` field: https://github.com/nodejs/ecmascript-modules/pull/41.
   - Status summary: https://github.com/nodejs/modules/issues/273#issuecomment-492408041.
   - Proposal for `require` of ESM: https://github.com/nodejs/modules/issues/299.
   - **Status**: Status quo has consensus and will ship absent any other proposals achieving consensus. “New field” proposal lacks consensus. “`require` of ESM” proposal awaiting implementation and consensus.
