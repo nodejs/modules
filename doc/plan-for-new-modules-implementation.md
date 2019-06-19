@@ -99,24 +99,23 @@ Phase 3 improves user experience and extends the MVP. Phase 3 is malleable based
   - Should loaders be per package, per application or either?
   - **Status**: In development.
 
-* Map the paths within modules, providing similar functionality as the browser’s [import maps proposal](https://github.com/WICG/import-maps#packages-via-trailing-slashes).
+* `"exports"` field: for consumers of a package, map the paths of deep imports to provide encapsulation (an explicit public API); pretty specifiers (no file exensions or paths that include things like `dist/`) and flexibility for future package versions renaming or moving files without affecting the package’s public API. Applies to both ESM and CommonJS.
+  - Proposal: [Package Exports Proposal](https://github.com/jkrems/proposal-pkg-exports).
+  - **Status**: Ready for PR.
+
+* `"imports"` field: provide mappings for `import` specifiers within a package, similar to browsers’ [import maps proposal](https://github.com/WICG/import-maps#packages-via-trailing-slashes).
   - Proposal: [Package Exports Proposal](https://github.com/jkrems/proposal-pkg-exports).
   - **Status**: Proposal under development.
 
 * Reference package root via the package’s name.
   - Proposal: [Package `"name"` Resolution Proposal](https://github.com/guybedford/package-name-resolution).
   - Discussion: https://github.com/nodejs/modules/issues/306.
-  - **Status**: Seeking consensus.
+  - **Status**: Seeking consensus. Possibly implemented as part of `"imports"` (see above).
 
 * Limited module type detection.
   - PR: https://github.com/nodejs/ecmascript-modules/pull/69.
   - Upstream PR: https://github.com/nodejs/node/pull/27808.
   - **Status**: Upstream PR submitted.
-
-* Provide a way to make ESM the default instead of CommonJS.
-  - Discussion: https://github.com/nodejs/modules/issues/318.
-  - Proposal: https://github.com/nodejs/modules/issues/335.
-  - **Status**: Seeking consensus.
 
 * Dual CommonJS/ESM packages: Either support packages with both CommonJS and ESM sources that can be used in either environment; or decide to specifically not support dual CommonJS/ESM packages.
   - Status quo is current `--experimental-modules` behavior: `"main"` points to exactly one file, and all file extensions are mandatory (by default), so there is no possibility of an `import` specifier pointing to different files in ESM versus CommonJS. Recommended practice for dual packages is to have `"main"` point to the CommonJS entry point and have users use a deep import, e.g. `/module.mjs`, to access ESM entry point.
@@ -139,6 +138,9 @@ Phase 3 improves user experience and extends the MVP. Phase 3 is malleable based
 * Better mechanism for creating `require` function: `createRequire`.
   - Landed in https://github.com/nodejs/node/pull/27405 and shipped in 12.2.0.
 
-### Abandoned
+### Tabled
 
-Proposals that the group has decided not to pursue will be listed here, along with explanations.
+* Provide a way to make ESM the default instead of CommonJS.
+  - Discussion: https://github.com/nodejs/modules/issues/318.
+  - Proposal: https://github.com/nodejs/modules/issues/335.
+  - **Status**: Currently one can add `--input-type=module` to `NODE_OPTIONS` to flip the default for `--input-type`; at the moment the group is deciding not to pursue providing an ability to flip the default for the `package.json` `type` field. We instead want to encourage all packages, both ESM and CommonJS, to include an explicit `type` field; leaving it out and relying on a default is something we want to discourage.
