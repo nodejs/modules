@@ -103,14 +103,10 @@ Phase 3 improves user experience and extends the MVP. Phase 3 is malleable based
   - Proposal: [Package Exports Proposal](https://github.com/jkrems/proposal-pkg-exports).
   - **Status**: Ready for PR.
 
-* `"imports"` field: provide mappings for `import` specifiers within a package, similar to browsers’ [import maps proposal](https://github.com/WICG/import-maps#packages-via-trailing-slashes).
-  - Proposal: [Package Exports Proposal](https://github.com/jkrems/proposal-pkg-exports).
-  - **Status**: Proposal under development.
-
 * Reference package root via the package’s name.
   - Proposal: [Package `"name"` Resolution Proposal](https://github.com/guybedford/package-name-resolution).
   - Discussion: https://github.com/nodejs/modules/issues/306.
-  - **Status**: Seeking consensus. Possibly implemented as part of `"imports"` (see above).
+  - **Status**: Seeking consensus.
 
 * Limited module type detection.
   - PR: https://github.com/nodejs/ecmascript-modules/pull/69.
