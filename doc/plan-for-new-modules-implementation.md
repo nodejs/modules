@@ -101,7 +101,8 @@ Phase 3 improves user experience and extends the MVP. Phase 3 is malleable based
 
 * `"exports"` field: for consumers of a package, map the paths of deep imports to provide encapsulation (an explicit public API); pretty specifiers (no file exensions or paths that include things like `dist/`) and flexibility for future package versions renaming or moving files without affecting the package’s public API. Applies to both ESM and CommonJS.
   - Proposal: [Package Exports Proposal](https://github.com/jkrems/proposal-pkg-exports).
-  - **Status**: Ready for PR.
+  - Partial upstream PR: https://github.com/nodejs/node/pull/28568.
+  - **Status**: Upstream PR submitted.
 
 * Reference package root via the package’s name.
   - Proposal: [Package `"name"` Resolution Proposal](https://github.com/guybedford/package-name-resolution).
