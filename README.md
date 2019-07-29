@@ -108,11 +108,13 @@ Based on [these use cases](https://docs.google.com/document/d/10BBsIqdAXB9JR2KUz
 - [@chrisdickinson](https://github.com/chrisdickinson) - Chris Dickinson
 - [@dduleone](https://github.com/dduleone) - Dan DuLeone
 - [@devamaz](https://github.com/devamaz) - Ahmad Abdul-Aziz
+- [@devongovett](https://github.com/devongovett) - Devon Govett
 - [@eugeneo](https://github.com/eugeneo) - Eugene Ostroukhov
 - [@evanplaice](https://github.com/evanplaice) - Evan Plaice
 - [@giltayar](https://github.com/giltayar) - Gil Tayar
 - [@hiroppy](https://github.com/hiroppy) - Yuta Hiroto
 - [@iarna](https://github.com/iarna) - Rebecca Turner
+- [@jamiebuilds](https://github.com/jamiebuilds) - Jamie Kyle
 - [@jasnell](https://github.com/jasnell) - James M Snell
 - [@justinfagnani](https://github.com/justinfagnani) - Justin Fagnani
 - [@linclark](https://github.com/linclark) - Lin Clark
