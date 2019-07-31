@@ -106,6 +106,7 @@ Based on [these use cases](https://docs.google.com/document/d/10BBsIqdAXB9JR2KUz
 - [@bmeurer](https://github.com/bmeurer) - Benedikt Meurer
 - [@ceejbot](https://github.com/ceejbot) - C J Silverio
 - [@chrisdickinson](https://github.com/chrisdickinson) - Chris Dickinson
+- [@darcyclarke](https://github.com/darcyclarke) - Darcy Clarke
 - [@dduleone](https://github.com/dduleone) - Dan DuLeone
 - [@devamaz](https://github.com/devamaz) - Ahmad Abdul-Aziz
 - [@devongovett](https://github.com/devongovett) - Devon Govett
