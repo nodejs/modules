@@ -99,7 +99,7 @@ Based on [these use cases](https://docs.google.com/document/d/10BBsIqdAXB9JR2KUz
 ## Observers
 
 <!-- ncu-team-sync.team(nodejs/modules-observers) -->
-
+- [@A-lxe](https://github.com/A-lxe) - Alex Aubuchon
 - [@benjamingr](https://github.com/benjamingr) - Benjamin Gruenbaum
 - [@benjamn](https://github.com/benjamn) - Ben Newman
 - [@bmacnaughton](https://github.com/bmacnaughton) - Bruce MacNaughton
