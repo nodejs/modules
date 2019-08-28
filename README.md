@@ -104,6 +104,7 @@ Based on [these use cases](https://docs.google.com/document/d/10BBsIqdAXB9JR2KUz
 - [@benjamn](https://github.com/benjamn) - Ben Newman
 - [@bmacnaughton](https://github.com/bmacnaughton) - Bruce MacNaughton
 - [@bmeurer](https://github.com/bmeurer) - Benedikt Meurer
+- [@bizob2828](https://github.com/bizob2828) - Bob Evans
 - [@ceejbot](https://github.com/ceejbot) - C J Silverio
 - [@chrisdickinson](https://github.com/chrisdickinson) - Chris Dickinson
 - [@clarkbw](https://github.com/clarkbw) - Bryan Clark
