@@ -22,7 +22,7 @@ Like the previous version, this new `--experimental-modules` adds support to Nod
 
 - Dynamic `import()` expressions can be used to import ES modules from either CommonJS or ES module files. Note that `import()` returns a promise.
 
-- `import.meta.url` provides the `file://` URL of the current ES module file.
+- `import.meta.url` provides the absolute URL of the current ES module file.
 
 - Loaders can be written to modify Node.js’s runtime behavior with respect to ES modules. _This is still very much a work in progress._
 
@@ -38,7 +38,7 @@ And the new version of `--experimental-modules` adds:
 
 We heard some [very](https://github.com/dherman/defense-of-dot-js/blob/master/proposal.md) [strong](https://gist.github.com/ceejbot/b49f8789b2ab6b09548ccb72813a1054) [feedback](https://twitter.com/maybekatz/status/1062473765865512961) that Node.js needs to provide a way to use `import` and `export` syntax in `.js` files.
 
-The new `--experimental-modules` provides two ways: a `"type"` field in `package.json` and an `--entry-type` flag. Their naming was inspired by browsers’ `<script type="module">`.
+The new `--experimental-modules` provides two ways: for files, a `"type"` field in `package.json`; and for input via `--eval`, `--print` or `STDIN`, an `--input-type` flag.
 
 ### `package.json` `"type"` field
 
@@ -48,15 +48,9 @@ If some of your project’s files use CommonJS and you can’t convert your enti
 
 For any file that Node.js tries to load, it will look for a `package.json` in that file’s folder, then that file’s parent folder and so on upwards until it reaches the root of the volume. This is similar to [how Babel searches for `.babelrc` files](https://babeljs.io/docs/en/config-files#file-relative-configuration). This new approach allows Node.js to use `package.json` for package-level metadata and configuration, similar to how it is already used by Babel and other tools.
 
-### `--entry-type` flag
+### `--input-type` flag
 
-Use `--entry-type=module` to run a `.js` file as an ES module.
-
-When running a file, e.g. `node --experimental-modules --entry-type=module main.js`, Node.js follows an algorithm to determine if it should load the file as CommonJS or as an ES module. First it looks for an explicit file extension (`.mjs` or `.cjs`); then it looks for a `"type"` field in the nearest parent `package.json`; and finally it looks at the `--entry-type` flag. The `--entry-type` flag can be `--entry-type=module` or `--entry-type=commonjs`.
-
-Note that setting the type of a file via `--entry-type` does _not_ set the type for any files that that file may `import`; you probably want to add a `package.json` with a `"type"` field to define the type for a folder of files.
-
-This flag provides a way to support ES module syntax for input via `--eval`, `--print`, or `STDIN`; and for loose single `.js` and extensionless files outside of any package or project.
+Use `--input-type=module` to run string input (via `--eval`, `--print` or `STDIN`) as an ES module. The `--input-type` flag can be `--input-type=module` or `--input-type=commonjs`.
 
 ## `.cjs` extension
 
@@ -66,13 +60,13 @@ Just as the `.mjs` file extension explicitly signifies that a file should be tre
 
 By default in the new `--experimental-modules`, file extensions are mandatory in `import` statements: `import './file.js'`, not `import './file'`. However, the CommonJS-style automatic extension resolution behavior (`'./file'`) can be enabled via a new flag, `--es-module-specifier-resolution=node`. (Its inverse, the default, is `--es-module-specifier-resolution=explicit`.) Package names are still just package names, e.g. `import fs from 'fs'`.
 
-We’re providing the `--es-module-specifier-resolution=node` flag to opt in to cjs-style extension and `index` resolution. We’ve turned it off by default to collect feedback on how users feel about using fully specified paths before we unflag the `--experimental-modules` implementation. You can find our discussion on the topic [here](https://github.com/nodejs/modules/issues/268).
+We’re providing the `--es-module-specifier-resolution=node` flag to opt in to CommonJS-style extension and `index` resolution. We’ve turned it off by default to collect feedback on how users feel about using fully specified paths before we unflag the `--experimental-modules` implementation. You can find our discussion on the topic [here](https://github.com/nodejs/modules/issues/268).
 
-Since explicit file extensions are usually required on the Web, we hope that aligning with that style encourages code to be cross-platform by default.
+One of the primary reasons for this design decision was to encourage the authoring of code that could be shared between browser and Node.js environments by giving our specifier resolution algorithm the same baseline functionality as the browser.
 
 ## `module.createRequireFromPath`
 
-The “CommonJS globals” `require`, `exports`, `module.exports`, `__filename`, `__dirname` are not defined in ES modules. However, [`module.createRequireFromPath()`](https://nodejs.org/api/modules.html#modules_module_createrequirefrompath_filename) can be used to create a CommonJS `require` function to be used in an ES module context.
+The “CommonJS globals” (`require`, `exports`, `module`, `__filename`, `__dirname`) are not defined in ES modules. However, [`module.createRequireFromPath()`](https://nodejs.org/api/modules.html#modules_module_createrequirefrompath_filename) can be used to create a CommonJS `require` function to be used in an ES module context.
 
 ## `import` for JavaScript only
 
@@ -86,7 +80,7 @@ There is also ongoing work to cover WASM and other future potential module types
 
 _This is a work in progress and subject to change._ You can create a package with ES module sources by using the `package.json` `"main"` field to point to an ES module package entry point. Node.js will know to load it as an ES module if the file ends in `.mjs` or if the `package.json` also contains `"type": "module"`.
 
-Currently it is not possible to create a package that can be used via both `require('pkg')` and `import 'pkg'`. There are efforts underway to address this, and may involve changes to the above. In particular, Node.js might choose a field other than `"main"` to define a package’s ES module entry point. While we are aware that the community has embraced the `"module"` field, it is unlikely that Node.js will adopt that field as many of the packages published using `"module"` include ES module JavaScript that may not evaluate in Node.js (because extensions are left off of filenames, or the code includes `require` statements, etc.). Please do not publish any ES module packages intended for use by Node.js until this is resolved.
+Currently, it is not possible to create a package that can be used via both `require('pkg')` and `import 'pkg'`. There are efforts underway to address this, and may involve changes to the above. In particular, Node.js might choose a field other than `"main"` to define a package’s ES module entry point. While we are aware that the community has embraced the `"module"` field, it is unlikely that Node.js will adopt that field as many of the packages published using `"module"` include ES module JavaScript that may not evaluate in Node.js (because extensions are left off of filenames, or the code includes `require` statements, etc.). Please do not publish any ES module packages intended for use by Node.js until this is resolved.
 
 ## Works in progress
 
@@ -100,6 +94,6 @@ All of the above is shipping as part of `--experimental-modules` in Node.js 12. 
 
 - **Package path maps.** We would like to support paths to files within packages. This would allow things like `import sdk from 'some-service/sdk'` to have `'some-service/sdk'` map to something like `./src/sdk/public-api.mjs`.
 
-- **Automatic entry point module type detection.** This would provide a way for running `.js` files as either CommonJS or ES modules based on whether `import` or `export` statements appear in the source code of the file.
+- **Automatic entry point module type detection.** This would provide a way for running JavaScript code as either CommonJS or ES modules based on static analysis.
 
-That’s it! We hope you enjoy this new `--experimental-modules`, and we look forward to hearing your feedback. The modules team’s work is public at https://github.com/nodejs/modules.
+That’s it! We hope you enjoy this new `--experimental-modules`, and we look forward to hearing your feedback. The modules team’s work is public at [https://github.com/nodejs/modules](https://github.com/nodejs/modules).
