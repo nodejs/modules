@@ -96,18 +96,15 @@ Phase 3 improves user experience and extends the MVP. Phase 3 is malleable based
 ### In Progress
 
 * A loaders solution that supports all items in the [features list in our README](https://github.com/nodejs/modules/#features).
-  - Should loaders be per package, per application or either?
+  - Discussion: https://github.com/nodejs/modules/issues/351.
+  - Design: https://docs.google.com/document/d/1J0zDFkwxojLXc36t2gcv1gZ-QnoTXSzK1O6mNAMlync/edit#heading=h.xzp5p5pt8hlq.
   - **Status**: In development.
 
-* `"exports"` field: for consumers of a package, map the paths of deep imports to provide encapsulation (an explicit public API); pretty specifiers (no file exensions or paths that include things like `dist/`) and flexibility for future package versions renaming or moving files without affecting the package’s public API. Applies to both ESM and CommonJS.
-  - Proposal: [Package Exports Proposal](https://github.com/jkrems/proposal-pkg-exports).
-  - Partial upstream PR: https://github.com/nodejs/node/pull/28568.
-  - **Status**: Upstream PR submitted.
-
-* Reference package root via the package’s name.
+* Shortcut to resolve to package root.
   - Proposal: [Package `"name"` Resolution Proposal](https://github.com/guybedford/package-name-resolution).
   - Discussion: https://github.com/nodejs/modules/issues/306.
-  - **Status**: Seeking consensus.
+  - Upstream PR: https://github.com/nodejs/node/pull/29327 (proposes `@` instead of package name).
+  - **Status**: Upstream PR submitted.
 
 * Limited module type detection.
   - PR: https://github.com/nodejs/ecmascript-modules/pull/69.
@@ -116,12 +113,11 @@ Phase 3 improves user experience and extends the MVP. Phase 3 is malleable based
 
 * Dual CommonJS/ESM packages: Either support packages with both CommonJS and ESM sources that can be used in either environment; or decide to specifically not support dual CommonJS/ESM packages.
   - Status quo is current `--experimental-modules` behavior: `"main"` points to exactly one file, and all file extensions are mandatory (by default), so there is no possibility of an `import` specifier pointing to different files in ESM versus CommonJS. Recommended practice for dual packages is to have `"main"` point to the CommonJS entry point and have users use a deep import, e.g. `/module.mjs`, to access ESM entry point.
-  - PR to document status quo: https://github.com/nodejs/node/pull/27957.
   - Proposal for new `package.json` field for ESM entry point: https://github.com/nodejs/modules/issues/273.
-  - PR for new `package.json` field: https://github.com/nodejs/ecmascript-modules/pull/41.
-  - Status summary: https://github.com/nodejs/modules/issues/273#issuecomment-492408041.
+    - PR for above proposal: https://github.com/nodejs/ecmascript-modules/pull/41.
+    - PR is currently blocked because of this issue: https://github.com/nodejs/modules/issues/371.
   - Proposal for `require` of ESM: https://github.com/nodejs/modules/issues/299.
-  - **Status**: Status quo has consensus and will ship absent any other proposals achieving consensus. “New field” proposal lacks consensus. “`require` of ESM” proposal awaiting implementation and consensus.
+  - **Status**: Status quo has consensus and will ship absent any other proposals achieving consensus. “New field” proposal is [blocked](https://github.com/nodejs/modules/issues/371). “`require` of ESM” proposal awaiting implementation and consensus.
 
 * Finalize behavior of `import` of CommonJS files and packages.
   - Overview: https://github.com/nodejs/modules/issues/264.
@@ -134,6 +130,10 @@ Phase 3 improves user experience and extends the MVP. Phase 3 is malleable based
 
 * Better mechanism for creating `require` function: `createRequire`.
   - Landed in https://github.com/nodejs/node/pull/27405 and shipped in 12.2.0.
+
+* `"exports"` field: for consumers of a package, map the paths of deep imports to provide encapsulation (an explicit public API); pretty specifiers (no file exensions or paths that include things like `dist/`) and flexibility for future package versions renaming or moving files without affecting the package’s public API. Applies to both ESM and CommonJS.
+  - Proposal: [Package Exports Proposal](https://github.com/jkrems/proposal-pkg-exports).
+  - Landed in https://github.com/nodejs/node/pull/28568 and shipped in 12.7.0 behind `--experimental-exports`. Further improvements are being made as additional PRs against core.
 
 ### Tabled
 
