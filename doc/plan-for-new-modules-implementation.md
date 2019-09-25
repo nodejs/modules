@@ -13,6 +13,8 @@ This document outlines the plan for building a new implementation to support ECM
 * **Phase 3** improves user experience and extends the MVP.
 
   - At the completion of Phase 3, the new implementation’s experimental flag will be dropped. The goal is to “release” (drop the `--experimental-modules` flag) by when Node 12 starts LTS in October 2019.
+  
+* **Phase 4** are items that were under development in earlier phases but weren’t finished when the new implementation’s experimental flag was dropped; these items may continue development after unflagging and potentially ship in later versions of Node.js.
 
 The effort is currently in **[Phase 3](#phase-3-path-to-stability-removing---experimental-modules-flag)**.
 
@@ -93,12 +95,24 @@ The work through the end of Phase 2 landed in Node.js `master` as part of https:
 
 Phase 3 improves user experience and extends the MVP. Phase 3 is malleable based on how things proceed while working on this phase. At the end of this phase, the `--experimental-modules` flag is dropped.
 
-### In Progress
+* Better mechanism for creating `require` function: `createRequire`.
+  - Landed in https://github.com/nodejs/node/pull/27405 and shipped in 12.2.0.
+
+* `"exports"` field: for consumers of a package, map the paths of deep imports to provide encapsulation (an explicit public API); pretty specifiers (no file exensions or paths that include things like `dist/`) and flexibility for future package versions renaming or moving files without affecting the package’s public API. Applies to both ESM and CommonJS.
+  - Proposal: [Package Exports Proposal](https://github.com/jkrems/proposal-pkg-exports).
+  - Landed in https://github.com/nodejs/node/pull/28568 and shipped in 12.7.0 behind `--experimental-exports`. Further improvements are being made as additional PRs against core.
+
+* Provide a way to make ESM the default instead of CommonJS.
+  - Discussion: https://github.com/nodejs/modules/issues/318.
+  - Proposal: https://github.com/nodejs/modules/issues/335.
+  - **Tabled**. Currently one can add `--input-type=module` to `NODE_OPTIONS` to flip the default for `--input-type`; at the moment the group is deciding not to pursue providing an ability to flip the default for the `package.json` `type` field. We instead want to encourage all packages, both ESM and CommonJS, to include an explicit `type` field; leaving it out and relying on a default is something we want to discourage.
+
+## Phase 4: Further Improvements After Unflagging
 
 * A loaders solution that supports all items in the [features list in our README](https://github.com/nodejs/modules/#features).
   - Discussion: https://github.com/nodejs/modules/issues/351.
   - Design: https://docs.google.com/document/d/1J0zDFkwxojLXc36t2gcv1gZ-QnoTXSzK1O6mNAMlync/edit#heading=h.xzp5p5pt8hlq.
-  - **Status**: In development.
+  - **Status**: In development behind a flag.
 
 * Shortcut to resolve to package root.
   - Proposal: [Package `"name"` Resolution Proposal](https://github.com/guybedford/package-name-resolution).
@@ -112,32 +126,16 @@ Phase 3 improves user experience and extends the MVP. Phase 3 is malleable based
   - **Status**: Upstream PR submitted.
 
 * Dual CommonJS/ESM packages: Either support packages with both CommonJS and ESM sources that can be used in either environment; or decide to specifically not support dual CommonJS/ESM packages.
-  - Status quo is current `--experimental-modules` behavior: `"main"` points to exactly one file, and all file extensions are mandatory (by default), so there is no possibility of an `import` specifier pointing to different files in ESM versus CommonJS. Recommended practice for dual packages is to have `"main"` point to the CommonJS entry point and have users use a deep import, e.g. `/module.mjs`, to access ESM entry point.
+  - Status quo (at time of unflagging): `"main"` points to exactly one file, and all file extensions are mandatory (by default), so there is no possibility of an `import` specifier pointing to different files in ESM versus CommonJS. Recommended practice for dual packages is to have `"main"` point to the CommonJS entry point and have users use a deep import, e.g. `/module.mjs`, to access ESM entry point.
   - Proposal for new `package.json` field for ESM entry point: https://github.com/nodejs/modules/issues/273.
     - PR for above proposal: https://github.com/nodejs/ecmascript-modules/pull/41.
     - PR is currently blocked because of this issue: https://github.com/nodejs/modules/issues/371.
   - Proposal for `require` of ESM: https://github.com/nodejs/modules/issues/299.
-  - **Status**: Status quo has consensus and will ship absent any other proposals achieving consensus. “New field” proposal is [blocked](https://github.com/nodejs/modules/issues/371). “`require` of ESM” proposal awaiting implementation and consensus.
+  - **Status**: “New field” proposal is [blocked](https://github.com/nodejs/modules/issues/371). “`require` of ESM” proposal may ship after unflagging if it is implemented and finds approval upstream.
 
 * Finalize behavior of `import` of CommonJS files and packages.
   - Overview: https://github.com/nodejs/modules/issues/264.
-  - Status quo is current `--experimental-modules` behavior: `import` only the CommonJS default export, so `import _ from 'cjs-pkg'` but not `import { shuffle } from 'cjs-pkg'`.
+  - Status quo (at time of unflagging): `import` only the CommonJS default export, so `import _ from 'cjs-pkg'` but not `import { shuffle } from 'cjs-pkg'`.
   - If the spec changes to allow it, we want to implement dynamic modules to enable named exports from CommonJS: https://github.com/nodejs/modules/issues/252.
   - Another option is to specify CommonJS named exports in `package.json`: https://github.com/nodejs/modules/issues/324.
-  - **Status**: Status quo has consensus and will ship absent any other proposals achieving consensus. Dynamic modules is stalled due to upstream concerns from TC39. Named exports in `package.json` seeks consensus.
-
-### Done
-
-* Better mechanism for creating `require` function: `createRequire`.
-  - Landed in https://github.com/nodejs/node/pull/27405 and shipped in 12.2.0.
-
-* `"exports"` field: for consumers of a package, map the paths of deep imports to provide encapsulation (an explicit public API); pretty specifiers (no file exensions or paths that include things like `dist/`) and flexibility for future package versions renaming or moving files without affecting the package’s public API. Applies to both ESM and CommonJS.
-  - Proposal: [Package Exports Proposal](https://github.com/jkrems/proposal-pkg-exports).
-  - Landed in https://github.com/nodejs/node/pull/28568 and shipped in 12.7.0 behind `--experimental-exports`. Further improvements are being made as additional PRs against core.
-
-### Tabled
-
-* Provide a way to make ESM the default instead of CommonJS.
-  - Discussion: https://github.com/nodejs/modules/issues/318.
-  - Proposal: https://github.com/nodejs/modules/issues/335.
-  - **Status**: Currently one can add `--input-type=module` to `NODE_OPTIONS` to flip the default for `--input-type`; at the moment the group is deciding not to pursue providing an ability to flip the default for the `package.json` `type` field. We instead want to encourage all packages, both ESM and CommonJS, to include an explicit `type` field; leaving it out and relying on a default is something we want to discourage.
+  - **Status**: Dynamic modules is stalled due to upstream concerns from TC39. Named exports in `package.json` seeks consensus but could potentially ship after unflagging.
