@@ -106,6 +106,10 @@ Phase 3 improves user experience and extends the MVP. Phase 3 is malleable based
   - Discussion: https://github.com/nodejs/modules/issues/318.
   - Proposal: https://github.com/nodejs/modules/issues/335.
   - **Tabled**. Currently one can add `--input-type=module` to `NODE_OPTIONS` to flip the default for `--input-type`; at the moment the group is deciding not to pursue providing an ability to flip the default for the `package.json` `type` field. We instead want to encourage all packages, both ESM and CommonJS, to include an explicit `type` field; leaving it out and relying on a default is something we want to discourage.
+  
+* Define behavior for builtin globals between CommonJS and ESM. Does modifying a builtin in one module system carry over into the other? If it does, we may have major performance concerns.
+  - Issue: https://github.com/nodejs/node/pull/29426.
+  - Current plan is to remove proxy support for changes in one system to affect the other.
 
 ## Phase 4: Further Improvements After Unflagging
 
