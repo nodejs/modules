@@ -79,7 +79,6 @@ Based on [these use cases](https://docs.google.com/document/d/10BBsIqdAXB9JR2KUz
 - [@bmeck](https://github.com/bmeck) - Bradley Meck
 - [@DanielRosenwasser](https://github.com/DanielRosenwasser) - Daniel Rosenwasser
 - [@devsnek](https://github.com/devsnek) - Gus Caplan
-- [@Fishrock123](https://github.com/Fishrock123) - Jeremiah Senkpiel
 - [@GeoffreyBooth](https://github.com/GeoffreyBooth) - Geoffrey Booth
 - [@guybedford](https://github.com/guybedford) - Guy Bedford
 - [@inidaname](https://github.com/inidaname) - Hassan Sani
@@ -114,6 +113,7 @@ Based on [these use cases](https://docs.google.com/document/d/10BBsIqdAXB9JR2KUz
 - [@devongovett](https://github.com/devongovett) - Devon Govett
 - [@eugeneo](https://github.com/eugeneo) - Eugene Ostroukhov
 - [@evanplaice](https://github.com/evanplaice) - Evan Plaice
+- [@Fishrock123](https://github.com/Fishrock123) - Jeremiah Senkpiel
 - [@giltayar](https://github.com/giltayar) - Gil Tayar
 - [@hiroppy](https://github.com/hiroppy) - Yuta Hiroto
 - [@iarna](https://github.com/iarna) - Rebecca Turner
