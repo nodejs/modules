@@ -130,7 +130,7 @@ Phase 3 improves user experience and extends the MVP. Phase 3 is malleable based
   - **Status**: Upstream PR submitted.
 
 * Dual CommonJS/ESM packages: Either support packages with both CommonJS and ESM sources that can be used in either environment; or decide to specifically not support dual CommonJS/ESM packages.
-  - Status quo (at time of unflagging): `"main"` points to exactly one file, and all file extensions are mandatory (by default), so there is no possibility of an `import` specifier pointing to different files in ESM versus CommonJS. Recommended practice for dual packages is to have `"main"` point to the CommonJS entry point and have users use a deep import, e.g. `/module.mjs`, to access ESM entry point.
+  - Status quo (at time of possible unflagging): `"main"` points to exactly one file, and all file extensions are mandatory (by default), so there is no possibility of an `import` specifier pointing to different files in ESM versus CommonJS. Recommended practice for dual packages is to have `"main"` point to the CommonJS entry point and have users use a deep import, e.g. `/module.mjs`, to access ESM entry point.
   - Proposal for new `package.json` field for ESM entry point: https://github.com/nodejs/modules/issues/273.
     - PR for above proposal: https://github.com/nodejs/ecmascript-modules/pull/41.
     - PR is currently blocked because of this issue: https://github.com/nodejs/modules/issues/371.
@@ -139,7 +139,7 @@ Phase 3 improves user experience and extends the MVP. Phase 3 is malleable based
 
 * Finalize behavior of `import` of CommonJS files and packages.
   - Overview: https://github.com/nodejs/modules/issues/264.
-  - Status quo (at time of unflagging): `import` only the CommonJS default export, so `import _ from 'cjs-pkg'` but not `import { shuffle } from 'cjs-pkg'`.
+  - Status quo (at time of possible unflagging): `import` only the CommonJS default export, so `import _ from 'cjs-pkg'` but not `import { shuffle } from 'cjs-pkg'`.
   - If the spec changes to allow it, we want to implement dynamic modules to enable named exports from CommonJS: https://github.com/nodejs/modules/issues/252.
   - Another option is to specify CommonJS named exports in `package.json`: https://github.com/nodejs/modules/issues/324.
   - **Status**: Dynamic modules is stalled due to upstream concerns from TC39. Named exports in `package.json` seeks consensus but could potentially ship after unflagging.
