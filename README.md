@@ -76,7 +76,7 @@ Based on [these use cases](https://docs.google.com/document/d/10BBsIqdAXB9JR2KUz
 
 <!-- ncu-team-sync.team(nodejs/modules-active-members) -->
 
-- [@bmeck](https://github.com/bmeck) - Bradley Meck
+- [@bmeck](https://github.com/bmeck) - Bradley Farias
 - [@DanielRosenwasser](https://github.com/DanielRosenwasser) - Daniel Rosenwasser
 - [@devsnek](https://github.com/devsnek) - Gus Caplan
 - [@GeoffreyBooth](https://github.com/GeoffreyBooth) - Geoffrey Booth
@@ -85,19 +85,18 @@ Based on [these use cases](https://docs.google.com/document/d/10BBsIqdAXB9JR2KUz
 - [@jdalton](https://github.com/jdalton) - John-David Dalton
 - [@jkrems](https://github.com/jkrems) - Jan Olaf Krems
 - [@ljharb](https://github.com/ljharb) - Jordan Harband
-- [@mduleone](https://github.com/mduleone) - Matt DuLeone
 - [@MylesBorins](https://github.com/MylesBorins) - Myles Borins
 - [@robpalme](https://github.com/robpalme) - Rob Palmer
 - [@SMotaal](https://github.com/SMotaal) - Saleh Abdel Motaal
 - [@targos](https://github.com/targos) - Michaël Zasso
 - [@weswigham](https://github.com/weswigham) - Wesley Wigham
-- [@zenparsing](https://github.com/zenparsing) - Kevin Smith
 
 <!-- ncu-team-sync end -->
 
 ## Observers
 
 <!-- ncu-team-sync.team(nodejs/modules-observers) -->
+
 - [@A-lxe](https://github.com/A-lxe) - Alex Aubuchon
 - [@benjamingr](https://github.com/benjamingr) - Benjamin Gruenbaum
 - [@benjamn](https://github.com/benjamn) - Ben Newman
@@ -109,7 +108,7 @@ Based on [these use cases](https://docs.google.com/document/d/10BBsIqdAXB9JR2KUz
 - [@clarkbw](https://github.com/clarkbw) - Bryan Clark
 - [@darcyclarke](https://github.com/darcyclarke) - Darcy Clarke
 - [@dduleone](https://github.com/dduleone) - Dan DuLeone
-- [@devamaz](https://github.com/devamaz) - Ahmad Abdul-Aziz
+- [@devamaz](https://github.com/devamaz) - Ahmad Abdul-Aziz 
 - [@devongovett](https://github.com/devongovett) - Devon Govett
 - [@eugeneo](https://github.com/eugeneo) - Eugene Ostroukhov
 - [@evanplaice](https://github.com/evanplaice) - Evan Plaice
@@ -123,8 +122,9 @@ Based on [these use cases](https://docs.google.com/document/d/10BBsIqdAXB9JR2KUz
 - [@linclark](https://github.com/linclark) - Lin Clark
 - [@manekinekko](https://github.com/manekinekko) - Wassim Chegham
 - [@mcollina](https://github.com/mcollina) - Matteo Collina
+- [@mduleone](https://github.com/mduleone) - Matt DuLeone
 - [@mhdawson](https://github.com/mhdawson) - Michael Dawson
-- [@refack](https://github.com/refack) - Refael Ackermann
+- [@refack](https://github.com/refack) - Refael Ackermann (רפאל פלחי)
 - [@robwormald](https://github.com/robwormald) - Rob Wormald
 - [@rubys](https://github.com/rubys) - Sam Ruby
 - [@ryzokuken](https://github.com/ryzokuken) - Ujjwal Sharma
@@ -140,5 +140,6 @@ Based on [these use cases](https://docs.google.com/document/d/10BBsIqdAXB9JR2KUz
 - [@xtuc](https://github.com/xtuc) - Sven Sauleau
 - [@yosuke-furukawa](https://github.com/yosuke-furukawa) - Yosuke Furukawa
 - [@zackschuster](https://github.com/zackschuster) - Zack Schuster
+- [@zenparsing](https://github.com/zenparsing) - Kevin Smith
 
 <!-- ncu-team-sync end -->
