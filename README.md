@@ -108,7 +108,8 @@ Based on [these use cases](https://docs.google.com/document/d/10BBsIqdAXB9JR2KUz
 - [@clarkbw](https://github.com/clarkbw) - Bryan Clark
 - [@darcyclarke](https://github.com/darcyclarke) - Darcy Clarke
 - [@dduleone](https://github.com/dduleone) - Dan DuLeone
-- [@devamaz](https://github.com/devamaz) - Ahmad Abdul-Aziz 
+- [@DerekNonGeneric](https://github.com/DerekNonGeneric) - Derek Lewis
+- [@devamaz](https://github.com/devamaz) - Ahmad Abdul-Aziz
 - [@devongovett](https://github.com/devongovett) - Devon Govett
 - [@eugeneo](https://github.com/eugeneo) - Eugene Ostroukhov
 - [@evanplaice](https://github.com/evanplaice) - Evan Plaice
