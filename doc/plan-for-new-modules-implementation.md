@@ -113,6 +113,12 @@ Phase 3 improves user experience and extends the MVP. Phase 3 is malleable based
   - Discussion: https://github.com/nodejs/modules/issues/306.
   - Landed in https://github.com/nodejs/node/pull/29327 behind the flag `--experimental-resolve-self`.
 
+* Finalize behavior of `import` of CommonJS files and packages.
+  - Overview: https://github.com/nodejs/modules/issues/264.
+  - At time of unflagging: `import` only the CommonJS default export, so `import _ from 'cjs-pkg'` but not `import { shuffle } from 'cjs-pkg'`.
+  - [Conditional exports](https://github.com/nodejs/node/pull/29978) allows creating an ESM wrapper to provide named exports of an otherwise all-CommonJS package; see [heading “Approach #1: Use an ES Module Wrapper.”](https://github.com/nodejs/node/pull/30051/files?short_path=8e67f40#diff-8e67f407bc32a0569e25d7ecaff6e494)
+  - **Status**: No further improvements expected.
+
 * Dual CommonJS/ESM packages: Support packages with both CommonJS and ESM sources that can be used in either environment.
   - At time of unflagging: `"main"` points to exactly one file, and full filenames are required (by default), so there is no possibility of an `import` specifier pointing to different files in ESM versus CommonJS; unless `--experimental-require-target` is used (see next bullet). Without that flag, dual packages must provide secondary entry point via a path, e.g. `'pkg/module'` or `'pkg/commonjs'`.
   - With `--experimental-require-target`, paths within the `package.json` `"exports"` block can have separate entry points per environment.
@@ -120,12 +126,6 @@ Phase 3 improves user experience and extends the MVP. Phase 3 is malleable based
   - PR for additional docs for best practices on writing dual packages with conditional exports: https://github.com/nodejs/node/pull/30051. [Formatted version](https://github.com/nodejs/node/pull/30051/files?short_path=8e67f40#diff-8e67f407bc32a0569e25d7ecaff6e494); start at the “Dual CommonJS/ES Module Packages” heading.
   - Some members of the group expressed hesitation about conditional exports and want to explore other potential solutions for dual packages. If no alternative proposal reaches consensus before January 2020, the `--experimental-require-target` flag will be dropped and conditional exports will ship.
   - **Status**: Per 2019-10-30 meeting, conditional exports and docs approved to merge into core behind `--experimental-require-target` flag.
-
-* Finalize behavior of `import` of CommonJS files and packages.
-  - Overview: https://github.com/nodejs/modules/issues/264.
-  - At time of unflagging: `import` only the CommonJS default export, so `import _ from 'cjs-pkg'` but not `import { shuffle } from 'cjs-pkg'`.
-  - [Conditional exports](https://github.com/nodejs/node/pull/29978) allows creating an ESM wrapper to provide named exports of an otherwise all-CommonJS package; see [heading “Approach #1: Use an ES Module Wrapper.”](https://github.com/nodejs/node/pull/30051/files?short_path=8e67f40#diff-8e67f407bc32a0569e25d7ecaff6e494)
-  - **Status**: No further improvements expected.
 
 ## Phase 4: Further Improvements After Unflagging
 
