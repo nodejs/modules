@@ -81,8 +81,6 @@ Based on [these use cases](https://docs.google.com/document/d/10BBsIqdAXB9JR2KUz
 - [@devsnek](https://github.com/devsnek) - Gus Caplan
 - [@GeoffreyBooth](https://github.com/GeoffreyBooth) - Geoffrey Booth
 - [@guybedford](https://github.com/guybedford) - Guy Bedford
-- [@inidaname](https://github.com/inidaname) - Hassan Sani
-- [@jdalton](https://github.com/jdalton) - John-David Dalton
 - [@jkrems](https://github.com/jkrems) - Jan Olaf Krems
 - [@ljharb](https://github.com/ljharb) - Jordan Harband
 - [@MylesBorins](https://github.com/MylesBorins) - Myles Borins
@@ -116,8 +114,10 @@ Based on [these use cases](https://docs.google.com/document/d/10BBsIqdAXB9JR2KUz
 - [@giltayar](https://github.com/giltayar) - Gil Tayar
 - [@hiroppy](https://github.com/hiroppy) - Yuta Hiroto
 - [@iarna](https://github.com/iarna) - Rebecca Turner
+- [@inidaname](https://github.com/inidaname) - Hassan Sani
 - [@jamiebuilds](https://github.com/jamiebuilds) - Jamie Kyle
 - [@jasnell](https://github.com/jasnell) - James M Snell
+- [@jdalton](https://github.com/jdalton) - John-David Dalton
 - [@justinfagnani](https://github.com/justinfagnani) - Justin Fagnani
 - [@linclark](https://github.com/linclark) - Lin Clark
 - [@manekinekko](https://github.com/manekinekko) - Wassim Chegham
