@@ -12,11 +12,11 @@ This document outlines the plan for building a new implementation to support ECM
 
 * **Phase 3** improves user experience and extends the MVP.
 
-  - At the completion of Phase 3, the new implementation’s experimental flag will be dropped. Per the modules group meeting on 2019-10-30, the implementation will be “released” (the `--experimental-modules` flag dropped) in early November 2019.
+  - At the completion of Phase 3, the new implementation’s experimental flag will be dropped. Per the modules group meeting on 2019-10-30, the implementation will be “released” (the `--experimental-modules` flag dropped) in November 2019.
 
 * **Phase 4** are items that were under development in earlier phases but weren’t finished when the new implementation’s experimental flag was dropped; these items may continue development after unflagging and potentially ship in later versions of Node.js.
 
-The effort is currently in **[Phase 3](#phase-3-path-to-stability-removing---experimental-modules-flag)**, with unflagging of `--experimental-modules` expected in early November 2019.
+The effort is currently in **[Phase 3](#phase-3-path-to-stability-removing---experimental-modules-flag)**, with unflagging of `--experimental-modules` expected in November 2019.
 
 At every phase, the following standards must be maintained:
 
@@ -105,19 +105,21 @@ Phase 3 improves user experience and extends the MVP. Phase 3 is malleable based
 
 * Define behavior for builtin globals between CommonJS and ESM. Does modifying a builtin in one module system carry over into the other? If it does, we may have major performance concerns.
   - Issue raised in: https://github.com/nodejs/node/pull/29426.
+  - Solution was to not sync bindings automatically, but provide an API to manually sync them when desired: `module.syncBuiltinESMExports()`.
   - Landed in https://github.com/nodejs/node/pull/29737 and shipped in 12.12.0.
 
 * Shortcut to resolve to package root.
   - Proposal: [Package `"name"` Resolution Proposal](https://github.com/guybedford/package-name-resolution).
   - Discussion: https://github.com/nodejs/modules/issues/306.
-  - Landed in https://github.com/nodejs/node/pull/29327.
+  - Landed in https://github.com/nodejs/node/pull/29327 behind the flag `--experimental-resolve-self`.
 
 * Dual CommonJS/ESM packages: Support packages with both CommonJS and ESM sources that can be used in either environment.
-  - At time of unflagging: `"main"` points to exactly one file, and all file extensions are mandatory (by default), so there is no possibility of an `import` specifier pointing to different files in ESM versus CommonJS; unless `--experimental-conditional-exports` is used. Without that flag, dual packages must provide secondary entry point via a path, e.g. `'pkg/module'` or `'pkg/commonjs'`. With `--experimental-conditional-exports`, paths within the `package.json` `"exports"` block can have separate entry points per environment.
+  - At time of unflagging: `"main"` points to exactly one file, and full filenames are required (by default), so there is no possibility of an `import` specifier pointing to different files in ESM versus CommonJS; unless `--experimental-require-target` is used (see next bullet). Without that flag, dual packages must provide secondary entry point via a path, e.g. `'pkg/module'` or `'pkg/commonjs'`.
+  - With `--experimental-require-target`, paths within the `package.json` `"exports"` block can have separate entry points per environment.
   - PR for conditional exports: https://github.com/nodejs/node/pull/29978.
   - PR for additional docs for best practices on writing dual packages with conditional exports: https://github.com/nodejs/node/pull/30051. [Formatted version](https://github.com/nodejs/node/pull/30051/files?short_path=8e67f40#diff-8e67f407bc32a0569e25d7ecaff6e494); start at the “Dual CommonJS/ES Module Packages” heading.
-  - Some members of the group expressed hesitation about conditional exports and want to explore other potential solutions for dual packages. If no alternative proposal reaches consensus before January 2020, the `--experimental-conditional-exports` flag will be dropped and conditional exports will ship.
-  - **Status**: Per 2019-10-30 meeting, conditional exports and docs approved to merge into core behind `--experimental-conditional-exports` flag.
+  - Some members of the group expressed hesitation about conditional exports and want to explore other potential solutions for dual packages. If no alternative proposal reaches consensus before January 2020, the `--experimental-require-target` flag will be dropped and conditional exports will ship.
+  - **Status**: Per 2019-10-30 meeting, conditional exports and docs approved to merge into core behind `--experimental-require-target` flag.
 
 * Finalize behavior of `import` of CommonJS files and packages.
   - Overview: https://github.com/nodejs/modules/issues/264.
@@ -129,7 +131,7 @@ Phase 3 improves user experience and extends the MVP. Phase 3 is malleable based
 
 * Dual CommonJS/ESM packages: See previous section.
   - One alternative proposal is `require` of ESM: https://github.com/nodejs/modules/issues/299.
-  - **Status**: `--experimental-conditional-exports` will unflag by January 2020 unless alternative approach reaches consensus.
+  - **Status**: `--experimental-require-target` will unflag by the end of January 2020 unless consensus is reached on an alternative approach. The flag may be dropped sooner if a consensus is reached, either for an alternative solution or for `--experimental-require-target`.
 
 * A loaders solution that supports all items in the [features list in our README](https://github.com/nodejs/modules/#features).
   - Discussion: https://github.com/nodejs/modules/issues/351.
