@@ -120,7 +120,7 @@ Phase 3 improves user experience and extends the MVP. Phase 3 is malleable based
   - **Status**: No further improvements expected.
 
 * Dual CommonJS/ESM packages: Support packages with both CommonJS and ESM sources that can be used in either environment.
-  - At time of unflagging: `"main"` points to exactly one file, and full filenames are required (by default), so there is no possibility of an `import` specifier pointing to different files in ESM versus CommonJS; unless `--experimental-dual-resolution` is used (see next bullet). Without that flag, dual packages must provide secondary entry point via a path, e.g. `'pkg/module'` or `'pkg/commonjs'`.
+  - At time of unflagging: `"main"` (or `"exports": { ".": "file.js" }` overriding `"main"`) points to exactly one file, and full filenames are required (by default), so there is no possibility of an `import` specifier pointing to different files in ESM versus CommonJS; unless `--experimental-dual-resolution` is used (see next bullet). Without that flag, dual packages must provide secondary entry point via a path, e.g. `'pkg/module'` or `'pkg/commonjs'`.
   - With `--experimental-dual-resolution`, paths within the `package.json` `"exports"` block can have separate entry points per environment.
   - PR for conditional exports: https://github.com/nodejs/node/pull/29978.
   - PR for additional docs for best practices on writing dual packages with conditional exports: https://github.com/nodejs/node/pull/30051. [Formatted version](https://github.com/nodejs/node/pull/30051/files?short_path=8e67f40#diff-8e67f407bc32a0569e25d7ecaff6e494); start at the “Dual CommonJS/ES Module Packages” heading.
