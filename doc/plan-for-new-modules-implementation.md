@@ -120,18 +120,18 @@ Phase 3 improves user experience and extends the MVP. Phase 3 is malleable based
   - **Status**: No further improvements expected.
 
 * Dual CommonJS/ESM packages: Support packages with both CommonJS and ESM sources that can be used in either environment.
-  - At time of unflagging: `"main"` points to exactly one file, and full filenames are required (by default), so there is no possibility of an `import` specifier pointing to different files in ESM versus CommonJS; unless `--experimental-require-target` is used (see next bullet). Without that flag, dual packages must provide secondary entry point via a path, e.g. `'pkg/module'` or `'pkg/commonjs'`.
-  - With `--experimental-require-target`, paths within the `package.json` `"exports"` block can have separate entry points per environment.
+  - At time of unflagging: `"main"` points to exactly one file, and full filenames are required (by default), so there is no possibility of an `import` specifier pointing to different files in ESM versus CommonJS; unless `--experimental-dual-resolution` is used (see next bullet). Without that flag, dual packages must provide secondary entry point via a path, e.g. `'pkg/module'` or `'pkg/commonjs'`.
+  - With `--experimental-dual-resolution`, paths within the `package.json` `"exports"` block can have separate entry points per environment.
   - PR for conditional exports: https://github.com/nodejs/node/pull/29978.
   - PR for additional docs for best practices on writing dual packages with conditional exports: https://github.com/nodejs/node/pull/30051. [Formatted version](https://github.com/nodejs/node/pull/30051/files?short_path=8e67f40#diff-8e67f407bc32a0569e25d7ecaff6e494); start at the “Dual CommonJS/ES Module Packages” heading.
-  - Some members of the group expressed hesitation about conditional exports and want to explore other potential solutions for dual packages. If no alternative proposal reaches consensus before January 2020, the `--experimental-require-target` flag will be dropped and conditional exports will ship.
-  - **Status**: Per 2019-10-30 meeting, conditional exports and docs approved to merge into core behind `--experimental-require-target` flag.
+  - Some members of the group expressed hesitation about conditional exports and want to explore other potential solutions for dual packages. If no alternative proposal reaches consensus before January 2020, the `--experimental-dual-resolution` flag will be dropped and conditional exports will ship.
+  - **Status**: Per 2019-10-30 meeting, conditional exports and docs approved to merge into core behind `--experimental-dual-resolution` flag.
 
 ## Phase 4: Further Improvements After Unflagging
 
 * Dual CommonJS/ESM packages: See previous section.
   - One alternative proposal is `require` of ESM: https://github.com/nodejs/modules/issues/299.
-  - **Status**: `--experimental-require-target` will unflag by the end of January 2020 unless consensus is reached on an alternative approach. The flag may be dropped sooner if a consensus is reached, either for an alternative solution or for `--experimental-require-target`.
+  - **Status**: `--experimental-dual-resolution` will unflag by the end of January 2020 unless consensus is reached on an alternative approach. The flag may be dropped sooner if a consensus is reached, either for an alternative solution or for `--experimental-dual-resolution`.
 
 * A loaders solution that supports all items in the [features list in our README](https://github.com/nodejs/modules/#features).
   - Discussion: https://github.com/nodejs/modules/issues/351.
