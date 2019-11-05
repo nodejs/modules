@@ -9,7 +9,7 @@ Work includes:
 * ESM Loader implementation
 * ESM Module Specifier Resolution Algorithm
 * Loader Hooks
-* ESM and Common.js Interoperability
+* ESM and CommonJS Interoperability
 * Node.js and Browser interoperability
 * VM Modules implementation
 
@@ -17,7 +17,7 @@ Work includes:
 
 > ### [Current Plan for `--experimental-modules`](./doc/plan-for-new-modules-implementation.md)
 
-The team is working on a new implementation that replaces the Node.js 8 through 11 `--experimental-modules` implementation starting in Node.js 12. The new implementation is in progress in the [ecmascript-modules](https://github.com/nodejs/ecmascript-modules) repo. A road map of its development is [here](./doc/plan-for-new-modules-implementation.md).
+A new ECMAScript modules implementation shipped behind the `--experimental-modules` flag in Node 12. The flag is scheduled to be dropped in November 2019 as part of a minor release of Node 13. A road map of the implementation’s development is [here](./doc/plan-for-new-modules-implementation.md).
 
 
 ## Features

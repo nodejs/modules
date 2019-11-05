@@ -12,11 +12,11 @@ This document outlines the plan for building a new implementation to support ECM
 
 * **Phase 3** improves user experience and extends the MVP.
 
-  - At the completion of Phase 3, the new implementation’s experimental flag will be dropped. The goal is to “release” (drop the `--experimental-modules` flag) by when Node 12 starts LTS in October 2019.
-  
+  - At the completion of Phase 3, the new implementation’s experimental flag will be dropped. Per the modules group meeting on 2019-10-30, the implementation will be “released” (the `--experimental-modules` flag dropped) in November 2019.
+
 * **Phase 4** are items that were under development in earlier phases but weren’t finished when the new implementation’s experimental flag was dropped; these items may continue development after unflagging and potentially ship in later versions of Node.js.
 
-The effort is currently in **[Phase 3](#phase-3-path-to-stability-removing---experimental-modules-flag)**.
+The effort is currently in **[Phase 3](#phase-3-path-to-stability-removing---experimental-modules-flag)**, with unflagging of `--experimental-modules` expected in November 2019.
 
 At every phase, the following standards must be maintained:
 
@@ -103,44 +103,47 @@ Phase 3 improves user experience and extends the MVP. Phase 3 is malleable based
   - Landed in https://github.com/nodejs/node/pull/28568 and shipped in 12.7.0 behind `--experimental-exports`. Further improvements are being made as additional PRs against core.
   - The separate `--experimental-exports` flag was dropped in https://github.com/nodejs/node/pull/29867, merging the feature with overall `--experimental-modules`.
 
-* Provide a way to make ESM the default instead of CommonJS.
-  - Discussion: https://github.com/nodejs/modules/issues/318.
-  - Proposal: https://github.com/nodejs/modules/issues/335.
-  - **Tabled**. Currently one can add `--input-type=module` to `NODE_OPTIONS` to flip the default for `--input-type`; at the moment the group is deciding not to pursue providing an ability to flip the default for the `package.json` `type` field. We instead want to encourage all packages, both ESM and CommonJS, to include an explicit `type` field; leaving it out and relying on a default is something we want to discourage.
-  
 * Define behavior for builtin globals between CommonJS and ESM. Does modifying a builtin in one module system carry over into the other? If it does, we may have major performance concerns.
-  - Issue: https://github.com/nodejs/node/pull/29426.
-  - Current plan is to remove proxy support for changes in one system to affect the other.
-
-## Phase 4: Further Improvements After Unflagging
-
-* A loaders solution that supports all items in the [features list in our README](https://github.com/nodejs/modules/#features).
-  - Discussion: https://github.com/nodejs/modules/issues/351.
-  - Design: https://docs.google.com/document/d/1J0zDFkwxojLXc36t2gcv1gZ-QnoTXSzK1O6mNAMlync/edit#heading=h.xzp5p5pt8hlq.
-  - **Status**: In development behind a flag.
+  - Issue raised in: https://github.com/nodejs/node/pull/29426.
+  - Solution was to not sync bindings automatically, but provide an API to manually sync them when desired: `module.syncBuiltinESMExports()`.
+  - Landed in https://github.com/nodejs/node/pull/29737 and shipped in 12.12.0.
 
 * Shortcut to resolve to package root.
   - Proposal: [Package `"name"` Resolution Proposal](https://github.com/guybedford/package-name-resolution).
   - Discussion: https://github.com/nodejs/modules/issues/306.
-  - Upstream PR: https://github.com/nodejs/node/pull/29327 (proposes `@` instead of package name).
-  - **Status**: Upstream PR submitted.
+  - Landed in https://github.com/nodejs/node/pull/29327 behind the flag `--experimental-resolve-self`.
+
+* Finalize behavior of `import` of CommonJS files and packages.
+  - Overview: https://github.com/nodejs/modules/issues/264.
+  - At time of unflagging: `import` only the CommonJS default export, so `import _ from 'cjs-pkg'` but not `import { shuffle } from 'cjs-pkg'`.
+  - [Conditional exports](https://github.com/nodejs/node/pull/29978) allows creating an ESM wrapper to provide named exports of an otherwise all-CommonJS package; see [heading “Approach #1: Use an ES Module Wrapper.”](https://github.com/nodejs/node/pull/30051/files?short_path=8e67f40#diff-8e67f407bc32a0569e25d7ecaff6e494)
+  - **Status**: No further improvements expected.
+
+* Dual CommonJS/ESM packages: Support packages with both CommonJS and ESM sources that can be used in either environment.
+  - At time of unflagging: `"main"` (or `"exports": { ".": "file.js" }` overriding `"main"`) points to exactly one file, and full filenames are required (by default), so there is no possibility of an `import` specifier pointing to different files in ESM versus CommonJS; unless `--experimental-dual-resolution` is used (see next bullet). Without that flag, dual packages must provide secondary entry point via a path, e.g. `'pkg/module'` or `'pkg/commonjs'`.
+  - With `--experimental-dual-resolution`, paths within the `package.json` `"exports"` block can have separate entry points per environment.
+  - PR for conditional exports: https://github.com/nodejs/node/pull/29978.
+  - PR for additional docs for best practices on writing dual packages with conditional exports: https://github.com/nodejs/node/pull/30051. [Formatted version](https://github.com/nodejs/node/pull/30051/files?short_path=8e67f40#diff-8e67f407bc32a0569e25d7ecaff6e494); start at the “Dual CommonJS/ES Module Packages” heading.
+  - Some members of the group expressed hesitation about conditional exports and want to explore other potential solutions for dual packages. If no alternative proposal reaches consensus before January 2020, the `--experimental-dual-resolution` flag will be dropped and conditional exports will ship.
+  - **Status**: Per 2019-10-30 meeting, conditional exports and docs approved to merge into core behind `--experimental-dual-resolution` flag.
+
+## Phase 4: Further Improvements After Unflagging
+
+* Dual CommonJS/ESM packages: See previous section.
+  - One alternative proposal is `require` of ESM: https://github.com/nodejs/modules/issues/299.
+  - **Status**: `--experimental-dual-resolution` will unflag by the end of January 2020 unless consensus is reached on an alternative approach. The flag may be dropped sooner if a consensus is reached, either for an alternative solution or for `--experimental-dual-resolution`.
+
+* A loaders solution that supports all items in the [features list in our README](https://github.com/nodejs/modules/#features).
+  - Discussion: https://github.com/nodejs/modules/issues/351.
+  - Design: https://docs.google.com/document/d/1J0zDFkwxojLXc36t2gcv1gZ-QnoTXSzK1O6mNAMlync/edit#heading=h.xzp5p5pt8hlq.
+  - **Status**: In development behind `--experimental-loader` flag.
 
 * Limited module type detection.
   - PR: https://github.com/nodejs/ecmascript-modules/pull/69.
   - Upstream PR: https://github.com/nodejs/node/pull/27808.
   - **Status**: Upstream PR submitted.
 
-* Dual CommonJS/ESM packages: Either support packages with both CommonJS and ESM sources that can be used in either environment; or decide to specifically not support dual CommonJS/ESM packages.
-  - Status quo (at time of possible unflagging): `"main"` points to exactly one file, and all file extensions are mandatory (by default), so there is no possibility of an `import` specifier pointing to different files in ESM versus CommonJS. Recommended practice for dual packages is to have `"main"` point to the CommonJS entry point and have users use a deep import, e.g. `/module.mjs`, to access ESM entry point.
-  - Proposal for new `package.json` field for ESM entry point: https://github.com/nodejs/modules/issues/273.
-    - PR for above proposal: https://github.com/nodejs/ecmascript-modules/pull/41.
-    - PR is currently blocked because of this issue: https://github.com/nodejs/modules/issues/371.
-  - Proposal for `require` of ESM: https://github.com/nodejs/modules/issues/299.
-  - **Status**: “New field” proposal is [blocked](https://github.com/nodejs/modules/issues/371). “`require` of ESM” proposal may ship after unflagging if it is implemented and finds approval upstream.
-
-* Finalize behavior of `import` of CommonJS files and packages.
-  - Overview: https://github.com/nodejs/modules/issues/264.
-  - Status quo (at time of possible unflagging): `import` only the CommonJS default export, so `import _ from 'cjs-pkg'` but not `import { shuffle } from 'cjs-pkg'`.
-  - If the spec changes to allow it, we want to implement dynamic modules to enable named exports from CommonJS: https://github.com/nodejs/modules/issues/252.
-  - Another option is to specify CommonJS named exports in `package.json`: https://github.com/nodejs/modules/issues/324.
-  - **Status**: Dynamic modules is stalled due to upstream concerns from TC39. Named exports in `package.json` seeks consensus but could potentially ship after unflagging.
+* Provide a way to make ESM the default instead of CommonJS.
+  - Discussion: https://github.com/nodejs/modules/issues/318.
+  - Proposal: https://github.com/nodejs/modules/issues/335.
+  - **Tabled**. Currently one can add `--input-type=module` to `NODE_OPTIONS` to flip the default for `--input-type`; at the moment the group is deciding not to pursue providing an ability to flip the default for the `package.json` `type` field. We instead want to encourage all packages, both ESM and CommonJS, to include an explicit `type` field; leaving it out and relying on a default is something we want to discourage.
