@@ -17,7 +17,7 @@ Work includes:
 
 > ### [Current Plan for `--experimental-modules`](./doc/plan-for-new-modules-implementation.md)
 
-A new ECMAScript modules implementation shipped behind the `--experimental-modules` flag in Node 12. The flag is scheduled to be dropped in November 2019 as part of a minor release of Node 13. A road map of the implementation’s development is [here](./doc/plan-for-new-modules-implementation.md).
+A new ECMAScript modules implementation shipped behind the `--experimental-modules` flag in Node 12. The flag was [dropped in November 2019](https://github.com/nodejs/node/pull/29866#issuecomment-553138184) as part of a minor release of Node 13. A road map of the implementation’s development is [here](./doc/plan-for-new-modules-implementation.md).
 
 
 ## Features
