@@ -58,7 +58,7 @@ We encourage all packages to include the `"type"` field, even if the `"type"` is
 
 ## Package entry points and the `package.json` `"exports"` field
 
-There are now two fields that can define entry points for a package: `"main"` and `"exports"`. The `"main"` field is supported in all versions of Node.js, but its capabilities are limited: it only defines the main entry point of the package. A new `package.json` field `"exports"` can also define the main entry point, along with subpaths. It also provides encapsulation, where only the paths explicitly defined in `"exports"` are available for importing. `"exports"` applies to both CommonJS and ES module packages, whether used via `require` or `import`.
+There are now two fields that can define [entry points for a package](https://nodejs.org/api/esm.html#esm_package_entry_points): `"main"` and [`"exports"`](https://nodejs.org/api/esm.html#esm_package_exports). The `"main"` field is supported in all versions of Node.js, but its capabilities are limited: it only defines the main entry point of the package. A new `package.json` field `"exports"` can also define the main entry point, along with subpaths. It also provides encapsulation, where only the paths explicitly defined in `"exports"` are available for importing. `"exports"` applies to both CommonJS and ES module packages, whether used via `require` or `import`.
 
 This allows statements like `import 'pkg/feature'` to map to a path like `'./node_modules/pkg/esm/feature.js`. It also causes an error to be thrown for statements like `import 'pkg/esm/feature.js'` unless that path is defined in `"exports"`.
 
