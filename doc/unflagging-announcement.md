@@ -12,7 +12,9 @@ Node.js will treat the following as ES modules when passed to `node` as the init
 
 * Strings passed in as an argument to `--eval` or piped to `node` via `STDIN`, with the flag `--input-type=module`.
 
-Node.js will treat as CommonJS all other forms of input, such as `.js` files where the nearest parent `package.json` file contains no top-level `"type"` field, or string input without the flag `--input-type`. This behavior is to preserve backward compatibility. However, now that Node.js supports both CommonJS and ES modules, it is best to be explicit whenever possible. Node.js will treat the following as CommonJS when passed to `node` as the initial input, or when referenced by `import` statements within ES module code:
+Node.js will treat as CommonJS all other forms of input, such as `.js` files where the nearest parent `package.json` file contains no top-level `"type"` field, or string input without the flag `--input-type`. This behavior is to preserve backward compatibility. However, now that Node.js supports both CommonJS and ES modules, it is best to be explicit whenever possible.
+
+Node.js will treat the following as CommonJS when passed to `node` as the initial input, or when referenced by `import` statements within ES module code:
 
 * Files ending in `.cjs`.
 
@@ -36,7 +38,7 @@ Within ES module files and string input, [`import` statements](https://developer
 
 `import` statements that reference ES module files can specify the default export (`import _ from 'es-module-package'`), named exports (`import { shuffle } from 'es-module-package'`) and namespace exports (`import * as fs from 'fs'`). All Node.js built-in packages like `fs` and `path` support all three types of exports.
 
-`import` statements that reference CommonJS files (all current JavaScript code written for Node.js, [using `require` and `module.exports`](https://nodejs.org/api/modules.html)) can use the CommonJS default export (`import _ from 'commonjs-package'`) only.
+`import` statements that reference CommonJS files (all current JavaScript code written for Node.js, [using `require` and `module.exports`](https://nodejs.org/api/modules.html)) can only use the CommonJS default export (`import _ from 'commonjs-package'`).
 
 `import` statements that reference other types of files such as JSON or Wasm are experimental and require the [`--experimental-json-modules`](https://nodejs.org/api/esm.html#esm_experimental_json_modules) or [`--experimental-wasm-modules`](https://nodejs.org/api/esm.html#esm_experimental_wasm_modules) flags. The non-experimental [`module.createRequire`](https://nodejs.org/api/modules.html#modules_module_createrequire_filename) can be used to import JSON or native addons.
 
