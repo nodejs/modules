@@ -4,7 +4,7 @@ Node.js 13.2.0 ships support for [ECMAScript modules](https://hacks.mozilla.org/
 
 ## Enabling
 
-Node.js will treat the following as ES modules when passed to `node` as the initial input, or when referenced by `import` statements within ES module code:
+Node.js will treat the following as ES modules when passed to `node` as the initial input, or when referenced by `import`:
 
 * Files ending in `.mjs`.
 
@@ -14,7 +14,7 @@ Node.js will treat the following as ES modules when passed to `node` as the init
 
 Node.js will treat as CommonJS all other forms of input, such as `.js` files where the nearest parent `package.json` file contains no top-level `"type"` field, or string input without the flag `--input-type`. This behavior is to preserve backward compatibility. However, now that Node.js supports both CommonJS and ES modules, it is best to be explicit whenever possible.
 
-Node.js will treat the following as CommonJS when passed to `node` as the initial input, or when referenced by `import` statements within ES module code:
+Node.js will treat the following as CommonJS when passed to `node` as the initial input, or when referenced by `import`:
 
 * Files ending in `.cjs`.
 
@@ -84,7 +84,7 @@ Equivalents of `__filename` and `__dirname` can be created inside of each file v
 
 ## Writing packages
 
-At the moment, we recommend writing packages that provide to Node.js only entirely CommonJS or entirely ES module sources. The modules team is working on better support for “dual” packages, that provide CommonJS sources for package consumers using `require` and ES module sources for package consumers using `import`. The current experimental feature covering this use case is [conditional exports](https://nodejs.org/api/esm.html#esm_conditional_exports), and the team hopes to ship that or an alternative by the end of January 2020 if not earlier. See recommended patterns in [Dual CommonJS/ES Module Packages](https://nodejs.org/api/esm.html#esm_dual_commonjses_module_packages).
+At the moment, we recommend that packages are written using either entirely CommonJS or entirely ES module syntax for the JavaScript sources intended for Node.js. The modules team is working on better support for “dual” packages, that provide CommonJS sources for package consumers using `require` and ES module sources for package consumers using `import`. The current experimental feature covering this use case is [conditional exports](https://nodejs.org/api/esm.html#esm_conditional_exports), and the team hopes to ship that or an alternative by the end of January 2020 if not earlier. See recommended patterns in [Dual CommonJS/ES Module Packages](https://nodejs.org/api/esm.html#esm_dual_commonjses_module_packages).
 
 ## Works in progress
 
