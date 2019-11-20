@@ -104,6 +104,7 @@ Based on [these use cases](https://docs.google.com/document/d/10BBsIqdAXB9JR2KUz
 - [@ceejbot](https://github.com/ceejbot) - C J Silverio
 - [@chrisdickinson](https://github.com/chrisdickinson) - Chris Dickinson
 - [@clarkbw](https://github.com/clarkbw) - Bryan Clark
+- [@coreyfarrell](https://github.com/coreyfarrell) - Corey Farrell
 - [@darcyclarke](https://github.com/darcyclarke) - Darcy Clarke
 - [@dduleone](https://github.com/dduleone) - Dan DuLeone
 - [@DerekNonGeneric](https://github.com/DerekNonGeneric) - Derek Lewis
