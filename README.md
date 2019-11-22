@@ -2,7 +2,7 @@
 
 ## Purpose
 
-The Node.js Modules Team maintains and actively develops the ESModules (ESM) implementation in Node.js Core.
+The Node.js Modules Team maintains and actively develops the ECMAScript Modules (ESM) implementation in Node.js Core.
 
 Work includes:
 
@@ -15,9 +15,9 @@ Work includes:
 
 ## Current Efforts
 
-> ### [Current Plan for `--experimental-modules`](./doc/plan-for-new-modules-implementation.md)
+> ### [Current Plan for ECMAScript Modules support in Node.js](./doc/plan-for-new-modules-implementation.md)
 
-A new ECMAScript modules implementation shipped behind the `--experimental-modules` flag in Node 12. The flag is scheduled to be dropped in November 2019 as part of a minor release of Node 13. A road map of the implementation’s development is [here](./doc/plan-for-new-modules-implementation.md).
+A new ECMAScript modules implementation shipped behind the `--experimental-modules` flag in Node.js 12.0.0. The flag was dropped in Node.js 13.2.0, although the implementation remains experimental and is still subject to change. A road map of the implementation’s development is [here](./doc/plan-for-new-modules-implementation.md).
 
 
 ## Features

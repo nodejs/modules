@@ -12,11 +12,11 @@ This document outlines the plan for building a new implementation to support ECM
 
 * **Phase 3** improves user experience and extends the MVP.
 
-  - At the completion of Phase 3, the new implementation’s experimental flag will be dropped. Per the modules group meeting on 2019-10-30, the implementation will be “released” (the `--experimental-modules` flag dropped) in November 2019.
+  - At the completion of Phase 3, the new implementation’s experimental flag was [dropped](https://github.com/nodejs/node/pull/29866). It was released as part of Node 13.2.0 on 2019-11-21.
 
 * **Phase 4** are items that were under development in earlier phases but weren’t finished when the new implementation’s experimental flag was dropped; these items may continue development after unflagging and potentially ship in later versions of Node.js.
 
-The effort is currently in **[Phase 3](#phase-3-path-to-stability-removing---experimental-modules-flag)**, with unflagging of `--experimental-modules` expected in November 2019.
+The effort is currently in **[Phase 4](#phase-4-further-improvements-after-unflagging)**
 
 At every phase, the following standards must be maintained:
 
