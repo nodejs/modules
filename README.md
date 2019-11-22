@@ -17,7 +17,7 @@ Work includes:
 
 > ### [Current Plan for ECMAScript Modules support in Node.js](./doc/plan-for-new-modules-implementation.md)
 
-A new ECMAScript modules implementation shipped behind the `--experimental-modules` flag in Node.js 12.0.0. The flag was dropped in Node.js 13.2.0. A road map of the implementation’s development is [here](./doc/plan-for-new-modules-implementation.md).
+A new ECMAScript modules implementation shipped behind the `--experimental-modules` flag in Node.js 12.0.0. The flag was dropped in Node.js 13.2.0, although the implementation remains experimental and is still subject to change. A road map of the implementation’s development is [here](./doc/plan-for-new-modules-implementation.md).
 
 
 ## Features
