@@ -139,7 +139,7 @@ Phase 3 improves user experience and extends the MVP. Phase 3 is malleable based
 * Limited module type detection.
   - PR: https://github.com/nodejs/ecmascript-modules/pull/69.
   - Upstream PR: https://github.com/nodejs/node/pull/27808.
-  - **Status**: Upstream PR submitted.
+  - **Tabled**. The group’s current thinking is to encourage explicit source type definition via file extension or the `"type"` field. Source type detection via parsing source code is not 100% accurate and should therefore be left to userland where users can choose to accept its risks.
 
 * Provide a way to make ESM the default instead of CommonJS.
   - Discussion: https://github.com/nodejs/modules/issues/318.
