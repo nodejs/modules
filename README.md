@@ -22,7 +22,7 @@ A new ECMAScript modules implementation shipped behind the `--experimental-modul
 
 ## Features
 
-Based on [these use cases](https://docs.google.com/document/d/10BBsIqdAXB9JR2KUzQGYbCiVugYBnxE4REBakX29yyo/edit) ([#55](https://github.com/nodejs/modules/issues/55)), our implementation aims to support the following features (subject to change):
+Based on [these use cases](./doc/use-cases.md) ([#55](https://github.com/nodejs/modules/issues/55)), our implementation aims to support the following features (subject to change):
 
 ### Baseline Modules Implementation Features:
 * Spec compliance ([#132](https://github.com/nodejs/modules/issues/132))
