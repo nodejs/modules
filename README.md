@@ -92,3 +92,7 @@ A new ECMAScript modules implementation shipped behind the `--experimental-modul
 - [@zenparsing](https://github.com/zenparsing) - Kevin Smith
 
 <!-- ncu-team-sync end -->
+
+## Archives
+
+As part of creating the ECMAScript Modules implementation for Node.js 12.0.0, [use cases](./doc/use-cases.md) were brainstormed, which led to a list of [features](./doc/features.md), which guided the [plan for the implementation](./doc/plan-for-new-modules-implementation.md).
