@@ -123,25 +123,8 @@ Phase 3 improves user experience and extends the MVP. Phase 3 is malleable based
   - At time of unflagging: `"main"` (or `"exports": { ".": "file.js" }` overriding `"main"`) points to exactly one file, and full filenames are required (by default), so there is no possibility of an `import` specifier pointing to different files in ESM versus CommonJS; unless `--experimental-conditional-exports` is used (see next bullet). Without that flag, dual packages must provide secondary entry point via a path, e.g. `'pkg/module'` or `'pkg/commonjs'`.
   - With `--experimental-conditional-exports`, paths within the `package.json` `"exports"` block can have separate entry points per environment.
   - Landed in https://github.com/nodejs/node/pull/29978 and https://github.com/nodejs/node/pull/30051 behind `--experimental-conditional-exports` flag.
-  - Some members of the group expressed hesitation about conditional exports and want to explore other potential solutions for dual packages. If no alternative proposal reaches consensus before the end of January 2020, the `--experimental-conditional-exports` flag will be dropped and conditional exports will ship.
+  - Unflagged in https://github.com/nodejs/node/pull/31001 and shipped in Node 13.7.0.
 
 ## Phase 4: Further Improvements After Unflagging
 
-* Dual CommonJS/ESM packages: See previous section.
-  - One alternative proposal is `require` of ESM: https://github.com/nodejs/modules/issues/299.
-  - **Status**: `--experimental-conditional-exports` will unflag by the end of January 2020 unless consensus is reached on an alternative approach. The flag may be dropped sooner if a consensus is reached, either for an alternative solution or for `--experimental-conditional-exports`.
-
-* A loaders solution that supports all items in the [features list in our README](https://github.com/nodejs/modules/#features).
-  - Discussion: https://github.com/nodejs/modules/issues/351.
-  - Design: https://docs.google.com/document/d/1J0zDFkwxojLXc36t2gcv1gZ-QnoTXSzK1O6mNAMlync/edit#heading=h.xzp5p5pt8hlq.
-  - **Status**: In development behind `--experimental-loader` flag.
-
-* Limited module type detection.
-  - PR: https://github.com/nodejs/ecmascript-modules/pull/69.
-  - Upstream PR: https://github.com/nodejs/node/pull/27808.
-  - **Tabled**. The group’s current thinking is to encourage explicit source type definition via file extension or the `"type"` field. Source type detection via parsing source code is not 100% accurate and should therefore be left to userland where users can choose to accept its risks.
-
-* Provide a way to make ESM the default instead of CommonJS.
-  - Discussion: https://github.com/nodejs/modules/issues/318.
-  - Proposal: https://github.com/nodejs/modules/issues/335.
-  - **Tabled**. Currently one can add `--input-type=module` to `NODE_OPTIONS` to flip the default for `--input-type`; at the moment the group is deciding not to pursue providing an ability to flip the default for the `package.json` `type` field. We instead want to encourage all packages, both ESM and CommonJS, to include an explicit `type` field; leaving it out and relying on a default is something we want to discourage.
+Now that the implementation has shipped, further efforts are listed on the [README](../README.md).
