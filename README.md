@@ -2,16 +2,16 @@
 
 ## Purpose
 
-The Node.js Modules Team maintains and actively develops the ECMAScript Modules (ESM) implementation in Node.js Core.
+The Node.js Modules Team maintains and actively develops the ECMAScript Modules (ESM) implementation in Node.js core.
 
 Work includes:
 
-* ESM Loader implementation
-* ESM Module Specifier Resolution Algorithm
-* Loader Hooks
-* ESM and CommonJS Interoperability
-* Node.js and Browser interoperability
-* VM Modules implementation
+* ESM loader implementation
+* ESM specifier resolution
+* Loader hooks
+* ESM and CommonJS interoperability
+* Node.js and browser interoperability
+* VM modules implementation
 
 ## Current Efforts
 
