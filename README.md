@@ -57,7 +57,7 @@ Work includes:
 
 ## Archives
 
-- **[`features_2020-02-12.md`](./doc/archive/features_2020-02-12.md)**: As part of creating the ECMAScript Modules implementation for Node.js 12.0.0, [use cases](./doc/use-cases.md) were brainstormed, which led to a list of features that guided the [plan for the implementation](./doc/plan-for-new-modules-implementation.md).
+- **[`features.md`](./doc/archive/features.md)**: As part of creating the ECMAScript Modules implementation for Node.js 12.0.0, [use cases](./doc/use-cases.md) were brainstormed, which led to a list of features. This feature list, which previously existed as a section in this repo's root README, informed what became the [plan for the implementation](./doc/plan-for-new-modules-implementation.md).
 
 ## Members
 

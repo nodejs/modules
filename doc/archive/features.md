@@ -3,8 +3,7 @@
 
 | Date archived | Reason | Description |
 |---|---|---|
-| 12 February 2020 | Cause of confusion | This section, which previously existed in this repo's root README, was written for the new ECMAScript modules implementation initially created for Node 12.0.0. This feature list informed what became the [plan](../plan-for-new-modules-implementation.md) for that implementation. |
-
+| 12 February 2020 | Cause of confusion | As part of creating the ECMAScript Modules implementation for Node.js 12.0.0, use cases were brainstormed, which led to a list of features. This feature list, which previously existed as a section in this repo's root README, informed what became the plan for the implementation. |
 
 # Features
 
