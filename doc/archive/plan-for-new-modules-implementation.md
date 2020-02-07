@@ -1,3 +1,10 @@
+| This document has been archived. It is now read-only. |
+|---|
+<!-- FIXME(@GeoffreyBooth): What goes below? -->
+| Date archived | Reason | Description |
+|---|---|---|
+| 12 February 2020 | Lorem ipsum. | Lorem ipsum. |
+
 # Plan for New Modules Implementation
 
 This document outlines the plan for building a new implementation to support ECMAScript modules in Node.js. The effort is split up into phases:
