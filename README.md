@@ -57,7 +57,9 @@ Work includes:
 
 ## Archives
 
-As part of creating the ECMAScript Modules implementation for Node.js 12.0.0, [use cases](./doc/use-cases.md) were brainstormed, which led to a list of [features](./doc/features.md), which guided the [plan for the implementation](./doc/plan-for-new-modules-implementation.md).
+- **[Features](./doc/archive/features.md)**: As part of creating the ECMAScript Modules implementation for Node.js 12.0.0, [use cases](./doc/use-cases.md) were brainstormed, which led to a list of features. This feature list, which previously existed as a section in this repo's root README, informed what became the [plan for the implementation](./doc/archive/plan-for-new-modules-implementation.md).
+
+- **[Plan for New Modules Implementation](./doc/archive/plan-for-new-modules-implementation.md)**: This document summarized the work that went into the new ECMAScript Modules implementation that shipped in Node.js 12.0.0.
 
 ## Members
 

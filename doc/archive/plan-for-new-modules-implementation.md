@@ -1,3 +1,7 @@
+> _This document has been archived._
+>
+> This document summarized the work that went into the new ECMAScript Modules implementation that shipped in Node.js 12.0.0.
+
 # Plan for New Modules Implementation
 
 This document outlines the plan for building a new implementation to support ECMAScript modules in Node.js. The effort is split up into phases:

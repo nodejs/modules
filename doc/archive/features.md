@@ -1,6 +1,8 @@
-# Features
+> _This document has been archived._
+>
+> As part of creating the ECMAScript Modules implementation for Node.js 12.0.0, use cases were brainstormed, which led to a list of features. This feature list, which previously existed as a section in this repo's root [README](../../README.md), informed what became the [plan for the implementation](./plan-for-new-modules-implementation.md).
 
-> The below list of features was written for the new ECMAScript modules implementation that was created for Node 12.0.0. These features informed what became the [plan](./plan-for-new-modules-implementation.md) for that implementation.
+# Features
 
 Based on [these use cases](./doc/use-cases.md) ([#55](https://github.com/nodejs/modules/issues/55)), our implementation aims to support the following features (subject to change):
 
