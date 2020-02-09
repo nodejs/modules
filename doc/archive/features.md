@@ -1,9 +1,6 @@
-| This document has been archived. It is now read-only. |
-|---|
-
-| Date archived | Reason | Description |
-|---|---|---|
-| 12 February 2020 | Cause of confusion | As part of creating the ECMAScript Modules implementation for Node.js 12.0.0, use cases were brainstormed, which led to a list of features. This feature list, which previously existed as a section in this repo's root README, informed what became the plan for the implementation. |
+> _This document has been archived._
+>
+> As part of creating the ECMAScript Modules implementation for Node.js 12.0.0, use cases were brainstormed, which led to a list of features. This feature list, which previously existed as a section in this repo's root [README](../../README.md), informed what became the [plan for the implementation](./plan-for-new-modules-implementation.md).
 
 # Features
 

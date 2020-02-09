@@ -1,9 +1,6 @@
-| This document has been archived. It is now read-only. |
-|---|
-<!-- FIXME(@GeoffreyBooth): What goes below? -->
-| Date archived | Reason | Description |
-|---|---|---|
-| 12 February 2020 | Lorem ipsum. | Lorem ipsum. |
+> _This document has been archived._
+>
+> This document summarized the work that went into the new ECMAScript Modules implementation that shipped in Node.js 12.0.0.
 
 # Plan for New Modules Implementation
 
