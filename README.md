@@ -19,8 +19,6 @@ Work includes:
 
 - **[Plan for New Modules Implementation](./doc/archive/plan-for-new-modules-implementation.md)**: This document summarized the work that went into the new ECMAScript Modules implementation that shipped in Node.js 12.0.0.
 
-- **[Roadmap](./doc/archive/roadmap.md)**: These sections have been archived, which previously existed compositely as a section named "Current Efforts" in this repo's root README.
-
 ## Members
 
 <!-- ncu-team-sync.team(nodejs/modules-active-members) -->
