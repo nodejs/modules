@@ -63,6 +63,6 @@ Work includes:
 - [@XadillaX](https://github.com/XadillaX) - Khaidi Chu
 - [@xtuc](https://github.com/xtuc) - Sven Sauleau
 - [@yosuke-furukawa](https://github.com/yosuke-furukawa) - Yosuke Furukawa
-- [@zackschuster](https://github.com/zackschuster)
+- [@zackschuster](https://github.com/zackschuster) - Zack Schuster
 
 <!-- ncu-team-sync end -->
