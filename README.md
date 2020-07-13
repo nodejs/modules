@@ -43,6 +43,8 @@ Work includes:
 <!-- ncu-team-sync.team(nodejs/modules-observers) -->
 
 - [@benjamingr](https://github.com/benjamingr) - Benjamin Gruenbaum
+- [@bizob2828](https://github.com/bizob2828) - Bob Evans
+- [@bmacnaughton](https://github.com/bmacnaughton) - Bruce MacNaughton
 - [@bmeurer](https://github.com/bmeurer) - Benedikt Meurer
 - [@coreyfarrell](https://github.com/coreyfarrell) - Corey Farrell
 - [@darcyclarke](https://github.com/darcyclarke) - Darcy Clarke
@@ -54,12 +56,15 @@ Work includes:
 - [@iarna](https://github.com/iarna) - Rebecca Turner
 - [@jasnell](https://github.com/jasnell) - James M Snell
 - [@jdalton](https://github.com/jdalton) - John-David Dalton
+- [@manekinekko](https://github.com/manekinekko) - Wassim Chegham
 - [@mcollina](https://github.com/mcollina) - Matteo Collina
 - [@mhdawson](https://github.com/mhdawson) - Michael Dawson
 - [@rubys](https://github.com/rubys) - Sam Ruby
 - [@ryzokuken](https://github.com/ryzokuken) - Ujjwal Sharma
+- [@sendilkumarn](https://github.com/sendilkumarn) - Sendil Kumar N
 - [@soldair](https://github.com/soldair) - Ryan Day
 - [@TimothyGu](https://github.com/TimothyGu) - Timothy Gu
+- [@WebReflection](https://github.com/WebReflection) - Andrea Giammarchi
 - [@XadillaX](https://github.com/XadillaX) - Khaidi Chu
 - [@xtuc](https://github.com/xtuc) - Sven Sauleau
 - [@yosuke-furukawa](https://github.com/yosuke-furukawa) - Yosuke Furukawa
