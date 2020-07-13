@@ -42,53 +42,27 @@ Work includes:
 
 <!-- ncu-team-sync.team(nodejs/modules-observers) -->
 
-- [@A-lxe](https://github.com/A-lxe) - Alex Aubuchon
 - [@benjamingr](https://github.com/benjamingr) - Benjamin Gruenbaum
-- [@benjamn](https://github.com/benjamn) - Ben Newman
-- [@bmacnaughton](https://github.com/bmacnaughton) - Bruce MacNaughton
 - [@bmeurer](https://github.com/bmeurer) - Benedikt Meurer
-- [@bizob2828](https://github.com/bizob2828) - Bob Evans
-- [@ceejbot](https://github.com/ceejbot) - C J Silverio
-- [@chrisdickinson](https://github.com/chrisdickinson) - Chris Dickinson
-- [@clarkbw](https://github.com/clarkbw) - Bryan Clark
 - [@coreyfarrell](https://github.com/coreyfarrell) - Corey Farrell
 - [@darcyclarke](https://github.com/darcyclarke) - Darcy Clarke
-- [@dduleone](https://github.com/dduleone) - Dan DuLeone
 - [@DerekNonGeneric](https://github.com/DerekNonGeneric) - Derek Lewis
-- [@devamaz](https://github.com/devamaz) - Ahmad Abdul-Aziz
-- [@devongovett](https://github.com/devongovett) - Devon Govett
+- [@devamaz](https://github.com/devamaz) - Ahmad Abdul-Aziz 
 - [@eugeneo](https://github.com/eugeneo) - Eugene Ostroukhov
-- [@evanplaice](https://github.com/evanplaice) - Evan Plaice
-- [@Fishrock123](https://github.com/Fishrock123) - Jeremiah Senkpiel
 - [@giltayar](https://github.com/giltayar) - Gil Tayar
 - [@hiroppy](https://github.com/hiroppy) - Yuta Hiroto
 - [@iarna](https://github.com/iarna) - Rebecca Turner
-- [@inidaname](https://github.com/inidaname) - Hassan Sani
-- [@jamiebuilds](https://github.com/jamiebuilds) - Jamie Kyle
 - [@jasnell](https://github.com/jasnell) - James M Snell
 - [@jdalton](https://github.com/jdalton) - John-David Dalton
-- [@justinfagnani](https://github.com/justinfagnani) - Justin Fagnani
-- [@linclark](https://github.com/linclark) - Lin Clark
-- [@manekinekko](https://github.com/manekinekko) - Wassim Chegham
 - [@mcollina](https://github.com/mcollina) - Matteo Collina
-- [@mduleone](https://github.com/mduleone) - Matt DuLeone
 - [@mhdawson](https://github.com/mhdawson) - Michael Dawson
-- [@refack](https://github.com/refack) - Refael Ackermann (רפאל פלחי)
-- [@robwormald](https://github.com/robwormald) - Rob Wormald
 - [@rubys](https://github.com/rubys) - Sam Ruby
 - [@ryzokuken](https://github.com/ryzokuken) - Ujjwal Sharma
-- [@sendilkumarn](https://github.com/sendilkumarn) - Sendil Kumar N
 - [@soldair](https://github.com/soldair) - Ryan Day
-- [@tbjers](https://github.com/tbjers) - Torgny Bjers
-- [@tbranyen](https://github.com/tbranyen) - Tim Branyen
-- [@TheLarkInn](https://github.com/TheLarkInn) - Sean Larkin
 - [@TimothyGu](https://github.com/TimothyGu) - Timothy Gu
-- [@tzmanics](https://github.com/tzmanics) - Tara Z. Manicsic
-- [@WebReflection](https://github.com/WebReflection) - Andrea Giammarchi
 - [@XadillaX](https://github.com/XadillaX) - Khaidi Chu
 - [@xtuc](https://github.com/xtuc) - Sven Sauleau
 - [@yosuke-furukawa](https://github.com/yosuke-furukawa) - Yosuke Furukawa
 - [@zackschuster](https://github.com/zackschuster) - Zack Schuster
-- [@zenparsing](https://github.com/zenparsing) - Kevin Smith
 
 <!-- ncu-team-sync end -->
