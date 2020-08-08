@@ -59,6 +59,7 @@ Work includes:
 - [@manekinekko](https://github.com/manekinekko) - Wassim Chegham
 - [@mcollina](https://github.com/mcollina) - Matteo Collina
 - [@mhdawson](https://github.com/mhdawson) - Michael Dawson
+- [@qballer](https://github.com/qballer) - Doron Tsur
 - [@rubys](https://github.com/rubys) - Sam Ruby
 - [@ryzokuken](https://github.com/ryzokuken) - Ujjwal Sharma
 - [@sendilkumarn](https://github.com/sendilkumarn) - Sendil Kumar N
