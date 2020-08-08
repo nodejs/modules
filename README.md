@@ -69,5 +69,6 @@ Work includes:
 - [@xtuc](https://github.com/xtuc) - Sven Sauleau
 - [@yosuke-furukawa](https://github.com/yosuke-furukawa) - Yosuke Furukawa
 - [@zackschuster](https://github.com/zackschuster) - Zack Schuster
+- [@qballer](https://github.com/qballer) - Doron Tsur
 
 <!-- ncu-team-sync end -->
