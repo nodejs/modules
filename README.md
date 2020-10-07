@@ -25,14 +25,13 @@ Work includes:
 
 - [@bmeck](https://github.com/bmeck) - Bradley Farias
 - [@DanielRosenwasser](https://github.com/DanielRosenwasser) - Daniel Rosenwasser
-- [@devsnek](https://github.com/devsnek) - Gus Caplan
+- [@devsnek](https://github.com/devsnek) - devsnek
 - [@GeoffreyBooth](https://github.com/GeoffreyBooth) - Geoffrey Booth
 - [@guybedford](https://github.com/guybedford) - Guy Bedford
 - [@jkrems](https://github.com/jkrems) - Jan Olaf Krems
 - [@ljharb](https://github.com/ljharb) - Jordan Harband
 - [@MylesBorins](https://github.com/MylesBorins) - Myles Borins
 - [@robpalme](https://github.com/robpalme) - Rob Palmer
-- [@SMotaal](https://github.com/SMotaal) - Saleh Abdel Motaal
 - [@targos](https://github.com/targos) - Michaël Zasso
 - [@weswigham](https://github.com/weswigham) - Wesley Wigham
 
@@ -63,6 +62,7 @@ Work includes:
 - [@rubys](https://github.com/rubys) - Sam Ruby
 - [@ryzokuken](https://github.com/ryzokuken) - Ujjwal Sharma
 - [@sendilkumarn](https://github.com/sendilkumarn) - Sendil Kumar N
+- [@SMotaal](https://github.com/SMotaal) - Saleh Abdel Motaal
 - [@soldair](https://github.com/soldair) - Ryan Day
 - [@TimothyGu](https://github.com/TimothyGu) - Timothy Gu
 - [@WebReflection](https://github.com/WebReflection) - Andrea Giammarchi
