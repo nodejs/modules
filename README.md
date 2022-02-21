@@ -21,54 +21,24 @@ Work includes:
 
 ## Members
 
-<!-- ncu-team-sync.team(nodejs/modules-active-members) -->
+<!-- ncu-team-sync.team(nodejs/modules) -->
 
 - [@bmeck](https://github.com/bmeck) - Bradley Farias
 - [@DanielRosenwasser](https://github.com/DanielRosenwasser) - Daniel Rosenwasser
 - [@devsnek](https://github.com/devsnek) - devsnek
 - [@GeoffreyBooth](https://github.com/GeoffreyBooth) - Geoffrey Booth
+- [@giltayar](https://github.com/giltayar) - Gil Tayar
 - [@guybedford](https://github.com/guybedford) - Guy Bedford
+- [@JakobJingleheimer](https://github.com/JakobJingleheimer) - Jacob Smith
 - [@jkrems](https://github.com/jkrems) - Jan Olaf Krems
 - [@ljharb](https://github.com/ljharb) - Jordan Harband
 - [@MylesBorins](https://github.com/MylesBorins) - Myles Borins
+- [@qballer](https://github.com/qballer) - Doron Tsur
 - [@robpalme](https://github.com/robpalme) - Rob Palmer
 - [@targos](https://github.com/targos) - Michaël Zasso
-- [@weswigham](https://github.com/weswigham) - Wesley Wigham
-
-<!-- ncu-team-sync end -->
-
-## Observers
-
-<!-- ncu-team-sync.team(nodejs/modules-observers) -->
-
-- [@benjamingr](https://github.com/benjamingr) - Benjamin Gruenbaum
-- [@bizob2828](https://github.com/bizob2828) - Bob Evans
-- [@bmacnaughton](https://github.com/bmacnaughton) - Bruce MacNaughton
-- [@bmeurer](https://github.com/bmeurer) - Benedikt Meurer
-- [@coreyfarrell](https://github.com/coreyfarrell) - Corey Farrell
-- [@darcyclarke](https://github.com/darcyclarke) - Darcy Clarke
-- [@DerekNonGeneric](https://github.com/DerekNonGeneric) - Derek Lewis
-- [@devamaz](https://github.com/devamaz) - Ahmad Abdul-Aziz 
-- [@eugeneo](https://github.com/eugeneo) - Eugene Ostroukhov
-- [@giltayar](https://github.com/giltayar) - Gil Tayar
-- [@hiroppy](https://github.com/hiroppy) - Yuta Hiroto
-- [@iarna](https://github.com/iarna) - Rebecca Turner
-- [@jasnell](https://github.com/jasnell) - James M Snell
-- [@jdalton](https://github.com/jdalton) - John-David Dalton
-- [@manekinekko](https://github.com/manekinekko) - Wassim Chegham
-- [@mcollina](https://github.com/mcollina) - Matteo Collina
-- [@mhdawson](https://github.com/mhdawson) - Michael Dawson
-- [@qballer](https://github.com/qballer) - Doron Tsur
-- [@rubys](https://github.com/rubys) - Sam Ruby
-- [@ryzokuken](https://github.com/ryzokuken) - Ujjwal Sharma
-- [@sendilkumarn](https://github.com/sendilkumarn) - Sendil Kumar N
-- [@SMotaal](https://github.com/SMotaal) - Saleh Abdel Motaal
-- [@soldair](https://github.com/soldair) - Ryan Day
-- [@TimothyGu](https://github.com/TimothyGu) - Timothy Gu
+- [@VoltrexMaster](https://github.com/VoltrexMaster) - Mohammed Keyvanzadeh
 - [@WebReflection](https://github.com/WebReflection) - Andrea Giammarchi
-- [@XadillaX](https://github.com/XadillaX) - Khaidi Chu
-- [@xtuc](https://github.com/xtuc) - Sven Sauleau
-- [@yosuke-furukawa](https://github.com/yosuke-furukawa) - Yosuke Furukawa
+- [@weswigham](https://github.com/weswigham) - Wesley Wigham
 - [@zackschuster](https://github.com/zackschuster) - Zack Schuster
 
 <!-- ncu-team-sync end -->
