@@ -2,22 +2,9 @@
 
 ## Purpose
 
-The Node.js Modules Team maintains and actively develops the ECMAScript Modules (ESM) implementation in Node.js core.
+The original Node.js Modules Team planned and developed the ECMAScript Modules (ESM) implementation in Node.js core.
 
-Work includes:
-
-* ESM loader implementation
-* ESM specifier resolution
-* Loader hooks
-* ESM and CommonJS interoperability
-* Node.js and browser interoperability
-* VM modules implementation
-
-## Archives
-
-- **[Features](./doc/archive/features.md)**: As part of creating the ECMAScript Modules implementation for Node.js 12.0.0, [use cases](./doc/use-cases.md) were brainstormed, which led to a list of features. This feature list, which previously existed as a section in this repo's root README, informed what became the [plan for the implementation](./doc/archive/plan-for-new-modules-implementation.md).
-
-- **[Plan for New Modules Implementation](./doc/archive/plan-for-new-modules-implementation.md)**: This document summarized the work that went into the new ECMAScript Modules implementation that shipped in Node.js 12.0.0.
+The current team exists as subject matter experts to consult regarding the Node.js ESM implementation.
 
 ## Members
 
@@ -42,3 +29,9 @@ Work includes:
 - [@zackschuster](https://github.com/zackschuster) - Zack Schuster
 
 <!-- ncu-team-sync end -->
+
+## Archives
+
+- **[Features](./doc/archive/features.md)**: As part of creating the ECMAScript Modules implementation for Node.js 12.0.0, [use cases](./doc/use-cases.md) were brainstormed, which led to a list of features. This feature list, which previously existed as a section in this repo's root README, informed what became the [plan for the implementation](./doc/archive/plan-for-new-modules-implementation.md).
+
+- **[Plan for New Modules Implementation](./doc/archive/plan-for-new-modules-implementation.md)**: This document summarized the work that went into the new ECMAScript Modules implementation that shipped in Node.js 12.0.0.
