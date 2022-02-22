@@ -12,6 +12,7 @@ The current team exists as subject matter experts to consult regarding the Node.
 
 - [@bmeck](https://github.com/bmeck) - Bradley Farias
 - [@DanielRosenwasser](https://github.com/DanielRosenwasser) - Daniel Rosenwasser
+- [@DerekNonGeneric](https://github.com/DerekNonGeneric) - Derek Lewis
 - [@devsnek](https://github.com/devsnek) - devsnek
 - [@GeoffreyBooth](https://github.com/GeoffreyBooth) - Geoffrey Booth
 - [@giltayar](https://github.com/giltayar) - Gil Tayar
