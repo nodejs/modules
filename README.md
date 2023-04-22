@@ -23,7 +23,7 @@ The current team exists as subject matter experts to consult regarding the Node.
 - [@qballer](https://github.com/qballer) - Doron Tsur
 - [@robpalme](https://github.com/robpalme) - Rob Palmer
 - [@targos](https://github.com/targos) - Michaël Zasso
-- [@VoltrexMaster](https://github.com/VoltrexMaster) - Mohammed Keyvanzadeh
+- [@VoltrexKeyva](https://github.com/VoltrexKeyva) - Mohammed Keyvanzadeh
 - [@WebReflection](https://github.com/WebReflection) - Andrea Giammarchi
 - [@weswigham](https://github.com/weswigham) - Wesley Wigham
 - [@zackschuster](https://github.com/zackschuster) - Zack Schuster
